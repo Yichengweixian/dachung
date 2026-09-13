@@ -1,0 +1,9 @@
+{
+  "energy_capacity_MWh": 40.0,
+  "power_capacity_MW": 20.0,
+  "soc_initial": 0.50,
+  "soc_min": 0.10,
+  "soc_max": 0.90,
+  "eta_charge": 0.95,
+  "eta_discharge": 0.95
+}

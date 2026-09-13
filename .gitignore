@@ -1,0 +1,8 @@
+.venv/
+.claude/settings.local.json
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+.DS_Store
+Thumbs.db

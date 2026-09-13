@@ -1,0 +1,42 @@
+{
+  "input_file": "data/input_24h.csv",
+  "input_sha256": "30c0504459f1b72e8a5ac77d0fd1267c8f6293819ce67e87eb64ea7610bdb622",
+  "configs": {
+    "storage.json": {
+      "energy_capacity_MWh": 40.0,
+      "power_capacity_MW": 20.0,
+      "soc_initial": 0.5,
+      "soc_min": 0.1,
+      "soc_max": 0.9,
+      "eta_charge": 0.95,
+      "eta_discharge": 0.95
+    },
+    "simulation.json": {
+      "num_steps": 24,
+      "time_step_hours": 1.0
+    },
+    "no_storage.json": {
+      "thermal_max_MW": 120.0
+    },
+    "capacity_sensitivity.json": {
+      "energy_capacities_MWh": [
+        0,
+        20,
+        40,
+        60,
+        80
+      ],
+      "fixed_power_capacity_MW": 20.0
+    }
+  },
+  "python_version": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.1"
+  },
+  "power_rule": "Fixed power for nonzero energy capacity; zero power for zero capacity.",
+  "terminal_soc_target": null,
+  "storage_utilization_definition": "Fraction of hours with charging or discharging power > 1e-6 MW.",
+  "all_scenarios_validated_before_and_after_csv_export": true
+}

@@ -1,0 +1,50 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "运行项目入口",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "第3阶段 无储能平衡",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_no_storage.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "第4阶段 储能规则调度与对比",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_storage.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "第5阶段 储能容量敏感性分析",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_capacity_sensitivity.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "第6阶段 系统经济性评价",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_economics.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
