@@ -1,0 +1,6 @@
+# Basic data processing and plotting dependencies.
+# Stages 1-6 use these basic libraries; no optimization solver is required.
+numpy
+pandas
+matplotlib
+pulp==3.3.0

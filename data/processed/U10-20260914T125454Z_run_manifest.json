@@ -1,0 +1,45 @@
+{
+  "artifacts": {
+    "converted": "C:\\Users\\31374\\Desktop\\Dachuang\\dachung-U09\\data\\processed\\U10-20260914T125454Z_input_168h_wuhan_20200101T0000Z_20200107T2300Z.csv",
+    "converted_sha256": "cea7505e933f2b68775a8a5fd05e473af0d5d28ba23904f33cc813d686bac07f",
+    "quality_report": "C:\\Users\\31374\\Desktop\\Dachuang\\dachung-U09\\data\\processed\\U10-20260914T125454Z_quality_report.json",
+    "raw": "C:\\Users\\31374\\Desktop\\Dachuang\\dachung-U09\\data\\raw\\U10-20260914T125454Z\\nasa_power_hourly_wuhan_20200101_20200107_utc.json",
+    "raw_sha256": "66eb140842a767efd840c03f958ab66285049735f3f18f4d8c1a2a19d6b6956d"
+  },
+  "code": {
+    "platform": "Windows-10-10.0.22631-SP0",
+    "python": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+    "weather_pipeline": "src/weather_pipeline.py"
+  },
+  "frozen_request": {
+    "endpoint": "https://power.larc.nasa.gov/api/temporal/hourly/point",
+    "parameters": {
+      "community": "RE",
+      "end": "20200107",
+      "format": "JSON",
+      "latitude": "30.5900",
+      "longitude": "114.3000",
+      "parameters": "ALLSKY_SFC_SW_DWN,WS50M",
+      "start": "20200101",
+      "time-standard": "UTC"
+    }
+  },
+  "local_timezone": "Asia/Shanghai",
+  "output_fields": {
+    "hour": "h index",
+    "load": "MW (synthetic)",
+    "solar": "MW",
+    "wind": "MW"
+  },
+  "run_id": "U10-20260914T125454Z",
+  "source_fields": {
+    "ALLSKY_SFC_SW_DWN": "Wh/m²/h",
+    "WS50M": "m/s"
+  },
+  "unit": "U10",
+  "utc_window": {
+    "count": 168,
+    "end": "2020-01-07T23:00:00+00:00",
+    "start": "2020-01-01T00:00:00+00:00"
+  }
+}

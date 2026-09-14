@@ -1,0 +1,13 @@
+factor,metric,shapley,minimum_marginal,maximum_marginal
+thermal_minimum,operating_cost_CNY,111907.4236215388,108111.76543328946,115569.04986149655
+thermal_minimum,renewable_utilization_pct,-9.199638000687465,-9.470836518654494,-8.928439482720435
+thermal_minimum,curtailment_MWh,200.169403474158,194.2685576408242,206.07024930749185
+thermal_minimum,thermal_generation_MWh,204.26881348106818,197.12477377654693,211.10999999999467
+thermal_ramp,operating_cost_CNY,3756.9307644262735,-5.820766091346741e-11,7781.925425435766
+thermal_ramp,renewable_utilization_pct,-0.2711985179670293,-0.5423970359340586,0.0
+thermal_ramp,curtailment_MWh,5.900845833333818,0.0,11.801691666667637
+thermal_ramp,thermal_generation_MWh,7.056532779312931,-2.2737367544323206e-13,14.718771929815716
+terminal_energy,operating_cost_CNY,5397.336472761963,5168.000000001804,5894.7368421052815
+terminal_energy,renewable_utilization_pct,0.0,0.0,0.0
+terminal_energy,curtailment_MWh,0.0,0.0,0.0
+terminal_energy,thermal_generation_MWh,15.718199445986784,15.200000000005275,16.84210526315792

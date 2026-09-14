@@ -1,0 +1,12 @@
+{
+  "random_seed": 20260910,
+  "wind_capacity_MW": 100.0,
+  "solar_capacity_MW": 150.0,
+  "wind_mean_capacity_factor": 0.50,
+  "wind_daily_amplitude": 0.12,
+  "wind_noise_std_MW": 4.0,
+  "solar_start_hour": 6,
+  "solar_end_hour": 18,
+  "solar_shape_exponent": 1.6,
+  "load_MW": [92, 87, 83, 81, 82, 89, 103, 122, 139, 145, 141, 134, 128, 125, 127, 133, 143, 154, 160, 162, 151, 132, 112, 99]
+}

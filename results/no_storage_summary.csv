@@ -1,0 +1,2 @@
+num_steps,time_step_hours,thermal_max_MW,total_load_MWh,renewable_available_MWh,renewable_used_MWh,curtailment_MWh,thermal_generation_MWh,unserved_MWh,renewable_utilization_pct,curtailment_rate_pct
+24,1.00000000,120.00000000,2924.00000000,2175.84000000,1950.16000000,225.68000000,973.84000000,0.00000000,89.62791382,10.37208618

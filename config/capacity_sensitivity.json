@@ -1,0 +1,4 @@
+{
+  "energy_capacities_MWh": [0, 20, 40, 60, 80],
+  "fixed_power_capacity_MW": 20.0
+}

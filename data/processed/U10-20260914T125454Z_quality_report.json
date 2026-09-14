@@ -1,0 +1,18 @@
+{
+  "duplicate_timestamps": 0,
+  "expected_count": 168,
+  "expected_end": "2020-01-07T23:00:00+00:00",
+  "expected_start": "2020-01-01T00:00:00+00:00",
+  "fill_values": 0,
+  "issues": [],
+  "missing_timestamps": 0,
+  "nonfinite_values": 0,
+  "passed": true,
+  "range_violations": 0,
+  "source_units": {
+    "ALLSKY_SFC_SW_DWN": "Wh/m^2",
+    "WS50M": "m/s"
+  },
+  "time_standard": "UTC",
+  "unparseable_timestamps": 0
+}

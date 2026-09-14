@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "parameter_status": "synthetic_test_assumptions",
+    "currency": "CNY",
+    "source": "人为设置的模型测试参数，非文献引用、市场报价或实际工程数据。",
+    "capital_cost_scope": "能量侧和功率侧投资分别计价；不得将完整系统报价同时填入两项。",
+    "allocation_method": "投资按资本回收系数年化，再按仿真小时数/全年小时数分摊；固定运维采用相同时间比例。",
+    "variable_om_basis": "仅按电网侧放电量计费，不重复对充电量收费。"
+  },
+  "parameters": {
+    "thermal_cost_CNY_per_MWh": 350.0,
+    "storage_energy_capex_CNY_per_kWh": 800.0,
+    "storage_power_capex_CNY_per_kW": 300.0,
+    "storage_lifetime_years": 15.0,
+    "discount_rate": 0.05,
+    "storage_fixed_om_fraction_per_year": 0.02,
+    "storage_variable_om_CNY_per_MWh_discharged": 10.0,
+    "curtailment_penalty_CNY_per_MWh": 200.0,
+    "load_shedding_penalty_CNY_per_MWh": 10000.0,
+    "hours_per_year": 8760.0
+  }
+}

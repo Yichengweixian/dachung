@@ -1,0 +1,5 @@
+{
+  "status": "invalid",
+  "error": "ValueError(\"Constraint validation failed: {'nonnegative': 0.0, 'input_hour': 0.0, 'input_load': 0.0, 'input_wind_available': 0.0, 'input_solar_available': 0.0, 'balance': 5.000000001587068e-06, 'wind_split': 0.0, 'solar_split': 0.0, 'thermal_min': 0.0, 'thermal_max': 0.0, 'ramp': 0.0, 'unserved': 0.0, 'charge_limit': 0.0, 'discharge_limit': 0.0, 'mutual_exclusion': 0.0, 'energy_start_MWh_low': 0.0, 'energy_start_MWh_high': 0.0, 'energy_MWh_low': 0.0, 'energy_MWh_high': 0.0, 'initial': 0.0, 'continuity': 0.0, 'recurrence': 3.500000005374204e-07, 'terminal': 0.0, 'soc': 0.0}\")",
+  "note": "No successful U06 conclusion. Existing diagnostics preserved."
+}

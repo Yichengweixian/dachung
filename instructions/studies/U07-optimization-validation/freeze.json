@@ -1,0 +1,30 @@
+{
+  "run_id": "U07-20260913-01",
+  "base_commit": "9e5aab2af062560db8f264bdc5e718f08a64c285",
+  "sha256": {
+    "results/optimization/U06-20260913-02/run_manifest.json": "7070d7821e7d8aade3b57a3b7155718f0ab20257eba0d516803c934d3dd63a71",
+    "results/optimization/U06-20260913-02/attribution.csv": "0e432e4ee0330d87912cb40af4b21dfd2fc60e13ffde911fc76f7d18aaa77075",
+    "results/optimization/U06-20260913-02/summary.csv": "08f768e1713c0a87630128643178a808126fb2835c85d91451e6c67112c50e9f",
+    "results/optimization/U06-20260913-02/dispatch_hourly.csv": "8011584969ccf1944f70999fbadd45895f78896b521fa4313c07120ddcc469e5",
+    "results/optimization/U06-20260913-02/zero_renewables_hourly.csv": "66fcf0540450d9c19c7fe1447eaaa05ff699f7115179bbea93f9ebca5bc695de",
+    "results/optimization/U06-20260913-02/zero_storage_hourly.csv": "0ef91aa9e45f927f04d594c5acd9e2e43596c675e87de1dd5a2c86f378d1569d",
+    "results/optimization/U06-20260913-02/half_hour_hourly.csv": "bf45d77ccf9a5ad6b103f9442b40d910fc7891160732ee9a4efc4a61a7815c1e",
+    "results/optimization/U06-20260913-02/minimum_hourly.csv": "2e61b5ccc98dcd72a574501833e59515988cc7bb3aa5db74d9531e3ef4570bb6",
+    "results/optimization/U06-20260913-02/method_hourly.csv": "70cadaeae087c0c205a61bcfb88859a7af662a351921dc8304a5da0b02fa6a9d",
+    "results/optimization/U06-20260913-02/ramp_hourly.csv": "e941ffdcc81ce0371c47680b0e1331dee40905c12fb863a3038176efebb795fc",
+    "instructions/studies/U07-optimization-validation/design.md": "9fe0947bd9f0c20950076efc9a1d7f78ce1ab56fe371235ab449de4ca88755a2",
+    "instructions/studies/U07-optimization-validation/decision-rule.md": "b66e3120a8cd532e548605e1e723aae2609d7c5ce49ffca7683d264841087ad4",
+    "instructions/studies/U07-optimization-validation/plan.md": "d44728078a1f102c797383f3ec7386be794e887395a481a083d6fd3c7b2723ec",
+    "results/capacity_sensitivity/summary.csv": "6a02f7971259a2d775fda15688b11fd003baa6a6c22b2bb31f1532514b581d92",
+    "results/storage_hourly.csv": "3d27c7aa48ab4c49007132b49e3aa38e9527881bc28fedd4d31c3a7ac962422d",
+    "data/input_24h.csv": "19326084b33707847f2098d79a5930b130e9802f125ecb95455b056239773404",
+    "config/capacity_sensitivity.json": "89cca179137ea4b77187bd0d77a707dd7a5163fd2ab063e181629211e7b00bd0",
+    "config/optimization.json": "d33a065d19675ec041d9c23c3d890d2b2fa117d430d7de9f1af131fa391b924f",
+    "config/no_storage.json": "1871672aa6c0c973b4d2194a8cc03d00f12b1acad1319f881efc0b950ee58f5d",
+    "config/economics.json": "0d289528fb4f31d2169a07a06c62a649de8688fe4126a1947d8c40a5207202f5",
+    "config/data_24h.json": "fbb39060344d9f521233cdac02e84a34d91a8dc34459b5289fb655ffe3acfb01",
+    "config/simulation.json": "2204b07d0ceb5f6bd73da8a90d217c4c6787dc5afe0912eeb2d9aa3738695aee",
+    "config/storage.json": "3c2a46edcfcc877f1ed13a2c12f9393a0df8bc8dab645830736844b243ba6172"
+  },
+  "scope": "Original U07 thresholds and attribution formulas retained. U06 approved MILP used. New Python processes, same Linux machine; no second-machine claim."
+}

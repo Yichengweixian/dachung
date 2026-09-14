@@ -1,0 +1,5 @@
+{
+  "thermal_min_MW": 30.0,
+  "thermal_ramp_MW_per_h": 30.0,
+  "objective_terms": ["thermal", "curtailment", "load_shedding", "storage_variable_om"]
+}

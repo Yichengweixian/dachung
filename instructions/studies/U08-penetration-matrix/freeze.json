@@ -1,0 +1,124 @@
+{
+  "run_id": "U08-20260913-01",
+  "base_commit": "11443685c8cbb48e45483266a5a3e06c5112b562",
+  "preflight_tests": "..................................\n----------------------------------------------------------------------\nRan 34 tests in 0.268s\n\nOK\n",
+  "sha256": {
+    "data/input_24h.csv": "19326084b33707847f2098d79a5930b130e9802f125ecb95455b056239773404",
+    "data/scenarios/penetration_scenarios.csv": "aa7dbda85adf259e4e73e01ff061558a8ae3f7ee1405848f30d16e6a4656e3da",
+    "instructions/studies/U08-penetration-matrix/design.md": "db18294c86cff4f5e2e83aec232faa6b468e077e910838e332afc06fa2bf5ba4",
+    "instructions/studies/U08-penetration-matrix/decision-rule.md": "295b198e24c369a0d20182295119bb8d22b553262ea41afb7a930f9e73b28ad1",
+    "instructions/studies/U08-penetration-matrix/plan.md": "83ad6b85834ac4c4392e87d8768f807416a1d17cb72742ed205cfe1c0b5cffed",
+    "instructions/studies/U08-penetration-matrix/prerequisite-amendment.md": "438a25f561d8c9d6473ea7f4166516cc42cf8c23986aa1aa23166423c083d52b",
+    "config/capacity_sensitivity.json": "89cca179137ea4b77187bd0d77a707dd7a5163fd2ab063e181629211e7b00bd0",
+    "config/data_24h.json": "fbb39060344d9f521233cdac02e84a34d91a8dc34459b5289fb655ffe3acfb01",
+    "config/economics.json": "0d289528fb4f31d2169a07a06c62a649de8688fe4126a1947d8c40a5207202f5",
+    "config/no_storage.json": "1871672aa6c0c973b4d2194a8cc03d00f12b1acad1319f881efc0b950ee58f5d",
+    "config/optimization.json": "d33a065d19675ec041d9c23c3d890d2b2fa117d430d7de9f1af131fa391b924f",
+    "config/simulation.json": "2204b07d0ceb5f6bd73da8a90d217c4c6787dc5afe0912eeb2d9aa3738695aee",
+    "config/storage.json": "3c2a46edcfcc877f1ed13a2c12f9393a0df8bc8dab645830736844b243ba6172",
+    "src/optimization_model.py": "c02816ef414b7dcc44315a3163a00ddcee660f39212d6544da773e61f2809beb",
+    "src/optimization_validation.py": "e0689cb294e8b3edcb699fa413077da78d85da7565e89f5b343fa82531745d63",
+    "src/cbc_precision.py": "cf81518904f06bd9e5b8fb27e94ad3e7ce853b70972b9fbe37382d4923888b40",
+    "scripts/audit_u07.py": "cf915986848a59ce36630148ac1954b71d8f8ae20488a60a956e93b7af2070d2",
+    "instructions/studies/U06-optimization-model/findings.md": "6f5d56bcf0d09dc67be8c31bffe2b23fc1feaefa8f466cd625624d7e90dad4b3",
+    "instructions/studies/U07-optimization-validation/findings.md": "33b2b1682103a826b70b49a3694050353665520f0220d9e297be7f5b64e45e77",
+    "instructions/studies/U07R-factorial-attribution/findings.md": "051aeee4d8376c2eec451581a7236a749e09fc31cb5205f8e1fff0a2edc42d11"
+  },
+  "config": {
+    "data_24h.json": {
+      "random_seed": 20260910,
+      "wind_capacity_MW": 100.0,
+      "solar_capacity_MW": 150.0,
+      "wind_mean_capacity_factor": 0.5,
+      "wind_daily_amplitude": 0.12,
+      "wind_noise_std_MW": 4.0,
+      "solar_start_hour": 6,
+      "solar_end_hour": 18,
+      "solar_shape_exponent": 1.6,
+      "load_MW": [
+        92,
+        87,
+        83,
+        81,
+        82,
+        89,
+        103,
+        122,
+        139,
+        145,
+        141,
+        134,
+        128,
+        125,
+        127,
+        133,
+        143,
+        154,
+        160,
+        162,
+        151,
+        132,
+        112,
+        99
+      ]
+    },
+    "no_storage.json": {
+      "thermal_max_MW": 120.0
+    },
+    "simulation.json": {
+      "num_steps": 24,
+      "time_step_hours": 1.0
+    },
+    "storage.json": {
+      "energy_capacity_MWh": 40.0,
+      "power_capacity_MW": 20.0,
+      "soc_initial": 0.5,
+      "soc_min": 0.1,
+      "soc_max": 0.9,
+      "eta_charge": 0.95,
+      "eta_discharge": 0.95
+    },
+    "capacity_sensitivity.json": {
+      "energy_capacities_MWh": [
+        0,
+        20,
+        40,
+        60,
+        80
+      ],
+      "fixed_power_capacity_MW": 20.0
+    },
+    "optimization.json": {
+      "thermal_min_MW": 30.0,
+      "thermal_ramp_MW_per_h": 30.0,
+      "objective_terms": [
+        "thermal",
+        "curtailment",
+        "load_shedding",
+        "storage_variable_om"
+      ]
+    },
+    "economics.json": {
+      "metadata": {
+        "parameter_status": "synthetic_test_assumptions",
+        "currency": "CNY",
+        "source": "人为设置的模型测试参数，非文献引用、市场报价或实际工程数据。",
+        "capital_cost_scope": "能量侧和功率侧投资分别计价；不得将完整系统报价同时填入两项。",
+        "allocation_method": "投资按资本回收系数年化，再按仿真小时数/全年小时数分摊；固定运维采用相同时间比例。",
+        "variable_om_basis": "仅按电网侧放电量计费，不重复对充电量收费。"
+      },
+      "parameters": {
+        "thermal_cost_CNY_per_MWh": 350.0,
+        "storage_energy_capex_CNY_per_kWh": 800.0,
+        "storage_power_capex_CNY_per_kW": 300.0,
+        "storage_lifetime_years": 15.0,
+        "discount_rate": 0.05,
+        "storage_fixed_om_fraction_per_year": 0.02,
+        "storage_variable_om_CNY_per_MWh_discharged": 10.0,
+        "curtailment_penalty_CNY_per_MWh": 200.0,
+        "load_shedding_penalty_CNY_per_MWh": 10000.0,
+        "hours_per_year": 8760.0
+      }
+    }
+  }
+}

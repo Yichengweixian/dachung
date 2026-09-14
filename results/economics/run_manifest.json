@@ -1,0 +1,97 @@
+{
+  "input_file": "data/input_24h.csv",
+  "input_sha256": "19326084b33707847f2098d79a5930b130e9802f125ecb95455b056239773404",
+  "configs": {
+    "simulation.json": {
+      "num_steps": 24,
+      "time_step_hours": 1.0
+    },
+    "no_storage.json": {
+      "thermal_max_MW": 120.0
+    },
+    "storage.json": {
+      "energy_capacity_MWh": 40.0,
+      "power_capacity_MW": 20.0,
+      "soc_initial": 0.5,
+      "soc_min": 0.1,
+      "soc_max": 0.9,
+      "eta_charge": 0.95,
+      "eta_discharge": 0.95
+    },
+    "capacity_sensitivity.json": {
+      "energy_capacities_MWh": [
+        0,
+        20,
+        40,
+        60,
+        80
+      ],
+      "fixed_power_capacity_MW": 20.0
+    },
+    "economics.json": {
+      "metadata": {
+        "parameter_status": "synthetic_test_assumptions",
+        "currency": "CNY",
+        "source": "人为设置的模型测试参数，非文献引用、市场报价或实际工程数据。",
+        "capital_cost_scope": "能量侧和功率侧投资分别计价；不得将完整系统报价同时填入两项。",
+        "allocation_method": "投资按资本回收系数年化，再按仿真小时数/全年小时数分摊；固定运维采用相同时间比例。",
+        "variable_om_basis": "仅按电网侧放电量计费，不重复对充电量收费。"
+      },
+      "parameters": {
+        "thermal_cost_CNY_per_MWh": 350.0,
+        "storage_energy_capex_CNY_per_kWh": 800.0,
+        "storage_power_capex_CNY_per_kW": 300.0,
+        "storage_lifetime_years": 15.0,
+        "discount_rate": 0.05,
+        "storage_fixed_om_fraction_per_year": 0.02,
+        "storage_variable_om_CNY_per_MWh_discharged": 10.0,
+        "curtailment_penalty_CNY_per_MWh": 200.0,
+        "load_shedding_penalty_CNY_per_MWh": 10000.0,
+        "hours_per_year": 8760.0
+      }
+    }
+  },
+  "python_version": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  },
+  "cost_unit": "CNY per simulated period, including allocated capital cost",
+  "capital_allocation": "capex * CRF * simulation_hours / hours_per_year",
+  "total_cost_terms": [
+    "thermal_cost_CNY",
+    "storage_cost_CNY",
+    "curtailment_cost_CNY",
+    "load_shedding_cost_CNY"
+  ],
+  "all_dispatch_and_cost_results_validated_after_csv_export": true,
+  "cost_checks_passed": [
+    "finite_nonnegative_costs",
+    "simulation_hours",
+    "allocation_fraction",
+    "investment_units",
+    "crf",
+    "annual_investment",
+    "annual_fixed_om",
+    "allocated_investment",
+    "fixed_om",
+    "variable_om",
+    "storage_om_total",
+    "storage_total",
+    "thermal",
+    "curtailment",
+    "load_shedding",
+    "total",
+    "operating_excludes_capital",
+    "inventory_reference",
+    "no_storage_zero_cost"
+  ],
+  "lowest_supplied_scenarios": [
+    "E80_P20"
+  ],
+  "lowest_supplied_cost_CNY": 363810.5353309727,
+  "terminal_soc_target": null,
+  "initial_inventory_valuation_included_in_total": false,
+  "optimization_performed": false
+}
