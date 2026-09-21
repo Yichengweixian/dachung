@@ -1,0 +1,77 @@
+{
+  "automation_level": "chrome-cdp",
+  "url": "http://127.0.0.1:8513",
+  "human_confirmation": false,
+  "started_at": "2026-09-16T13:48:24.711683+00:00",
+  "steps": {
+    "01_page_load": {
+      "status": "passed",
+      "page_title_ok": true,
+      "number_inputs": 20,
+      "sidebar_present": true,
+      "tabs": [
+        "01 / 调度验证",
+        "02 / 容量寻优",
+        "03 / 方案对比",
+        "04 / 数据与说明"
+      ],
+      "screenshot_bytes": 128651,
+      "body_text_excerpt": "实验设置\n\n数据来源\n\nkeyboard_arrow_right\n\n导入参数 JSON\n\n调度模式\n\nMILP\n\n规则\n\nkeyboard_arrow_down\n\n储能容量与状态\n\n能量容量 (MWh)\n\n功率容量 (MW)\n\n初始 SOC\n\n最低 SOC\n\n最高 SOC\n\n充电效率\n\n放电效率\n\nkeyboard_arrow_right\n\n火电约束\n\nkeyboard_arrow_right\n\n经济参数（示例值）\n\n导出当前参数\n\n参数只作用于本次会话，不修改冻结配置。\n\nDeploy\nDACHUANG / ENERGY BALANCE LAB\n风光储 · 研究工作台\n\n从逐时平衡到储能容量配置。保留约束、核对结果，再讨论结论。\n\n研究原型 · 构造算例（非真实电网数据） · NASA输入仅气象估计，负荷仍为构造形状\n\n01 / 调度验证\n\n02 / 容量寻优\n\n03 / 方案对比\n\n04 / 数据与说明\n\n逐时调度与约束校验\n\n24 小时 · MILP · 本机计算\n\nMILP：火电上下限与爬坡、充放电互斥、整段初末SOC归位。\n\n计算调度"
+    },
+    "02_milp_solve": {
+      "status": "passed",
+      "metrics": [
+        "新能源消纳率==81.823%",
+        "弃电量==395.500 MWh",
+        "缺供电量==0.000 MWh",
+        "总成本==496,637.539 元"
+      ],
+      "status_line": "Optimal | 不同输入长度、参数和调度模式不能直接作优劣结论；总成本按各自仿真时段计。 | 计算调度后，点击“加入方案对比”保存当前结果。",
+      "charts": 0,
+      "download_labels": [
+        "逐时 CSV",
+        "汇总 CSV",
+        "调度图 PNG",
+        "输入 CSV"
+      ],
+      "table_rows": 0,
+      "screenshot_bytes": 254136,
+      "body_text_excerpt": "实验设置\n\n数据来源\n\nkeyboard_arrow_right\n\n导入参数 JSON\n\n调度模式\n\nMILP\n\n规则\n\nkeyboard_arrow_down\n\n储能容量与状态\n\n能量容量 (MWh)\n\n功率容量 (MW)\n\n初始 SOC\n\n最低 SOC\n\n最高 SOC\n\n充电效率\n\n放电效率\n\nkeyboard_arrow_right\n\n火电约束\n\nkeyboard_arrow_right\n\n经济参数（示例值）\n\n导出当前参数\n\n参数只作用于本次会话，不修改冻结配置。\n\nDeploy\nDACHUANG / ENERGY BALANCE LAB\n风光储 · 研究工作台\n\n从逐时平衡到储能容量配置。保留约束、核对结果，再讨论结论。\n\n研究原型 · 构造算例（非真实电网数据） · NASA输入仅气象估计，负荷仍为构造形状\n\n01 / 调度验证\n\n02 / 容量寻优\n\n03 / 方案对比\n\n04 / 数据与说明\n\n逐时调度与约束校验\n\n24 小时 · MILP · 本机计算\n\nMILP：火电上下限与爬坡、充放电互斥、整段初末SOC归位。\n\n计算调度\n\nOptimal\n\n新能源消纳率\n\n81.823%\n\n弃电量\n\n395.500 MWh\n\n缺供电量\n\n0.000 MWh\n\n总成本\n\n496,637.539 元\n\n逐时 CSV\n\n汇总 CSV\n\n调度图 PNG\n\n加入方案对比\n\nkeyboard_arrow_right\n\n逐时原始结果"
+    },
+    "03_add_comparison": {
+      "status": "passed",
+      "comparison_table_rows": 1,
+      "download_labels": [
+        "加入方案对比"
+      ],
+      "screenshot_bytes": 135418,
+      "body_text_excerpt": "实验设置\n\n数据来源\n\nkeyboard_arrow_right\n\n导入参数 JSON\n\n调度模式\n\nMILP\n\n规则\n\nkeyboard_arrow_down\n\n储能容量与状态\n\n能量容量 (MWh)\n\n功率容量 (MW)\n\n初始 SOC\n\n最低 SOC\n\n最高 SOC\n\n充电效率\n\n放电效率\n\nkeyboard_arrow_right\n\n火电约束\n\nkeyboard_arrow_right\n\n经济参数（示例值）\n\n导出当前参数\n\n参数只作用于本次会话，不修改冻结配置。\n\nStop\nDeploy\nDACHUANG / ENERGY BALANCE LAB\n风光储 · 研究工作台\n\n从逐时平衡到储能容量配置。保留约束、核对结果，再讨论结论。\n\n研究原型 · 构造算例（非真实电网数据） · NASA输入仅气象估计，负荷仍为构造形状\n\n01 / 调度验证\n\n02 / 容量寻优\n\n03 / 方案对比\n\n04 / 数据与说明\n\n保留假设，再比较结果\n\n不同输入长度、参数和调度模式不能直接作优劣结论；总成本按各自仿真时段计。"
+    },
+    "04_grid_101": {
+      "status": "passed",
+      "best_line": "网格最优：70 MWh / 25 MW · 486,358.65 元/24h\n\n网格 CSV\n\n网格图 PNG",
+      "table_rows": 12,
+      "screenshot_bytes": 228352,
+      "body_text_excerpt": "实验设置\n\n数据来源\n\nkeyboard_arrow_right\n\n导入参数 JSON\n\n调度模式\n\nMILP\n\n规则\n\nkeyboard_arrow_down\n\n储能容量与状态\n\n能量容量 (MWh)\n\n功率容量 (MW)\n\n初始 SOC\n\n最低 SOC\n\n最高 SOC\n\n充电效率\n\n放电效率\n\nkeyboard_arrow_right\n\n火电约束\n\nkeyboard_arrow_right\n\n经济参数（示例值）\n\n导出当前参数\n\n参数只作用于本次会话，不修改冻结配置。\n\nDeploy\nDACHUANG / ENERGY BALANCE LAB\n风光储 · 研究工作台\n\n从逐时平衡到储能容量配置。保留约束、核对结果，再讨论结论。\n\n研究原型 · 构造算例（非真实电网数据） · NASA输入仅气象估计，负荷仍为构造形状\n\n01 / 调度验证\n\n02 / 容量寻优\n\n03 / 方案对比\n\n04 / 数据与说明\n\n容量 × 功率联合寻优\n\n固定101候选：无储能(0,0)及容量10—100MWh、功率5—50MW的离散组合。仅支持24h，不声称连续全局最优。\n\n运行 101 点网格\n\n网格最优：70 MWh / 25 MW · 486,358.65 元/24h\n\n网格 CSV\n\n网格图 PNG"
+    },
+    "05_validation_error": {
+      "status": "passed",
+      "error_text": "输入校验失败：能量容量和功率容量不能为负。",
+      "screenshot_bytes": 89212,
+      "body_text_excerpt": "实验设置\n\n数据来源\n\nkeyboard_arrow_right\n\n导入参数 JSON\n\n调度模式\n\nMILP\n\n规则\n\nkeyboard_arrow_down\n\n储能容量与状态\n\n能量容量 (MWh)\n\n功率容量 (MW)\n\n初始 SOC\n\n最低 SOC\n\n最高 SOC\n\n充电效率\n\n放电效率\n\nkeyboard_arrow_right\n\n火电约束\n\nkeyboard_arrow_right\n\n经济参数（示例值）\n\nDeploy\nDACHUANG / ENERGY BALANCE LAB\n风光储 · 研究工作台\n\n从逐时平衡到储能容量配置。保留约束、核对结果，再讨论结论。\n\n研究原型 · 构造算例（非真实电网数据） · NASA输入仅气象估计，负荷仍为构造形状\n\n输入校验失败：能量容量和功率容量不能为负。"
+    }
+  },
+  "chrome_version": "Chrome/152.0.7977.83",
+  "console_error_events": [],
+  "console_error_count": 0,
+  "finished_at": "2026-09-16T13:49:09.571214+00:00",
+  "screenshots": [
+    "01_page_load.png",
+    "02_milp_result.png",
+    "03_comparison.png",
+    "04_grid_result.png",
+    "05_negative_capacity.png"
+  ],
+  "failed_steps": [],
+  "verdict": "browser_automation_passed"
+}

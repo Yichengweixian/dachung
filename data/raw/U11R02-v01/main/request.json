@@ -1,0 +1,39 @@
+{
+  "endpoint": "https://power.larc.nasa.gov/api/temporal/hourly/point",
+  "parameters": {
+    "parameters": "ALLSKY_SFC_SW_DWN,WS50M",
+    "community": "RE",
+    "latitude": 30.59,
+    "longitude": 114.3,
+    "start": "20230101",
+    "end": "20231231",
+    "format": "JSON",
+    "time-standard": "UTC"
+  },
+  "requested_at": "2026-09-16T12:48:09.735633+00:00",
+  "http_status": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "Content-Length": "317521",
+    "Connection": "close",
+    "X-Amz-Cf-Pop": "LAX54-P4",
+    "Date": "Wed, 16 Sep 2026 12:48:11 GMT",
+    "x-objects-time": "0.023",
+    "x-amzn-RequestId": "8b5ab238-6639-49be-9742-c67f1e0c8a91",
+    "x-process-time": "0.03",
+    "content-disposition": "inline; filename=POWER_Point_Hourly_20230101_20231231_030d59N_114d30E_UTC.json",
+    "x-amzn-Remapped-content-length": "317521",
+    "x-data-sources": "syn1deg,merra2,power",
+    "content-language": "en-US",
+    "x-app-name": "hourly",
+    "x-archive-time": "0.114",
+    "x-amz-apigw-id": "Dytx1FwuvHcEhRg=",
+    "x-app-version": "v2.10.2",
+    "x-service-time": "0.168",
+    "X-Amzn-Trace-Id": "Root=1-6aaa900b-1abbe5f623c388dc64ca8040;Parent=432dde7b929799be;Sampled=0;Lineage=1:4833d1ce:0",
+    "Via": "1.1 4cc483f2ffe2d4e29a27654363f1ae54.cloudfront.net (CloudFront), 1.1 da34a87c52ac72533d016ec1c077c41a.cloudfront.net (CloudFront)",
+    "X-Cache": "Miss from cloudfront",
+    "X-Amz-Cf-Id": "5uAvw4hBsxOJWev7p1ynlVM7js36u_ys9LWSbg1isp-1CWY0s2bzaQ=="
+  },
+  "sha256": "42cc18461067d16c539051e1fc9001239b2eaab4133fee33db829ed4e988b234"
+}

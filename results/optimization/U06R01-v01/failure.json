@@ -1,0 +1,4 @@
+{
+  "case": "main",
+  "error": "CalledProcessError(4294967295, ['E:\\\\dachuang\\\\.venv\\\\Lib\\\\site-packages\\\\pulp\\\\apis\\\\../solverdir/cbc/win/i64/cbc.exe', 'C:\\\\Users\\\\16482\\\\AppData\\\\Local\\\\Temp\\\\cbc-native-itfbb_kz\\\\model.mps', '-primalTolerance', '1e-9', '-integerTolerance', '1e-9', '-ratioGap', '0', '-allowableGap', '0', '-threads', '1', '-branch', '-printingOptions', 'all', '-solution', 'C:\\\\Users\\\\16482\\\\AppData\\\\Local\\\\Temp\\\\cbc-native-itfbb_kz\\\\solution.txt', '-saveSolution', 'C:\\\\Users\\\\16482\\\\AppData\\\\Local\\\\Temp\\\\cbc-native-itfbb_kz\\\\solution.bin', '-quit'])"
+}

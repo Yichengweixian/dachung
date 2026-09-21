@@ -1,0 +1,129 @@
+{
+  "unit": "U06",
+  "frozen_at": "2026-09-15T15:36:23.222454+00:00",
+  "rule_commit": "003a014ffa95a465cb2a0f0fb5874d2ccb75580f",
+  "model": "continuous LP as specified on master; no binary variables",
+  "tolerance": 1e-06,
+  "baseline_test_count": 25,
+  "sha256": {
+    "data/input_24h.csv": "30c0504459f1b72e8a5ac77d0fd1267c8f6293819ce67e87eb64ea7610bdb622",
+    "444.docx": "db7ad0383b59e629df8d6694212fc4b95b4912c2fedb15a601ff4b551cb7472a",
+    "requirements.txt": "904e1ba559aaaa38f771b78fded277abbf2d20160d0ba3a9c92bbaf72ef2cd67",
+    "config/capacity_sensitivity.json": "b129373e8401816e8c92ccb4273ed43eaba92d569546206d5b2ec0cfea0703ec",
+    "config/data_24h.json": "0079eac60d933431fbd3ae5663b132a44e32d2e47b409f13e2c3732245ec25fd",
+    "config/economics.json": "a4f85c6d224c14e0db834cc9f72ce8959bce4f1ee7979cdadb326ee78c155a79",
+    "config/no_storage.json": "c4bd45f88e83981270cbdf536e49e5053ab81c3eacab71dec2f339688476f270",
+    "config/optimization.json": "d33a065d19675ec041d9c23c3d890d2b2fa117d430d7de9f1af131fa391b924f",
+    "config/simulation.json": "2f806ee61963aa9277f55af7b694db5ae41f7954ef411ab111a40f57df599761",
+    "config/storage.json": "5ba124bdeed9e4f94c5679c7e15b651784b26381d9ba9142bccfc7608e7a9cf8",
+    "instructions/studies/U06-optimization-model/decision-rule.md": "1bd5d4591b4dbd65459099f99096ace651b666edec9cee0b4a858c0571fe8c03",
+    "instructions/studies/U06-optimization-model/design.md": "4f9a147d9c76953777bd58bdbe9ab35fc7598b5d8304a50b1e8cfd595539d48d",
+    "instructions/studies/U06-optimization-model/findings.md": "4da59d610878e84d76b155a715fe4dffbf9aacc744a1215df20bf248880ab4de",
+    "instructions/studies/U06-optimization-model/plan.md": "786ef270af48f4171add221b9f58a1e70ea0b689431530552c99d91cd65f5f32",
+    "instructions/studies/U06-optimization-model/question.md": "2b67c4e7c1ee27f041208e7023d457f2920c6a547df9a92bfde08da9285293f8",
+    "instructions/specs/methods.md": "fbfad27a144d30ba1b6a10e0e31fb2a03d4521ce589b7351bb28b5ca4824a2ea",
+    "instructions/specs/data.md": "be097cd87e1ac8c9eb4a4b2788d6d98ced6918ccadeefa0eade4c9be735dc877",
+    "instructions/specs/question.md": "95e9e62078bbc38b6b9b7526410b3ff6da743384f9213585441e7b37f82fc45b",
+    "instructions/specs/execution-policy.md": "0d7d3a2a5263d95e514d669441e4faadd930c2480c4365b537ffbea9e4d97c22",
+    "results/master_revalidation_v01/baseline_manifest.json": "49ec206be9efd3263054610c6e94bfdf1fa0db91c1b0f602ee005762d7d69c0e",
+    "results/master_revalidation_v01/baseline_tests.txt": "91c33d548ace33089dbd1a584a7f8208a4f2ba833129aff5564d7ce339b026bd"
+  },
+  "config": {
+    "capacity_sensitivity.json": {
+      "energy_capacities_MWh": [
+        0,
+        20,
+        40,
+        60,
+        80
+      ],
+      "fixed_power_capacity_MW": 20.0
+    },
+    "data_24h.json": {
+      "random_seed": 20260910,
+      "wind_capacity_MW": 100.0,
+      "solar_capacity_MW": 150.0,
+      "wind_mean_capacity_factor": 0.5,
+      "wind_daily_amplitude": 0.12,
+      "wind_noise_std_MW": 4.0,
+      "solar_start_hour": 6,
+      "solar_end_hour": 18,
+      "solar_shape_exponent": 1.6,
+      "load_MW": [
+        92,
+        87,
+        83,
+        81,
+        82,
+        89,
+        103,
+        122,
+        139,
+        145,
+        141,
+        134,
+        128,
+        125,
+        127,
+        133,
+        143,
+        154,
+        160,
+        162,
+        151,
+        132,
+        112,
+        99
+      ]
+    },
+    "economics.json": {
+      "metadata": {
+        "parameter_status": "synthetic_test_assumptions",
+        "currency": "CNY",
+        "source": "人为设置的模型测试参数，非文献引用、市场报价或实际工程数据。",
+        "capital_cost_scope": "能量侧和功率侧投资分别计价；不得将完整系统报价同时填入两项。",
+        "allocation_method": "投资按资本回收系数年化，再按仿真小时数/全年小时数分摊；固定运维采用相同时间比例。",
+        "variable_om_basis": "仅按电网侧放电量计费，不重复对充电量收费。"
+      },
+      "parameters": {
+        "thermal_cost_CNY_per_MWh": 350.0,
+        "storage_energy_capex_CNY_per_kWh": 800.0,
+        "storage_power_capex_CNY_per_kW": 300.0,
+        "storage_lifetime_years": 15.0,
+        "discount_rate": 0.05,
+        "storage_fixed_om_fraction_per_year": 0.02,
+        "storage_variable_om_CNY_per_MWh_discharged": 10.0,
+        "curtailment_penalty_CNY_per_MWh": 200.0,
+        "load_shedding_penalty_CNY_per_MWh": 10000.0,
+        "hours_per_year": 8760.0
+      }
+    },
+    "no_storage.json": {
+      "thermal_max_MW": 120.0
+    },
+    "optimization.json": {
+      "thermal_min_MW": 30.0,
+      "thermal_ramp_MW_per_h": 30.0,
+      "objective_terms": [
+        "thermal",
+        "curtailment",
+        "load_shedding",
+        "storage_variable_om"
+      ]
+    },
+    "simulation.json": {
+      "num_steps": 24,
+      "time_step_hours": 1.0
+    },
+    "storage.json": {
+      "energy_capacity_MWh": 40.0,
+      "power_capacity_MW": 20.0,
+      "soc_initial": 0.5,
+      "soc_min": 0.1,
+      "soc_max": 0.9,
+      "eta_charge": 0.95,
+      "eta_discharge": 0.95
+    }
+  },
+  "note": "External freeze of the existing master draft. Contradictory verdict clauses are not rewritten."
+}

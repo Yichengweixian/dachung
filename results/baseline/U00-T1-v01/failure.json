@@ -1,0 +1,10 @@
+{
+  "run_id": "U00-T1-v01",
+  "status": "interrupted",
+  "verdict": null,
+  "phase": "after_first_snapshot_before_completion",
+  "reason": "Sequential inventory process was interrupted for a bounded-concurrency retry. Buffered stdout confirmed the first snapshot contained 10835 files, but no completed repeat verification or scientific verdict is claimed.",
+  "observed_read_operations_before_stop": 27281,
+  "old_results_modified": false,
+  "retry": "U00-T1-v02"
+}

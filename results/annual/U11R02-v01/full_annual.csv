@@ -1,0 +1,2 @@
+renewable_available_MWh,renewable_used_MWh,curtailment_MWh,total_load_MWh,thermal_generation_MWh,unserved_MWh,total_cost_CNY,renewable_utilization_pct,curtailment_rate_pct
+301411.89000000007,239182.38632336073,62229.503676639237,1067113.8,778838.2356936218,51884.902449996211,808567728.12710202,79.353998385186685,20.646001614813279

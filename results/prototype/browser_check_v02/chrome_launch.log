@@ -1,0 +1,7 @@
+
+DevTools listening on ws://127.0.0.1:9333/devtools/browser/0ceb6bc1-2f06-4e4e-aa8f-8dec2dd6a569
+[15460:632:0916/214828.319:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[15460:632:0916/214828.390:ERROR:google_apis\gcm\engine\mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[15460:632:0916/214828.390:ERROR:google_apis\gcm\engine\mcs_client.cc:704] Failed to log in to GCM, resetting connection.
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[15460:632:0916/214854.667:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT

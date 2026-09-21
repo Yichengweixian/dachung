@@ -1,0 +1,17 @@
+{
+  "milp_24h_max_diff": 1.4210854715202004e-14,
+  "comparison_rows": 1,
+  "csv_roundtrip_max_diff": 1.4210854715202004e-14,
+  "rule_24h_max_diff": 4.2105180453333446e-11,
+  "rule_summary_max_diff": 1.9753088054130785e-11,
+  "negative_capacity_prompt": true,
+  "empty_csv_rejected": true,
+  "input_rows_24h 构造算例": 24,
+  "input_rows_168h 气象估计": 168,
+  "input_rows_8760h 年度独立日": 8760,
+  "milp_168h_max_diff": 1.4210854715202004e-14,
+  "grid_max_diff": 5.820766091346741e-11,
+  "png_verified": true,
+  "manual_user_confirmation": false,
+  "actual_browser_confirmation": false
+}

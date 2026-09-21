@@ -1,0 +1,167 @@
+{
+  "unit": "U13R01-consistent-prototype",
+  "run_audited": "results\\prototype\\U13R01-v01",
+  "browser_evidence": "results\\prototype\\browser_check_v02",
+  "method": "separate process; no src import for hash/value checks",
+  "checks": {
+    "manifest_status": {
+      "passed": true,
+      "status": "complete",
+      "verdict": "inconclusive",
+      "recorded_checks": {
+        "milp_24h_max_diff": 1.4210854715202004e-14,
+        "comparison_rows": 1,
+        "csv_roundtrip_max_diff": 1.4210854715202004e-14,
+        "rule_24h_max_diff": 4.2105180453333446e-11,
+        "rule_summary_max_diff": 1.9753088054130785e-11,
+        "negative_capacity_prompt": true,
+        "empty_csv_rejected": true,
+        "input_rows_24h 构造算例": 24,
+        "input_rows_168h 气象估计": 168,
+        "input_rows_8760h 年度独立日": 8760,
+        "milp_168h_max_diff": 1.4210854715202004e-14,
+        "grid_max_diff": 5.820766091346741e-11,
+        "png_verified": true,
+        "manual_user_confirmation": false,
+        "actual_browser_confirmation": false
+      }
+    },
+    "artifact_sha256_matches_manifest": {
+      "passed": true,
+      "artifacts_checked": 7,
+      "mismatch": []
+    },
+    "source_unchanged_since_run": {
+      "passed": true,
+      "sources_checked": 47,
+      "changed": {}
+    },
+    "ui_milp_24h_vs_U06R01_main": {
+      "passed": true,
+      "max_abs_diff": 0.0,
+      "tolerance": 1e-06,
+      "rows": [
+        24,
+        24
+      ]
+    },
+    "ui_milp_168h_vs_run_cli_168h": {
+      "passed": true,
+      "max_abs_diff": 0.0,
+      "tolerance": 1e-06,
+      "rows": [
+        168,
+        168
+      ]
+    },
+    "ui_grid_vs_U09R01_summary": {
+      "passed": true,
+      "max_abs_diff": 0.0,
+      "tolerance": 1e-06,
+      "candidates": [
+        101,
+        101
+      ],
+      "ui_best": {
+        "energy_capacity_MWh": 70,
+        "power_capacity_MW": 25
+      },
+      "frozen_best": {
+        "energy_capacity_MWh": 70,
+        "power_capacity_MW": 25
+      }
+    },
+    "browser_metrics_vs_cli_summary": {
+      "passed": true,
+      "display_rounding_tolerance": 0.0005,
+      "values": {
+        "新能源消纳率": {
+          "browser_displayed": 81.823,
+          "cli_recorded": 81.82310053554028,
+          "abs_diff": 0.0001005355402838859
+        },
+        "弃电量": {
+          "browser_displayed": 395.5,
+          "cli_recorded": 395.5002493075001,
+          "abs_diff": 0.00024930750009843905
+        },
+        "缺供电量": {
+          "browser_displayed": 0.0,
+          "cli_recorded": 0.0,
+          "abs_diff": 0.0
+        },
+        "总成本": {
+          "browser_displayed": 496637.539,
+          "cli_recorded": 496637.5386098228,
+          "abs_diff": 0.00039017718518152833
+        }
+      }
+    },
+    "browser_grid_best_vs_cli": {
+      "passed": true,
+      "browser_displayed": [
+        70.0,
+        25.0,
+        486358.65
+      ],
+      "cli_best": [
+        70.0,
+        25.0,
+        486358.6477398961
+      ]
+    },
+    "browser_automation_steps": {
+      "passed": true,
+      "verdict": "browser_automation_passed",
+      "failed_steps": [],
+      "console_error_count": 0,
+      "human_confirmation": false,
+      "screenshots": [
+        "01_page_load.png",
+        "02_milp_result.png",
+        "03_comparison.png",
+        "04_grid_result.png",
+        "05_negative_capacity.png"
+      ]
+    },
+    "rule_baseline_reproduction_src_dependent": {
+      "passed": true,
+      "module": "src.prototype_service.dispatch(mode='规则') on the frozen config",
+      "hourly_max_abs_diff_vs_E40_P20": 4.2105180453333446e-11,
+      "summary_max_abs_diff_vs_E40_P20": 1.9753088054130785e-11,
+      "recorded_rule_24h_max_diff": 4.2105180453333446e-11,
+      "frozen_storage_config": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "frozen_thermal_config": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "thermal_max_MW": 120.0
+      },
+      "note": "uses the public src module; the file/value checks above do not"
+    }
+  },
+  "failures": [],
+  "notes": [
+    "browser_checks.json reports human_confirmation=false; automation evidence does not replace the manual acceptance required by the frozen rule."
+  ],
+  "input_sha256": {
+    "results/prototype/U13R01-v01/run_manifest.json": "f7549ab0b4eb4a9119cb4b85b3d3913373799625679f6775e1f1ecd31df27273",
+    "results/prototype/U13R01-v01/checks.json": "a92a47dbab016ed40049516310b9876a6670e50fe8d322772f8c7cb6917ef4e5",
+    "results/prototype/browser_check_v02/browser_checks.json": "542e2225d5d0e75bf57927c88a139743de37da80a6cf35f46c3e523d705dd92d",
+    "results/optimization/U06R01-v03/main_hourly.csv": "41ba0237e88beff213e70c00670085572f614237953a5df498bd9f8dc4d438e7",
+    "results/grid_search/U09R01-v01/summary.csv": "77c71126704d8d55ff430dd6e03c458add6a7081ea3bfaa47cfeb17d9eeca893"
+  },
+  "verdict": "audit_passed",
+  "packages": {
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]"
+  }
+}

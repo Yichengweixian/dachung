@@ -1,0 +1,800 @@
+{
+  "run_id": "U07R01-v01",
+  "unit": "U07R01-factorial-audit",
+  "started_at": "2026-09-15T15:59:45.730690+00:00",
+  "freeze": {
+    "frozen_at": "2026-09-15T15:59:43.460469+00:00",
+    "unit": "U07R01-factorial-audit",
+    "git_head": "003a014ffa95a465cb2a0f0fb5874d2ccb75580f",
+    "sha256": {
+      "instructions/studies/U07R01-factorial-audit/question.md": "41ee793c43613197c66ada51ff2dc8ea1456ec1bb8430c4458568209a8956c9f",
+      "instructions/studies/U07R01-factorial-audit/design.md": "e8c2cb44b4d14e616be290dac0d4f107ae33d879b86917ef75f4c9d9a518edce",
+      "instructions/studies/U07R01-factorial-audit/plan.md": "f130e2e6afef9f42788880ef926ecf279bba2c6874897fd77f4dacf013759a62",
+      "instructions/studies/U07R01-factorial-audit/decision-rule.md": "68e89ba8e924f8cb7948833d2b7f3ac7190e7a56d260c202016485bd4ef1923f",
+      "config/capacity_sensitivity.json": "b129373e8401816e8c92ccb4273ed43eaba92d569546206d5b2ec0cfea0703ec",
+      "config/data_24h.json": "0079eac60d933431fbd3ae5663b132a44e32d2e47b409f13e2c3732245ec25fd",
+      "config/economics.json": "a4f85c6d224c14e0db834cc9f72ce8959bce4f1ee7979cdadb326ee78c155a79",
+      "config/no_storage.json": "c4bd45f88e83981270cbdf536e49e5053ab81c3eacab71dec2f339688476f270",
+      "config/optimization.json": "d33a065d19675ec041d9c23c3d890d2b2fa117d430d7de9f1af131fa391b924f",
+      "config/simulation.json": "2f806ee61963aa9277f55af7b694db5ae41f7954ef411ab111a40f57df599761",
+      "config/storage.json": "5ba124bdeed9e4f94c5679c7e15b651784b26381d9ba9142bccfc7608e7a9cf8",
+      "config/study_sequence_v02.json": "0293db61b9d989d0362a4c39b2206e3096041fae044971302c2696b8978f466a",
+      "data/input_24h.csv": "30c0504459f1b72e8a5ac77d0fd1267c8f6293819ce67e87eb64ea7610bdb622",
+      "results/optimization/U06R01-v03/summary.csv": "bcfaa0c747adf6fc1d824b51591bc9e221bad0f8e30562ea86bfcfd22a4a28f7",
+      "results/optimization/U06R01-v03/run_manifest.json": "6967b90e80f8625d0b2e34316c23e41884730972d64bcab391d0117e085334de"
+    },
+    "config": {
+      "capacity_sensitivity.json": {
+        "energy_capacities_MWh": [
+          0,
+          20,
+          40,
+          60,
+          80
+        ],
+        "fixed_power_capacity_MW": 20.0
+      },
+      "data_24h.json": {
+        "random_seed": 20260910,
+        "wind_capacity_MW": 100.0,
+        "solar_capacity_MW": 150.0,
+        "wind_mean_capacity_factor": 0.5,
+        "wind_daily_amplitude": 0.12,
+        "wind_noise_std_MW": 4.0,
+        "solar_start_hour": 6,
+        "solar_end_hour": 18,
+        "solar_shape_exponent": 1.6,
+        "load_MW": [
+          92,
+          87,
+          83,
+          81,
+          82,
+          89,
+          103,
+          122,
+          139,
+          145,
+          141,
+          134,
+          128,
+          125,
+          127,
+          133,
+          143,
+          154,
+          160,
+          162,
+          151,
+          132,
+          112,
+          99
+        ]
+      },
+      "economics.json": {
+        "metadata": {
+          "parameter_status": "synthetic_test_assumptions",
+          "currency": "CNY",
+          "source": "人为设置的模型测试参数，非文献引用、市场报价或实际工程数据。",
+          "capital_cost_scope": "能量侧和功率侧投资分别计价；不得将完整系统报价同时填入两项。",
+          "allocation_method": "投资按资本回收系数年化，再按仿真小时数/全年小时数分摊；固定运维采用相同时间比例。",
+          "variable_om_basis": "仅按电网侧放电量计费，不重复对充电量收费。"
+        },
+        "parameters": {
+          "thermal_cost_CNY_per_MWh": 350.0,
+          "storage_energy_capex_CNY_per_kWh": 800.0,
+          "storage_power_capex_CNY_per_kW": 300.0,
+          "storage_lifetime_years": 15.0,
+          "discount_rate": 0.05,
+          "storage_fixed_om_fraction_per_year": 0.02,
+          "storage_variable_om_CNY_per_MWh_discharged": 10.0,
+          "curtailment_penalty_CNY_per_MWh": 200.0,
+          "load_shedding_penalty_CNY_per_MWh": 10000.0,
+          "hours_per_year": 8760.0
+        }
+      },
+      "no_storage.json": {
+        "thermal_max_MW": 120.0
+      },
+      "optimization.json": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "objective_terms": [
+          "thermal",
+          "curtailment",
+          "load_shedding",
+          "storage_variable_om"
+        ]
+      },
+      "simulation.json": {
+        "num_steps": 24,
+        "time_step_hours": 1.0
+      },
+      "storage.json": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "study_sequence_v02.json": {
+        "tolerance": 1e-06,
+        "U08": {
+          "factors": [
+            0.8,
+            1,
+            1.2,
+            1.4
+          ],
+          "energies": [
+            0,
+            40,
+            80
+          ],
+          "power_ratio": 0.5
+        },
+        "U09": {
+          "energies": [
+            0,
+            10,
+            20,
+            30,
+            40,
+            50,
+            60,
+            70,
+            80,
+            90,
+            100
+          ],
+          "powers": [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45,
+            50
+          ],
+          "robust_energy_capex": 1200,
+          "robust_power_capex": 500
+        },
+        "U10": {
+          "latitude": 30.59,
+          "longitude": 114.3,
+          "start": "20230101",
+          "end": "20230107",
+          "parameters": [
+            "ALLSKY_SFC_SW_DWN",
+            "WS50M"
+          ],
+          "community": "RE",
+          "time_standard": "UTC",
+          "load_day_factors": [
+            0.95,
+            1,
+            1.05
+          ]
+        },
+        "U11": {
+          "year": 2023,
+          "clusters": [
+            8,
+            10,
+            12
+          ],
+          "seeds": [
+            42,
+            7
+          ],
+          "n_init": 10,
+          "solar_limit_MW": 150
+        },
+        "U12": {
+          "population": 30,
+          "generations": 50,
+          "seeds": [
+            42,
+            7,
+            2026
+          ],
+          "crossover_probability": 0.9,
+          "eta_c": 15,
+          "eta_m": 20,
+          "mutation_probability": 0.5
+        }
+      }
+    }
+  },
+  "freeze_sha256": "3935a8ffdab1ac83f49c749ed446ddf7e82d4c7daa101721c3ac0eaa20619b03",
+  "status": "complete",
+  "verdict": "supported",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "cases": {
+    "case_0": {
+      "solver_status": "Optimal",
+      "objective_CNY": 363463.4999999963,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 363463.4999999963,
+        "max_text_rounding": 4.2106000108788066e-07
+      },
+      "max_residual": 7.367439991412539e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 0,
+        "thermal_ramp_MW_per_h": null,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": false
+    },
+    "case_1": {
+      "solver_status": "Optimal",
+      "objective_CNY": 479032.5498614928,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 479032.5498614928,
+        "max_text_rounding": 4.736842171837452e-07
+      },
+      "max_residual": 7.368328169832239e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": null,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": false
+    },
+    "case_2": {
+      "solver_status": "Optimal",
+      "objective_CNY": 370518.68858332856,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 370518.68858332856,
+        "max_text_rounding": 3.3333368634202998e-06
+      },
+      "max_residual": 6.650680006714538e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": false
+    },
+    "case_3": {
+      "solver_status": "Optimal",
+      "objective_CNY": 479032.5498614928,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 479032.5498614928,
+        "max_text_rounding": 4.736842385000273e-07
+      },
+      "max_residual": 7.370104526671639e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": false
+    },
+    "case_4": {
+      "solver_status": "Optimal",
+      "objective_CNY": 368631.49999999814,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 368631.4999999981,
+        "max_text_rounding": 5.263337499172849e-08
+      },
+      "max_residual": 6.654232720393338e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 0,
+        "thermal_ramp_MW_per_h": null,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": true
+    },
+    "case_5": {
+      "solver_status": "Optimal",
+      "objective_CNY": 484200.5498614947,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 484200.5498614947,
+        "max_text_rounding": 4.736842385000273e-07
+      },
+      "max_residual": 7.370104526671639e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": null,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": true
+    },
+    "case_6": {
+      "solver_status": "Optimal",
+      "objective_CNY": 376413.42542543384,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 376413.42542543384,
+        "max_text_rounding": 3.3333368634202998e-06
+      },
+      "max_residual": 6.654232720393338e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": true
+    },
+    "case_7": {
+      "solver_status": "Optimal",
+      "objective_CNY": 484525.1908587234,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 484525.19085872336,
+        "max_text_rounding": 4.7368422428917256e-07
+      },
+      "max_residual": 7.370104526671639e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": true
+    },
+    "repeat_case_7": {
+      "solver_status": "Optimal",
+      "objective_CNY": 484525.1908587234,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 484525.19085872336,
+        "max_text_rounding": 4.7368422428917256e-07
+      },
+      "max_residual": 7.370104526671639e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": true
+    },
+    "repeat_case_6": {
+      "solver_status": "Optimal",
+      "objective_CNY": 376413.42542543384,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 376413.42542543384,
+        "max_text_rounding": 3.3333368634202998e-06
+      },
+      "max_residual": 6.654232720393338e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": true
+    },
+    "repeat_case_5": {
+      "solver_status": "Optimal",
+      "objective_CNY": 484200.5498614947,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 484200.5498614947,
+        "max_text_rounding": 4.736842385000273e-07
+      },
+      "max_residual": 7.370104526671639e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": null,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": true
+    },
+    "repeat_case_4": {
+      "solver_status": "Optimal",
+      "objective_CNY": 368631.49999999814,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 368631.4999999981,
+        "max_text_rounding": 5.263337499172849e-08
+      },
+      "max_residual": 6.654232720393338e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 0,
+        "thermal_ramp_MW_per_h": null,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": true
+    },
+    "repeat_case_3": {
+      "solver_status": "Optimal",
+      "objective_CNY": 479032.5498614928,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 479032.5498614928,
+        "max_text_rounding": 4.736842385000273e-07
+      },
+      "max_residual": 7.370104526671639e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": false
+    },
+    "repeat_case_2": {
+      "solver_status": "Optimal",
+      "objective_CNY": 370518.68858332856,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 370518.68858332856,
+        "max_text_rounding": 3.3333368634202998e-06
+      },
+      "max_residual": 6.650680006714538e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": false
+    },
+    "repeat_case_1": {
+      "solver_status": "Optimal",
+      "objective_CNY": 479032.5498614928,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 479032.5498614928,
+        "max_text_rounding": 4.736842171837452e-07
+      },
+      "max_residual": 7.368328169832239e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": null,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": false
+    },
+    "repeat_case_0": {
+      "solver_status": "Optimal",
+      "objective_CNY": 363463.4999999963,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 24,
+      "precision": {
+        "native_objective": 363463.4999999963,
+        "max_text_rounding": 4.2106000108788066e-07
+      },
+      "max_residual": 7.367439991412539e-12,
+      "storage": {
+        "energy_capacity_MWh": 40.0,
+        "power_capacity_MW": 20.0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 0,
+        "thermal_ramp_MW_per_h": null,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": false
+    },
+    "oracle": {
+      "solver_status": "Optimal",
+      "objective_CNY": 376500.0,
+      "pulp_version": "3.3.0",
+      "cbc_path": "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe",
+      "model_class": "MILP",
+      "integer_variable_count": 0,
+      "precision": {
+        "native_objective": 376500.0,
+        "max_text_rounding": 0.0
+      },
+      "max_residual": 0.0,
+      "storage": {
+        "energy_capacity_MWh": 0,
+        "power_capacity_MW": 0,
+        "soc_initial": 0.5,
+        "soc_min": 0.1,
+        "soc_max": 0.9,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95
+      },
+      "thermal": {
+        "thermal_min_MW": 30.0,
+        "thermal_ramp_MW_per_h": 30.0,
+        "thermal_max_MW": 120.0
+      },
+      "dt": 1.0,
+      "terminal": true
+    }
+  },
+  "source_sha256": {
+    "src/balance_model.py": "c88065cd991dfbfada82b847b88ac7d25367b23918bac7eead5a13ecf6356081",
+    "src/capacity_sensitivity.py": "1fdd039bcecf5edcc32801bd663752b78a04beb6d0b27c33d58a615fa7658883",
+    "src/cbc_full_precision.py": "417ebe161ab07aeda68c8a7d2f5c13234c75c4e027c44970532e92b099bd9e0e",
+    "src/data_loader.py": "7a0e63f04111af293127b54a7d938b36cc66f709abc28ed51fefde854660c767",
+    "src/economic_model.py": "6474c74b0972df74582316cb030c8abbbc5ef601e5e612ac52f52e0db6d034ba",
+    "src/generate_data.py": "982ac9c4e0293aac3f0d7d47b5024bda02dab37b40d825efe2c05d21ea512025",
+    "src/metrics.py": "34ea9bdeef914d4bd5de7accb219ed85e718826ae0a07250d3d45ade7371e7fe",
+    "src/optimization_model.py": "80a504443e1c0c5346a5ff10d0917dd7605468fbc482f44ca90a64d5d4ab3801",
+    "src/optimization_validation.py": "96142d85974804a527117a1e44ddf417dc5725cdbad5672bbe8e058aba1e5eeb",
+    "src/paths.py": "455cab36d9494a6426f53065b7b585d765370a4baeff9353c72479fa0679ca1e",
+    "src/plot_capacity_sensitivity.py": "da814112d80d1491e3b4092bf63f9d1e1c21db6f866167fb3ca61310805a1f59",
+    "src/plot_economics.py": "18bfb7c5d0e0373e865302f8fd31bce2ff443592533b3ba315d8f9e04a44d60a",
+    "src/plot_results.py": "f59e32fc112ca5abbf15f86fc897a216e77bdef660b22bbb6d8fd7e7c21e4b18",
+    "src/plot_storage.py": "af1d17e82ac2af7a5f7c421c9e60f52b44d81cad1ec43ae3987e9771051af9cc",
+    "src/storage_metrics.py": "a260cf1e6048b67c8c9a21f33d98bb493818ca8c6ff256859cb252ad574815ac",
+    "src/storage_model.py": "a2796329da2ed38f0e10492acb10dc95e0ba73c6f420dd154343f1d7021def51",
+    "src/storage_validation.py": "5620e73a380c13df4379917c6f5d76c2e40206f98ec5976a3b4d52f114e95522",
+    "src/study_runtime.py": "328330fd04638eb06c966901c609f128ab4ca3be6fde285f402120723df35478",
+    "src/validation.py": "7adb1e3f26ebd04ff958681201d297b70c69de6d7a9b19c034e4d4606d8f1370",
+    "src/__init__.py": "6303e9e7cc9cb77a7b01bb0f106977cab4784de396b096455118d27658e51c73",
+    "scripts/freeze_study.py": "de376d83d51d331b609bc43d40d5e402b990dc91a56bb52665cc79e88affb416",
+    "scripts/freeze_u06.py": "6271d5e9c94d7fa1206826909d07aae8119e408a571f0f3fdec234b8a5166119",
+    "scripts/independent_dispatch_audit.py": "8409fcec94c83c790596f728f8bafe78a2a7b363b35e2830db9bb93779910d66",
+    "scripts/prepare_master_baseline.py": "84420110f04a3d2dcffef15fd91d4db2cddfd1f4fd7a29ae397cf82eed9f3abd",
+    "run_capacity_sensitivity.py": "d56e2b90f32bd12817863870653063e64a46420460d6cb1eda739fd1c775aeb0",
+    "run_data_24h.py": "8f3596d896ea77babbd809561d1c74fa068f6c474bdc23692c77d3747cec86a9",
+    "run_economics.py": "3ec08c3bf9937b7a430f46d9ae971c92b5aa172fbc4d8ddd87f4d116c2a28406",
+    "run_no_storage.py": "63d8bb8cd6836d5ed5f1909b7516959bb1a1244ffec26537b1455ae437501ae3",
+    "run_optimization.py": "a0b250244ba9745a2fa5534e415e9dded7ef7710c73dbac8096de7cd54f7b65b",
+    "run_storage.py": "68bbfdf54148bdebfe788d4878ca23e6f15b15a8be61d3607050b40ecb924e71",
+    "run_u06_revision.py": "c836677eee46b512d2292b31d53b82c1280821f0db80dc74b9952b6c92ae5d04",
+    "run_validation.py": "c420018c2a20143c2f1aaf384f98433e7ff2c8e35136e34a25cde391d3bcbad3"
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.2",
+    "pulp": "3.3.0"
+  },
+  "details": {
+    "cases": 17,
+    "repeat_difference": 0.0,
+    "oracle": "passed",
+    "closure_max": 1.4551915228366852e-11
+  },
+  "artifacts": {
+    "case_0_cbc.log": "2b22cfbf3c566e91088a26c9f81b1ab1131a74b29090856fc45658bd2d23e045",
+    "case_0_hourly.csv": "4afa2da87ca2af563b736822198c8a43b3c56021cbbc92b453bdb993577b3212",
+    "case_1_cbc.log": "ca6d15dd2726c4b76ec2f91b2c708c7423173541382c3b41f33a3403b4629cec",
+    "case_1_hourly.csv": "9af7a1ef3f19ed38b55fe4ddce3ac4c33e95e9a6bdf4cbc64bca8a0daae76c2c",
+    "case_2_cbc.log": "db8f506ec9bc68d7d4f2b76bacb73d8a41d1774e5c81f2aed0165530984c60a3",
+    "case_2_hourly.csv": "082d62dbf3e66db2a144ad255857352e22254207639e6897b89264366ced6b9c",
+    "case_3_cbc.log": "502af7731f2fcadb75226e0b93960de68ab17c57fe685e9c3ba5cfec50bdfac6",
+    "case_3_hourly.csv": "46b4d7660da4bcd80a30e5025091704defbd776f04d427db02751fe0ffc9a18e",
+    "case_4_cbc.log": "bf9f09e5b8b2745c0a91b65210e8ea7306407b307fd0869c504948695a2a2bf8",
+    "case_4_hourly.csv": "5b9963a64423dfbd9efa83475d148209cab569eb6685bd244671f17176c76e82",
+    "case_5_cbc.log": "7858e08e3d37a107f2591a233e6a78f76d1675d9a37e020dabe407de0720ed3e",
+    "case_5_hourly.csv": "46827cad9f9afd0cd13cac978bf5e0c17f07169ed278bb4a5843645d0df996a8",
+    "case_6_cbc.log": "a2f8f1bec6af7bbb61b2fef5e0c2e109d93b6e1d88cd81060c6c30045fdee8bd",
+    "case_6_hourly.csv": "26f51f1bfa5542a72fda9d4e3a545c0d7dd5fcb027851990d54f0aef6a5035a3",
+    "case_7_cbc.log": "9c0f296149bc3eb9028bf4706db7fc0ff069724d9116a84123f217dd45fc0790",
+    "case_7_hourly.csv": "41ba0237e88beff213e70c00670085572f614237953a5df498bd9f8dc4d438e7",
+    "closure.csv": "89b9df6adafc27d56d84ce7db2a235ccac384617722a631a531ea501beeb07f6",
+    "combinations.csv": "1fcb708324abe53a0256f998515f3305bd0ddf6393aeee8c9f0f3189c5cda75d",
+    "independent_audit.json": "ecb31a6023628cf2384796ea97510d43073c463185310daa5994aeaee2e4ccd2",
+    "oracle_cbc.log": "a66885559a4265d335cf1bed61697e75b78bf7bee2e807424aeda008c6c712ea",
+    "oracle_hourly.csv": "e411e921427853c17f85d5e6bff19c9737ef846e1de10e005cd073eecd41495f",
+    "repeat_case_0_cbc.log": "acb824c2d6a2f84c30a9343ba8f0860dc3b116e3bb3f22957ba75883aaff1376",
+    "repeat_case_0_hourly.csv": "4afa2da87ca2af563b736822198c8a43b3c56021cbbc92b453bdb993577b3212",
+    "repeat_case_1_cbc.log": "56bcb818244953fce587318b29c32c03c5eb0a016fdb344a4bcb6cbb6636e6e6",
+    "repeat_case_1_hourly.csv": "9af7a1ef3f19ed38b55fe4ddce3ac4c33e95e9a6bdf4cbc64bca8a0daae76c2c",
+    "repeat_case_2_cbc.log": "24eabea9a3eaa5f9a39c0408ec2534acd6e1bb4ad0d8a24f15b792345c162b54",
+    "repeat_case_2_hourly.csv": "082d62dbf3e66db2a144ad255857352e22254207639e6897b89264366ced6b9c",
+    "repeat_case_3_cbc.log": "ccb7a58cd3c66eb95f252c5d13d891d646e5d08d08f82afb6bc7be0a899f479c",
+    "repeat_case_3_hourly.csv": "46b4d7660da4bcd80a30e5025091704defbd776f04d427db02751fe0ffc9a18e",
+    "repeat_case_4_cbc.log": "e96a8bcdf13e24e04cc704029f537ebf9935f02c6946a6acbba9ffffc422364d",
+    "repeat_case_4_hourly.csv": "5b9963a64423dfbd9efa83475d148209cab569eb6685bd244671f17176c76e82",
+    "repeat_case_5_cbc.log": "c537b60adbd098cde8bb48938cd44a77bba452549e14961cc89d10f879f3e416",
+    "repeat_case_5_hourly.csv": "46827cad9f9afd0cd13cac978bf5e0c17f07169ed278bb4a5843645d0df996a8",
+    "repeat_case_6_cbc.log": "78a3dbb8fce6692af637828e56a18511146530975432f1c441772c1103c37dad",
+    "repeat_case_6_hourly.csv": "26f51f1bfa5542a72fda9d4e3a545c0d7dd5fcb027851990d54f0aef6a5035a3",
+    "repeat_case_7_cbc.log": "15aeefb67cca1171e341b5bf5f5917f3679b661490e198709ae4b8ae9a5d74b7",
+    "repeat_case_7_hourly.csv": "41ba0237e88beff213e70c00670085572f614237953a5df498bd9f8dc4d438e7",
+    "shapley.csv": "df235e36d43245228210c984114fe646a67b98251f5ba41acea6bf3aec558fc0"
+  }
+}

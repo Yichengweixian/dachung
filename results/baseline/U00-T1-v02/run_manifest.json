@@ -1,0 +1,49 @@
+{
+  "run_id": "U00-T1-v02",
+  "unit": "U00",
+  "recorded_at": "2026-09-17T09:04:46.751797+00:00",
+  "status": "partial",
+  "verdict": null,
+  "supporting_checks_passed": true,
+  "checks": {
+    "repeat_identical": true,
+    "tests_passed": true,
+    "git_available": true,
+    "git_bash_passed": true,
+    "environment_saved": true,
+    "head_unchanged": true,
+    "git_index_worktree_unchanged_except_output": true
+  },
+  "project_file_count": 10838,
+  "result_file_count": 10568,
+  "unassigned_result_files": 13,
+  "elapsed_seconds": 10.386965199999395,
+  "freeze_sha256": "fc8ef830493d5df78cffce13926cbc22d47e9fa3651d90f430c1b7c03969a890",
+  "source_sha256": "2d71a8f58d42b02ceb9b5f79fc26a96e57f94967c10de3dd3143ed7de163b30e",
+  "test_command": [
+    "E:\\dachuang\\.venv\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "test_returncode": 0,
+  "base_commit": "003a014ffa95a465cb2a0f0fb5874d2ccb75580f",
+  "remaining": [
+    "Working-tree baseline commit not authorized",
+    "444.docx inclusion confirmation not independently established",
+    "Original self-containing inventory/output-path acceptance requires scope confirmation"
+  ],
+  "output_sha256": {
+    "artifacts.csv": "2c4df3622ed17f1e1e5a6be98a1e02102b811e6f3a644e3deca80c4a1f53665c",
+    "artifacts.json": "d380db9d9aee30e9dbfde76ad12c86bfc063cbdec686497617a649adc196d92e",
+    "baseline_manifest.json": "fbf9641799cd6eaea909e5174de6ecbabc4757e258d79dfbde75f50a1a72a3a6",
+    "environment.json": "ff9f72367b308b90739148be9b69c1dfcc94f2acd16ab1a360c6bc5b747cc63c",
+    "repeat_comparison.json": "433b8b3fdef9adfb72f4fa89838a2b31283523d1c0ee980d2bc1746f56dee6ed",
+    "tests.txt": "c6683e9ce489ee7fee9db81d2ae161208b64005d4ce313fb164d0bf2da390843"
+  }
+}

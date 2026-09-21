@@ -1,0 +1,17 @@
+coordinate,variable,stat,reference,value,relative_difference,passed
+north,wind,mean,3.074583333333333,3.074583333333333,0.0,True
+north,wind,max,16.9,16.9,0.0,True
+north,solar,mean,13.648511904761904,13.648511904761904,0.0,True
+north,solar,max,90.62,90.62,0.0,True
+south,wind,mean,3.074583333333333,3.074583333333333,0.0,True
+south,wind,max,16.9,16.9,0.0,True
+south,solar,mean,13.648511904761904,13.648511904761904,0.0,True
+south,solar,max,90.62,90.62,0.0,True
+east,wind,mean,3.074583333333333,3.074583333333333,0.0,True
+east,wind,max,16.9,16.9,0.0,True
+east,solar,mean,13.648511904761904,13.648511904761904,0.0,True
+east,solar,max,90.62,90.62,0.0,True
+west,wind,mean,3.074583333333333,3.074583333333333,0.0,True
+west,wind,max,16.9,16.9,0.0,True
+west,solar,mean,13.648511904761904,13.648511904761904,0.0,True
+west,solar,max,90.62,90.62,0.0,True

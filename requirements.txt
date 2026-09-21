@@ -3,3 +3,6 @@
 numpy
 pandas
 matplotlib
+pulp==3.3.0
+scikit-learn==1.9.1
+streamlit==1.64.0

@@ -1,0 +1,192 @@
+{
+  "in_memory": {
+    "passed": false,
+    "failed_checks": [
+      "simultaneous_charge_discharge"
+    ],
+    "max_residual": 5.789473735973161e-07,
+    "residuals": {
+      "input_hour": 0.0,
+      "input_load": 0.0,
+      "input_wind": 0.0,
+      "input_solar": 0.0,
+      "nonnegative_thermal": 0.0,
+      "nonnegative_wind_used": 0.0,
+      "nonnegative_solar_used": 0.0,
+      "nonnegative_wind_curt": 0.0,
+      "nonnegative_solar_curt": 0.0,
+      "nonnegative_charge": 0.0,
+      "nonnegative_discharge": 0.0,
+      "nonnegative_unserved": 0.0,
+      "nonnegative_energy_start_MWh": 0.0,
+      "nonnegative_energy_MWh": 0.0,
+      "power_balance": 2.9999999640040187e-07,
+      "wind_decomposition": 0.0,
+      "solar_decomposition": 0.0,
+      "thermal_bounds": 0.0,
+      "thermal_ramp": 0.0,
+      "unserved_bounds": 0.0,
+      "charge_bounds": 0.0,
+      "discharge_bounds": 0.0,
+      "bounds_energy_start_MWh": 0.0,
+      "bounds_energy_MWh": 0.0,
+      "initial_energy": 0.0,
+      "state_continuity": 0.0,
+      "energy_recurrence": 5.789473735973161e-07,
+      "terminal_energy": 0.0,
+      "soc_definition": 0.0
+    },
+    "simultaneous_periods": [
+      {
+        "hour": 0,
+        "charge": 19.32,
+        "discharge": 20.0
+      },
+      {
+        "hour": 1,
+        "charge": 20.0,
+        "discharge": 20.0
+      },
+      {
+        "hour": 2,
+        "charge": 20.0,
+        "discharge": 10.6663
+      },
+      {
+        "hour": 3,
+        "charge": 20.0,
+        "discharge": 9.77
+      },
+      {
+        "hour": 4,
+        "charge": 20.0,
+        "discharge": 14.0
+      },
+      {
+        "hour": 9,
+        "charge": 20.0,
+        "discharge": 18.05
+      },
+      {
+        "hour": 10,
+        "charge": 20.0,
+        "discharge": 18.05
+      },
+      {
+        "hour": 11,
+        "charge": 20.0,
+        "discharge": 18.05
+      },
+      {
+        "hour": 12,
+        "charge": 20.0,
+        "discharge": 18.05
+      },
+      {
+        "hour": 13,
+        "charge": 20.0,
+        "discharge": 18.05
+      },
+      {
+        "hour": 14,
+        "charge": 20.0,
+        "discharge": 5.7
+      }
+    ]
+  },
+  "readback": {
+    "passed": false,
+    "failed_checks": [
+      "simultaneous_charge_discharge"
+    ],
+    "max_residual": 5.789473735973161e-07,
+    "residuals": {
+      "input_hour": 0.0,
+      "input_load": 0.0,
+      "input_wind": 0.0,
+      "input_solar": 0.0,
+      "nonnegative_thermal": 0.0,
+      "nonnegative_wind_used": 0.0,
+      "nonnegative_solar_used": 0.0,
+      "nonnegative_wind_curt": 0.0,
+      "nonnegative_solar_curt": 0.0,
+      "nonnegative_charge": 0.0,
+      "nonnegative_discharge": 0.0,
+      "nonnegative_unserved": 0.0,
+      "nonnegative_energy_start_MWh": 0.0,
+      "nonnegative_energy_MWh": 0.0,
+      "power_balance": 2.9999999640040187e-07,
+      "wind_decomposition": 0.0,
+      "solar_decomposition": 2.842170943040401e-14,
+      "thermal_bounds": 0.0,
+      "thermal_ramp": 1.4210854715202004e-14,
+      "unserved_bounds": 0.0,
+      "charge_bounds": 0.0,
+      "discharge_bounds": 0.0,
+      "bounds_energy_start_MWh": 0.0,
+      "bounds_energy_MWh": 0.0,
+      "initial_energy": 0.0,
+      "state_continuity": 0.0,
+      "energy_recurrence": 5.789473735973161e-07,
+      "terminal_energy": 0.0,
+      "soc_definition": 1.1102230246251565e-16
+    },
+    "simultaneous_periods": [
+      {
+        "hour": 0,
+        "charge": 19.32,
+        "discharge": 20.0
+      },
+      {
+        "hour": 1,
+        "charge": 20.0,
+        "discharge": 20.0
+      },
+      {
+        "hour": 2,
+        "charge": 20.0,
+        "discharge": 10.6663
+      },
+      {
+        "hour": 3,
+        "charge": 20.0,
+        "discharge": 9.77
+      },
+      {
+        "hour": 4,
+        "charge": 20.0,
+        "discharge": 14.0
+      },
+      {
+        "hour": 9,
+        "charge": 20.0,
+        "discharge": 18.05
+      },
+      {
+        "hour": 10,
+        "charge": 20.0,
+        "discharge": 18.05
+      },
+      {
+        "hour": 11,
+        "charge": 20.0,
+        "discharge": 18.05
+      },
+      {
+        "hour": 12,
+        "charge": 20.0,
+        "discharge": 18.05
+      },
+      {
+        "hour": 13,
+        "charge": 20.0,
+        "discharge": 18.05
+      },
+      {
+        "hour": 14,
+        "charge": 20.0,
+        "discharge": 5.7
+      }
+    ]
+  }
+}

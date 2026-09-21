@@ -1,0 +1,13 @@
+metric,factor,contribution
+renewable_utilization_pct,minimum,-9.1996380006874645
+renewable_utilization_pct,ramp,-0.27119851796702932
+renewable_utilization_pct,terminal,0
+curtailment_MWh,minimum,200.16940347415795
+curtailment_MWh,ramp,5.9008458333338085
+curtailment_MWh,terminal,-9.473903143468002e-15
+thermal_generation_MWh,minimum,204.26881348106826
+thermal_generation_MWh,ramp,7.0565327793130255
+thermal_generation_MWh,terminal,15.718199445986707
+operating_cost_CNY,minimum,111907.42362153881
+operating_cost_CNY,ramp,3756.9307644262926
+operating_cost_CNY,terminal,5397.3364727619237

@@ -1,0 +1,5 @@
+hour,load,wind_available,solar_available,thermal,wind_used,solar_used,wind_curt,solar_curt,charge,discharge,unserved,energy_start_MWh,energy_MWh,soc,balance_error_MW
+0,40,60,0,30,10,0,50,0,0,0,0,0,0,,0
+1,30,0,0,30,0,0,0,0,0,0,0,0,0,,0
+2,90,0,0,60,0,0,0,0,0,0,30,0,0,,0
+3,70,0,0,70,0,0,0,0,0,0,0,0,0,,0

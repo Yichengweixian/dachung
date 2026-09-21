@@ -1,0 +1,144 @@
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - E:\dachuang\.venv\Lib\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 317 COLUMNS
+At line 1133 RHS
+At line 1446 BOUNDS
+At line 1521 ENDATA
+Problem MODEL has 312 rows, 241 columns and 647 elements
+Coin0008I MODEL read with 0 errors
+primalTolerance was changed from 1e-07 to 1e-09
+integerTolerance was changed from 1e-07 to 1e-09
+ratioGap was changed from 0 to 0
+allowableGap was changed from 1e-10 to 0
+Continuous objective value is 457228 - 0.00 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 3 strengthened rows, 0 substitutions
+Cgl0004I processed model has 119 rows, 167 columns (24 integer (24 of which binary)) and 356 elements
+Cbc0038I Initial state - 15 integers unsatisfied sum - 5.97005
+Cbc0038I Pass   1: suminf.    0.00000 (0) obj. 460241 iterations 23
+Cbc0038I Solution found of 460241
+Cbc0038I Relaxing continuous gives 460164
+Cbc0038I Before mini branch and bound, 9 integers at bound fixed and 77 continuous
+Cbc0038I Full problem 119 rows 167 columns, reduced to 14 rows 15 columns
+Cbc0038I Mini branch and bound did not improve solution (0.01 seconds)
+Cbc0038I Round again with cutoff of 459873
+Cbc0038I Pass   2: suminf.    0.44324 (1) obj. 459873 iterations 5
+Cbc0038I Pass   3: suminf.    0.00000 (0) obj. 459873 iterations 4
+Cbc0038I Solution found of 459873
+Cbc0038I Relaxing continuous gives 459642
+Cbc0038I Before mini branch and bound, 9 integers at bound fixed and 74 continuous
+Cbc0038I Full problem 119 rows 167 columns, reduced to 18 rows 22 columns
+Cbc0038I Mini branch and bound improved solution from 459642 to 459642 (0.02 seconds)
+Cbc0038I Freeing continuous variables gives a solution of 459506
+Cbc0038I Round again with cutoff of 459056
+Cbc0038I Pass   4: suminf.    0.89937 (3) obj. 459056 iterations 9
+Cbc0038I Pass   5: suminf.    0.89669 (3) obj. 459056 iterations 3
+Cbc0038I Pass   6: suminf.    1.29313 (5) obj. 459056 iterations 8
+Cbc0038I Pass   7: suminf.    0.81257 (3) obj. 459056 iterations 9
+Cbc0038I Pass   8: suminf.    0.78393 (3) obj. 459056 iterations 1
+Cbc0038I Pass   9: suminf.    1.88921 (6) obj. 459056 iterations 12
+Cbc0038I Pass  10: suminf.    2.04224 (7) obj. 459056 iterations 9
+Cbc0038I Pass  11: suminf.    2.04224 (7) obj. 459056 iterations 0
+Cbc0038I Pass  12: suminf.    1.88921 (6) obj. 459056 iterations 3
+Cbc0038I Pass  13: suminf.    1.88921 (6) obj. 459056 iterations 0
+Cbc0038I Pass  14: suminf.    2.79479 (8) obj. 459056 iterations 19
+Cbc0038I Pass  15: suminf.    2.23371 (8) obj. 459056 iterations 4
+Cbc0038I Pass  16: suminf.    1.69704 (6) obj. 459056 iterations 7
+Cbc0038I Pass  17: suminf.    1.69704 (6) obj. 459056 iterations 0
+Cbc0038I Pass  18: suminf.    1.61482 (6) obj. 459056 iterations 1
+Cbc0038I Pass  19: suminf.    1.61482 (6) obj. 459056 iterations 0
+Cbc0038I Pass  20: suminf.    1.81882 (7) obj. 459056 iterations 9
+Cbc0038I Pass  21: suminf.    1.69704 (6) obj. 459056 iterations 6
+Cbc0038I Pass  22: suminf.    1.69704 (6) obj. 459056 iterations 0
+Cbc0038I Pass  23: suminf.    1.61482 (6) obj. 459056 iterations 1
+Cbc0038I Pass  24: suminf.    1.61482 (6) obj. 459056 iterations 0
+Cbc0038I Pass  25: suminf.    1.82143 (6) obj. 459056 iterations 13
+Cbc0038I Pass  26: suminf.    1.57498 (5) obj. 459056 iterations 6
+Cbc0038I Pass  27: suminf.    1.57498 (5) obj. 459056 iterations 0
+Cbc0038I Pass  28: suminf.    1.49276 (5) obj. 459056 iterations 1
+Cbc0038I Pass  29: suminf.    1.49276 (5) obj. 459056 iterations 0
+Cbc0038I Pass  30: suminf.    2.07157 (7) obj. 459056 iterations 21
+Cbc0038I Pass  31: suminf.    2.07157 (7) obj. 459056 iterations 3
+Cbc0038I Pass  32: suminf.    1.52046 (5) obj. 459056 iterations 9
+Cbc0038I Pass  33: suminf.    1.52046 (5) obj. 459056 iterations 0
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 2 integers at bound fixed and 64 continuous
+Cbc0038I Full problem 119 rows 167 columns, reduced to 34 rows 46 columns
+Cbc0038I Mini branch and bound improved solution from 459506 to 459181 (0.04 seconds)
+Cbc0038I Freeing continuous variables gives a solution of 459181
+Cbc0038I Round again with cutoff of 458516
+Cbc0038I Pass  33: suminf.    2.04212 (7) obj. 458516 iterations 5
+Cbc0038I Pass  34: suminf.    2.04212 (6) obj. 458516 iterations 6
+Cbc0038I Pass  35: suminf.    1.94358 (6) obj. 458516 iterations 6
+Cbc0038I Pass  36: suminf.    1.87812 (6) obj. 458516 iterations 1
+Cbc0038I Pass  37: suminf.    1.92937 (7) obj. 458516 iterations 8
+Cbc0038I Pass  38: suminf.    1.92937 (7) obj. 458516 iterations 0
+Cbc0038I Pass  39: suminf.    1.96386 (7) obj. 458516 iterations 3
+Cbc0038I Pass  40: suminf.    1.92937 (7) obj. 458516 iterations 1
+Cbc0038I Pass  41: suminf.    1.92937 (7) obj. 458516 iterations 3
+Cbc0038I Pass  42: suminf.    2.15126 (9) obj. 458516 iterations 10
+Cbc0038I Pass  43: suminf.    2.15126 (9) obj. 458516 iterations 0
+Cbc0038I Pass  44: suminf.    1.96386 (7) obj. 458516 iterations 5
+Cbc0038I Pass  45: suminf.    1.92937 (7) obj. 458516 iterations 1
+Cbc0038I Pass  46: suminf.    1.92937 (7) obj. 458516 iterations 3
+Cbc0038I Pass  47: suminf.    1.92937 (7) obj. 458516 iterations 0
+Cbc0038I Pass  48: suminf.    2.28482 (7) obj. 458516 iterations 6
+Cbc0038I Pass  49: suminf.    1.92937 (7) obj. 458516 iterations 8
+Cbc0038I Pass  50: suminf.    2.85345 (9) obj. 458516 iterations 20
+Cbc0038I Pass  51: suminf.    2.85345 (9) obj. 458516 iterations 0
+Cbc0038I Pass  52: suminf.    2.15959 (9) obj. 458516 iterations 9
+Cbc0038I Pass  53: suminf.    2.15959 (9) obj. 458516 iterations 0
+Cbc0038I Pass  54: suminf.    2.42275 (8) obj. 458516 iterations 8
+Cbc0038I Pass  55: suminf.    2.38825 (8) obj. 458516 iterations 1
+Cbc0038I Pass  56: suminf.    1.92937 (7) obj. 458516 iterations 4
+Cbc0038I Pass  57: suminf.    1.92937 (7) obj. 458516 iterations 0
+Cbc0038I Pass  58: suminf.    1.96386 (7) obj. 458516 iterations 3
+Cbc0038I Pass  59: suminf.    1.92937 (7) obj. 458516 iterations 1
+Cbc0038I Pass  60: suminf.    2.38731 (8) obj. 458516 iterations 3
+Cbc0038I Pass  61: suminf.    3.33607 (9) obj. 458516 iterations 4
+Cbc0038I Pass  62: suminf.    3.33607 (9) obj. 458516 iterations 0
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 6 integers at bound fixed and 67 continuous
+Cbc0038I Full problem 119 rows 167 columns, reduced to 33 rows 43 columns
+Cbc0038I Mini branch and bound did not improve solution (0.05 seconds)
+Cbc0038I After 0.05 seconds - Feasibility pump exiting with objective of 459181 - took 0.04 seconds
+Cbc0012I Integer solution of 459180.9 found by feasibility pump after 0 iterations and 0 nodes (0.05 seconds)
+Cbc0038I Full problem 119 rows 167 columns, reduced to 94 rows 142 columns - 7 fixed gives 74, 122 - ok now
+Cbc0038I Full problem 119 rows 167 columns, reduced to 74 rows 122 columns
+Cbc0031I 15 added rows had average density of 7.4
+Cbc0013I At root node, 15 cuts changed objective from 457256.03 to 459178.31 in 68 passes
+Cbc0014I Cut generator 0 (Probing) - 11 row cuts average 3.0 elements, 7 column cuts (7 active)  in 0.010 seconds - new frequency is 1
+Cbc0014I Cut generator 1 (Gomory) - 147 row cuts average 25.7 elements, 0 column cuts (0 active)  in 0.004 seconds - new frequency is 1
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.014 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.001 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 11 row cuts average 4.6 elements, 0 column cuts (0 active)  in 0.003 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.016 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (TwoMirCuts) - 28 row cuts average 8.1 elements, 0 column cuts (0 active)  in 0.002 seconds - new frequency is -100
+Cbc0001I Search completed - best objective 459180.9047500068, took 380 iterations and 0 nodes (0.14 seconds)
+Cbc0032I Strong branching done 6 times (17 iterations), fathomed 1 nodes and fixed 0 variables
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 457256 to 459181
+Probing was tried 68 times and created 18 cuts of which 0 were active after adding rounds of cuts (0.010 seconds)
+Gomory was tried 68 times and created 147 cuts of which 0 were active after adding rounds of cuts (0.004 seconds)
+Knapsack was tried 68 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.014 seconds)
+Clique was tried 68 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.001 seconds)
+MixedIntegerRounding2 was tried 68 times and created 11 cuts of which 0 were active after adding rounds of cuts (0.003 seconds)
+FlowCover was tried 68 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.016 seconds)
+TwoMirCuts was tried 68 times and created 28 cuts of which 0 were active after adding rounds of cuts (0.002 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                459180.90475001
+Enumerated nodes:               0
+Total iterations:               380
+Time (CPU seconds):             0.15
+Time (Wallclock seconds):       0.15
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.17   (Wallclock seconds):       0.17
+

@@ -1,0 +1,90 @@
+{
+  "tolerance": 0.000001,
+  "U08": {
+    "factors": [
+      0.8,
+      1,
+      1.2,
+      1.4
+    ],
+    "energies": [
+      0,
+      40,
+      80
+    ],
+    "power_ratio": 0.5
+  },
+  "U09": {
+    "energies": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "powers": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50
+    ],
+    "robust_energy_capex": 1200,
+    "robust_power_capex": 500
+  },
+  "U10": {
+    "latitude": 30.59,
+    "longitude": 114.3,
+    "start": "20230101",
+    "end": "20230107",
+    "parameters": [
+      "ALLSKY_SFC_SW_DWN",
+      "WS50M"
+    ],
+    "community": "RE",
+    "time_standard": "UTC",
+    "load_day_factors": [
+      0.95,
+      1,
+      1.05
+    ]
+  },
+  "U11": {
+    "year": 2023,
+    "clusters": [
+      8,
+      10,
+      12
+    ],
+    "seeds": [
+      42,
+      7
+    ],
+    "n_init": 10,
+    "solar_limit_MW": 150
+  },
+  "U12": {
+    "population": 30,
+    "generations": 50,
+    "seeds": [
+      42,
+      7,
+      2026
+    ],
+    "crossover_probability": 0.9,
+    "eta_c": 15,
+    "eta_m": 20,
+    "mutation_probability": 0.5
+  }
+}

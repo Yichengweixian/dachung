@@ -1,5 +1,36 @@
 # 高比例新能源电力电量平衡研究
 
+## master 当前执行状态（2026-09-21）
+
+新顺序实现直接在master完成，不合并u10-complete。U06R01互斥MILP、U07R01独立审计、U08渗透矩阵、U09R01网格、U10气象管线和U13R01原型已通过各自冻结判据，U14材料整理已完成。
+U11R02年度典型日和U12R01遗传算法对照均已完成，但未达到各自冻结判据，结论保持inconclusive；U11R03与U12R02仅为待确认草案，尚未冻结或运行。详细进度见[instructions/sequence_status_v02.md](instructions/sequence_status_v02.md)。
+新增方法、限制和验证见[模型验证报告v02](docs/model_validation_report_v02.md)、[气象方法v02](docs/real_weather_data_method_v02.md)。
+原始LP失败和旧版说明全部保留。所有结果是探索性构造算例或气象估计，不是真实电网实测验证。
+
+## master 首次执行记录（2026-09-15，历史）
+
+以提交 `003a014` 的 instructions 为准完成 U06 连续 LP 的实现与首次验收。
+原有 25 项测试及新增 7 项测试通过；正式 24 h 算例 CBC 状态为 Optimal，
+但 11 个时段同时充放电，不满足 U06/plan.md 组2第5项。工程状态为 blocked，
+本次验收 invalid；不能把求解成功当作研究结论通过。
+
+详见 [master 指令执行核验 v01](docs/master_instruction_validation_v01.md)、
+[U06 结果记录](instructions/studies/U06-optimization-model/findings.md) 和
+`results/optimization/U06-master-v01/`。U09、U11、U13 尚未执行，具体前置缺项见核验文档。
+以下第1—6阶段文字是保留的规则模型历史说明；U06 依赖另含 `pulp==3.3.0`。
+
+本地 `.venv` 已建立，使用本机已有数值库并安装 PuLP。复查命令：
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -p "test_*.py" -v
+.\.venv\Scripts\python.exe run_optimization.py
+```
+
+第二条命令为每次运行生成新目录；在当前冻结规格下预期验收失败并返回非零。
+旧运行不会覆盖。后续需要另建修订单元明确充放电互斥方法，不能修改旧冻结判据或调低门槛。
+
+## 第1—6阶段历史说明
+
 本项目以简化区域电力系统为对象，研究火电、风电、光伏、储能和负荷之间的时序平衡关系。后续拟研究基于多时间尺度电力电量平衡的储能容量与功率协同优化配置方法。
 
 当前已完成项目框架、24小时构造数据、无储能规则平衡、固定储能规则调度、容量敏感性分析，以及第6阶段简单经济性评价。main.py只检查框架，各阶段使用独立入口。尚未开展储能容量优化。444.docx是用户指定的最终申请书，保留原样。

@@ -1,0 +1,26 @@
+{
+  "unit": "U13R01",
+  "item": "人工操作验收（冻结判据中的“缺少人工操作确认则注明该项待用户验收”项）",
+  "status": "confirmed_by_user",
+  "operator": "用户（项目负责人）",
+  "channel": "本会话文字答复",
+  "confirmed_at": "2026-09-16T23:12:54+08:00",
+  "user_statement": "通过",
+  "scope_checked": [
+    "01 页面加载：标题与侧栏正常",
+    "02 24h 构造算例 + MILP「计算调度」：Optimal，消纳率 81.823%、弃电 395.500 MWh、缺供 0.000 MWh、总成本 496,637.539 元，出现三联图",
+    "03「加入方案对比」→ 03 页签出现 1 行",
+    "04 02 页签「运行 101 点网格」：网格最优 70 MWh / 25 MW · 486,358.65 元/24h，热力图与明细表",
+    "05 能量容量改为 -1：报“输入校验失败：能量容量和功率容量不能为负”",
+    "06 切换规则模式后计算：提示不与 MILP 混作同一基准，结果正常出图"
+  ],
+  "evidence_basis": {
+    "automated": "results/prototype/U13R01-v01/checks.json",
+    "browser_automation": "results/prototype/browser_check_v02/browser_checks.json",
+    "independent_audit": "results/prototype/audit_v01/audit_report.json",
+    "regression_tests": "results/prototype/audit_v01/unit_tests_20260916.txt"
+  },
+  "machine_record_untouched": "results/prototype/U13R01-v01/run_manifest.json 的 verdict=inconclusive 为当次运行的机器记录，未改写；本次人工确认作为补充证据另行登记。",
+  "verdict_after_human_acceptance": "supported",
+  "recorded_by": "DSH 会话（据用户文字确认登记，非机器自动判定）"
+}

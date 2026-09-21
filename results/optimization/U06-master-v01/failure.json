@@ -1,0 +1,5 @@
+{
+  "error": "RuntimeError('U06 acceptance failed: simultaneous_charge_discharge')",
+  "status": "blocked",
+  "verdict": "invalid"
+}

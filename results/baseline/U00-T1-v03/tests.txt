@@ -1,0 +1,52 @@
+test_energy_first_not_mean_of_rates (test_annual.AnnualTests.test_energy_first_not_mean_of_rates) ... ok
+test_changed_added_and_missing_are_separate (test_baseline_manifest.BaselineManifestTests.test_changed_added_and_missing_are_separate) ... ok
+test_sensitive_file_is_not_read (test_baseline_manifest.BaselineManifestTests.test_sensitive_file_is_not_read) ... ok
+test_snapshot_repeat_and_exclusions (test_baseline_manifest.BaselineManifestTests.test_snapshot_repeat_and_exclusions) ... ok
+test_hand_calculated_marginal_values_for_unequal_steps (test_capacity_sensitivity.CapacitySensitivityTests.test_hand_calculated_marginal_values_for_unequal_steps) ... ok
+test_reject_duplicate_or_invalid_scenarios (test_capacity_sensitivity.CapacitySensitivityTests.test_reject_duplicate_or_invalid_scenarios) ... ok
+test_scenario_order_cannot_change_results_or_base_configuration (test_capacity_sensitivity.CapacitySensitivityTests.test_scenario_order_cannot_change_results_or_base_configuration) ... ok
+test_capital_recovery_zero_positive_and_tiny_discount (test_economics.EconomicsTests.test_capital_recovery_zero_positive_and_tiny_discount) ... ok
+test_changed_parameter_changes_only_related_cost (test_economics.EconomicsTests.test_changed_parameter_changes_only_related_cost) ... ok
+test_hand_calculated_costs_units_and_no_double_counting (test_economics.EconomicsTests.test_hand_calculated_costs_units_and_no_double_counting) ... ok
+test_invalid_parameters_or_summary (test_economics.EconomicsTests.test_invalid_parameters_or_summary) ... ok
+test_time_allocation_and_mwh_not_scaled_twice (test_economics.EconomicsTests.test_time_allocation_and_mwh_not_scaled_twice) ... ok
+test_validator_detects_export_or_accounting_errors (test_economics.EconomicsTests.test_validator_detects_export_or_accounting_errors) ... ok
+test_zero_storage_has_no_storage_cost (test_economics.EconomicsTests.test_zero_storage_has_no_storage_cost) ... ok
+test_bounds (test_ga.GATests.test_bounds) ... ok
+test_count_repeat_and_incumbent (test_ga.GATests.test_count_repeat_and_incumbent) ... ok
+test_dispatch_branches_and_hand_calculated_totals (test_no_storage.NoStorageTests.test_dispatch_branches_and_hand_calculated_totals) ... ok
+test_half_hour_energy_scaling (test_no_storage.NoStorageTests.test_half_hour_energy_scaling) ... ok
+test_invalid_inputs (test_no_storage.NoStorageTests.test_invalid_inputs) ... ok
+test_validator_detects_incorrect_dispatch (test_no_storage.NoStorageTests.test_validator_detects_incorrect_dispatch) ... ok
+test_zero_renewables_and_zero_thermal (test_no_storage.NoStorageTests.test_zero_renewables_and_zero_thermal) ... ok
+test_auditor_rejects_changed_input_and_state (test_optimization.OptimizationTests.test_auditor_rejects_changed_input_and_state) ... ok
+test_continuous_lp_cycling_is_detected_not_accepted (test_optimization.OptimizationTests.test_continuous_lp_cycling_is_detected_not_accepted) ... ok
+test_half_hour_oracle (test_optimization.OptimizationTests.test_half_hour_oracle) ... ok
+test_infeasible_stops_without_dispatch (test_optimization.OptimizationTests.test_infeasible_stops_without_dispatch) ... ok
+test_invalid_inputs (test_optimization.OptimizationTests.test_invalid_inputs) ... ok
+test_milp_blocks_loss_dumping (test_optimization.OptimizationTests.test_milp_blocks_loss_dumping) ... ok
+test_milp_full_precision_oracle (test_optimization.OptimizationTests.test_milp_full_precision_oracle) ... ok
+test_milp_infeasible_fails_closed (test_optimization.OptimizationTests.test_milp_infeasible_fails_closed) ... ok
+test_two_hour_hand_oracle (test_optimization.OptimizationTests.test_two_hour_hand_oracle) ... ok
+test_zero_storage_and_shedding (test_optimization.OptimizationTests.test_zero_storage_and_shedding) ... ok
+test_input_rejection_and_parameter_roundtrip (test_prototype.PrototypeTests.test_input_rejection_and_parameter_roundtrip) ... ok
+test_rule_service_matches_baseline (test_prototype.PrototypeTests.test_rule_service_matches_baseline) ... ok
+test_discharge_efficiency_lower_bound_and_shedding (test_storage.StorageTests.test_discharge_efficiency_lower_bound_and_shedding) ... ok
+test_energy_limited_charging_and_full_battery (test_storage.StorageTests.test_energy_limited_charging_and_full_battery) ... ok
+test_equal_supply_and_small_gap_priority (test_storage.StorageTests.test_equal_supply_and_small_gap_priority) ... ok
+test_half_hour_step_and_energy_conservation (test_storage.StorageTests.test_half_hour_step_and_energy_conservation) ... ok
+test_invalid_parameters (test_storage.StorageTests.test_invalid_parameters) ... ok
+test_power_limited_charging (test_storage.StorageTests.test_power_limited_charging) ... ok
+test_power_limited_discharge (test_storage.StorageTests.test_power_limited_discharge) ... ok
+test_validator_detects_broken_soc_recurrence (test_storage.StorageTests.test_validator_detects_broken_soc_recurrence) ... ok
+test_zero_capacity_matches_no_storage (test_storage.StorageTests.test_zero_capacity_matches_no_storage) ... ok
+test_zero_power_and_zero_renewables (test_storage.StorageTests.test_zero_power_and_zero_renewables) ... ok
+test_bad_values (test_weather.WeatherTests.test_bad_values) ... ok
+test_cap_is_explicit (test_weather.WeatherTests.test_cap_is_explicit) ... ok
+test_curve_boundaries_and_night (test_weather.WeatherTests.test_curve_boundaries_and_night) ... ok
+test_metadata_and_missing_rejected (test_weather.WeatherTests.test_metadata_and_missing_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 1.185s
+
+OK

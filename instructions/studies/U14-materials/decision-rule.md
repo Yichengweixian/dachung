@@ -1,6 +1,6 @@
 ---
 unit: U14
-freeze_status: draft
+freeze_status: external_record
 freeze_commit: null
 freeze_sha256: null
 ---
