@@ -1,0 +1,11 @@
+{
+  "run_id": "U11R02-v01",
+  "checked_hashes": 893,
+  "cases": 425,
+  "errors": [],
+  "source_drift_since_run": [],
+  "passed": true,
+  "audited_days": 365,
+  "max_residual": 7.37365724035044e-12,
+  "annual_difference": 1.1920928955078125e-07
+}

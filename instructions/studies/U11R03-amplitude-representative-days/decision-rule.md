@@ -1,10 +1,12 @@
 ---
 unit: U11R03
-freeze_status: draft
-user_approval: pending
+freeze_status: approved_for_freeze
+user_approval: confirmed_2026-09-22
 ---
 
 # 判据草案：保留1个百分点精度要求
+
+2026-09-22：用户“继续吧，然后每次做完都要上传”确认执行已提出的本单元方案。以下数值、候选和方法原样冻结；草案中的待确认条件至此满足。
 
 ## 有效性闸门
 

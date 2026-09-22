@@ -40,3 +40,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-09-17 | T2 / U11R03、U12R02草案 | 用户“继续”后准备方法与判据供确认 | 两单元not_started/null，未冻结、未实现、未运行；原1个百分点及0.5%质量量级保留，提议输入电量保真检查与显式小预算 | instructions/studies/U11R03-amplitude-representative-days/、U12R02-budgeted-ga/。只新增说明及台账，无提交、推送或材料数字变更；待用户确认后才执行单一研究单元。
 
 2026-09-21 | Git发布 | 用户授权检查当前工作副本并上传GitHub master | 发布前origin/master与本地基线无分叉，47项unittest通过，无超过10 MB项目文件，未发现明显凭据；提交与推送只发布既有成果，不确认U11R03/U12R02草案，不改变历史verdict | 当前完整工作副本及本日志。
+
+2026-09-22 | U11R03 | 用户确认继续并要求每阶段上传；冻结后完成幅值保留与真实代表日完整矩阵 | 252次Optimal，51项测试通过，另进程561项哈希及逐时复核通过；全部9组输入电量偏差超过2%，verdict=inconclusive | results/annual/U11R03-v01/、results/annual/U11R03-v01-independent-audit.json。旧基准365日只读复核通过。每阶段完成即提交推送的授权持续有效。

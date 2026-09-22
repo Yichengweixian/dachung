@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "hashes": {
+    "run_id": "U11R03-v01",
+    "checked_hashes": 561,
+    "cases": 252,
+    "errors": [],
+    "source_drift_since_run": [],
+    "passed": true
+  },
+  "solver_cases": 252,
+  "max_residual": 7.37365724035044e-12,
+  "groups": 9,
+  "passing_N": [],
+  "verdict": "inconclusive",
+  "audit_source_sha256": "352b4c0dca18be9943191eb31db0df84c556795ac2d37eddfbddb70f47c8a196",
+  "run_manifest_sha256": "d73771cd7e1ecdde6f90351e7726fc49bc7600cfdc8304845ae222aa19c0dee0"
+}
