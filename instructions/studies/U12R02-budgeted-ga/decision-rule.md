@@ -1,10 +1,12 @@
 ---
 unit: U12R02
-freeze_status: draft
-user_approval: pending
+freeze_status: approved_for_freeze
+user_approval: confirmed_2026-09-22
 ---
 
 # 判据草案：固定预算、明确质量、不达标保留不确定
+
+2026-09-22：U11R03完成后用户确认“继续”，按本草案全部数值执行。用户此前要求每阶段完成后提交上传，该发布授权继续有效。
 
 ## 有效性
 

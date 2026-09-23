@@ -42,3 +42,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-09-21 | Git发布 | 用户授权检查当前工作副本并上传GitHub master | 发布前origin/master与本地基线无分叉，47项unittest通过，无超过10 MB项目文件，未发现明显凭据；提交与推送只发布既有成果，不确认U11R03/U12R02草案，不改变历史verdict | 当前完整工作副本及本日志。
 
 2026-09-22 | U11R03 | 用户确认继续并要求每阶段上传；冻结后完成幅值保留与真实代表日完整矩阵 | 252次Optimal，51项测试通过，另进程561项哈希及逐时复核通过；全部9组输入电量偏差超过2%，verdict=inconclusive | results/annual/U11R03-v01/、results/annual/U11R03-v01-independent-audit.json。旧基准365日只读复核通过。每阶段完成即提交推送的授权持续有效。
+
+2026-09-23 | U12R02 | 固定89次预算GA及10种子主试验、种子42独立复现 | supported：10/10质量达标，979次Optimal，重复成本/轨迹差0，53项测试通过；逐时读回与另进程审计 | results/ga/U12R02-v02/、results/ga/U12R02-v02-independent-audit.json。v01基准路径缺main_前缀在求解前失败并保留，v02修正入口；无门槛、算子、数据调整。

@@ -1,0 +1,10 @@
+{
+  "run_id": "U09R01-v01",
+  "checked_hashes": 626,
+  "cases": 303,
+  "errors": [],
+  "source_drift_since_run": [],
+  "passed": true,
+  "audited_candidates": 101,
+  "max_cost_difference": 0.0
+}

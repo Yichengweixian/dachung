@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "hashes": {
+    "run_id": "U12R02-v02",
+    "checked_hashes": 1997,
+    "cases": 979,
+    "errors": [],
+    "source_drift_since_run": [],
+    "passed": true
+  },
+  "calls": 979,
+  "primary_calls": 890,
+  "repeat_calls": 89,
+  "max_cost_difference": 0.0,
+  "repeat_difference": 0.0,
+  "successful_seeds": 10,
+  "verdict": "supported",
+  "audit_source_sha256": "dee586d83bc0b5a9cd36d0cd97bcd9782ba8feb593fc82e3e73f7f235c30181f",
+  "manifest_sha256": "95e570239a2229d7b25e0530fd0544dcff120ccefa23e15f71f20bd238650dfa"
+}

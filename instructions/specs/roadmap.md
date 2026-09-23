@@ -24,6 +24,7 @@
 | U11R03 | 幅值保留与真实代表日 | exploratory | complete / inconclusive | U11R02 | results/annual/U11R03-v01/ |
 | U12 | 遗传算法/粒子群增强 | exploratory | 由 U12R01 覆盖 | U09R01 | — |
 | U12R01 | 三种子 GA 与网格对照 | exploratory | complete / inconclusive | U09R01 | results/ga/U12R01-v01/ |
+| U12R02 | 固定89次预算GA及10种子验证 | exploratory | complete / supported | U09R01、U12R01 | results/ga/U12R02-v02/ |
 | U13 | 决策软件原型（Streamlit） | exploratory | 由 U13R01 覆盖 | U09R01 | — |
 | U13R01 | 原型一致性、真实浏览器与独立审计 | exploratory | complete / supported（人工验收已确认） | U06R01、U09R01 | results/prototype/U13R01-v01/ 等 |
 | U14 | 成果凝练（报告/PPT/论文/专利） | — | complete（材料单元不设 verdict） | 全部前序 | docs/ 六份材料 + 数字核对表 |
@@ -37,6 +38,8 @@ U00 → U06 → U07 → U08。完成后即可支撑一次有"优化模型 + 渗�
 继续 U09 → U10 → U11 → U12 → U13 → U14。U09 是本项目核心创新点；U10/U11 把结论从构造数据搬到真实数据与全年尺度。
 
 ## Backlog（意外发现与暂缓项，进入前先在本表登记）
+
+- 2026-09-23 U12R02完成：10/10主种子均89次且质量达标，独立重复轨迹差0，总979次；supported仅限固定构造算例。v01路径错误在求解前失败，v02修正后完整运行。下一阶段T4将U11R03/U12R02结果同步到六份材料及数字出处；旧研究判定不改。
 
 - 2026-09-22 U11R03完成：252次Optimal、51项测试及另进程产物复核通过；全部9组风电输入电量误差超过2%，结论inconclusive。比例改善不代表电量、成本或缺供保真。电量守恒权重或极端日研究需另立单元；本轮不追加实验。用户要求阶段完成即提交和推送，已登记为持续发布偏好。下方2026-09-17草案状态是历史记录。
 
