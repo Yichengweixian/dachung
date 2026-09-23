@@ -2,6 +2,8 @@
 
 ## master 当前执行状态（2026-09-23）
 
+T4 最新六份成果材料见[修订版入口](docs/revisions/U14-T4-v01/README.md)：已同步 U11R03/U12R02，86 行数字出处核对通过，56 项测试通过。原材料保留；换人数字抽查及正式排版仍待办。
+
 新顺序实现直接在master完成，不合并u10-complete。U06R01互斥MILP、U07R01独立审计、U08渗透矩阵、U09R01网格、U10气象管线和U13R01原型已通过各自冻结判据，U14材料整理已完成。
 U11R02年度典型日和U12R01遗传算法对照均已完成，但未达到各自冻结判据，结论保持inconclusive。U11R03已完成252次真实代表日求解：比例近似改善，但风电输入电量误差仍超过2%，结论inconclusive。U12R02固定小预算GA完成，10个种子每次89次评估全部质量达标，独立重复一致，结论supported；此结论限于固定构造算例，全部研究含复现共979次评估。详细进度见[instructions/sequence_status_v02.md](instructions/sequence_status_v02.md)。
 新增方法、限制和验证见[模型验证报告v02](docs/model_validation_report_v02.md)、[气象方法v02](docs/real_weather_data_method_v02.md)。

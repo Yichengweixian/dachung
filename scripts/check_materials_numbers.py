@@ -5,9 +5,12 @@ Verifies (a) every row of docs/number_sources.csv against its cited source file,
     or to an explicitly justified structural-number pattern,
 (c) that every cited row is actually used, and that every 【Nxx】 tag exists.
 
-Writes docs/number_consistency_table.md and results/materials/U14-v01/number_check.json.
+Defaults to docs/number_consistency_table.md and results/materials/U14-v01/number_check.json.
+Use --materials-dir, --table, --out and --report-table for a separate revision.
+Custom report paths refuse to overwrite existing reports.
 """
 import csv
+import argparse
 import json
 import random
 import re
@@ -151,6 +154,21 @@ def allowed(raw):
 
 
 def main():
+    global TABLE, MATERIALS, OUT
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--materials-dir', default='docs')
+    parser.add_argument('--table', default='docs/number_sources.csv')
+    parser.add_argument('--out', default='results/materials/U14-v01')
+    parser.add_argument('--report-table', default='docs/number_consistency_table.md')
+    args = parser.parse_args()
+    TABLE = ROOT / args.table
+    MATERIALS = [(Path(args.materials_dir) / Path(name).name).as_posix() for name in MATERIALS]
+    OUT = ROOT / args.out
+    report_table = ROOT / args.report_table
+    if args.out != 'results/materials/U14-v01' and (OUT / 'number_check.json').exists():
+        raise FileExistsError('Versioned report already exists')
+    if args.report_table != 'docs/number_consistency_table.md' and report_table.exists():
+        raise FileExistsError('Versioned table already exists')
     rows = load_rows()
     report = {"unit": "U14-materials", "table": str(TABLE.relative_to(ROOT)),
               "source_checks": {}, "unmatched_numbers": {}, "unknown_tags": {},
@@ -224,9 +242,9 @@ def main():
         for token, reason in forbidden.items():
             if token in text:
                 issues.append(f"forbidden historical number {token}: {reason}")
-        if name in ("docs/stage_report.md", "docs/汇报稿.md") and not ("inconclusive" in text or "不确定" in text):
+        if Path(name).name in ("stage_report.md", "汇报稿.md") and not ("inconclusive" in text or "不确定" in text):
             issues.append("missing inconclusive statement for the failed criteria")
-        if name == "docs/stage_report.md" and "人工操作验收" not in text:
+        if Path(name).name == "stage_report.md" and "人工操作验收" not in text:
             issues.append("missing human-acceptance statement")
         for pending in ("人工操作验收尚未完成", "工程待人工验收", "人工操作验收待完成", "人工操作确认尚未发生"):
             if pending in text:
@@ -258,7 +276,7 @@ def main():
     (OUT / "number_check.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
     lines = ["# U14 数字一致性核对表（脚本生成，勿手改）", "",
-             f"生成脚本：`scripts/check_materials_numbers.py`；出处表：`docs/number_sources.csv`；"
+             f"生成脚本：`scripts/check_materials_numbers.py`；出处表：`{TABLE.relative_to(ROOT).as_posix()}`；"
              f"共 {len(rows)} 行；判定：**{report['verdict']}**。", "",
              "| ID | 材料中数值 | 单位 | 出处 | 选择器 | 列/字段 | 核对 |", "|---|---|---|---|---|---|---|"]
     for row in rows:
@@ -270,7 +288,8 @@ def main():
     for item in report["external_audit_sample"]:
         lines.append(f"- {item['id']}：{item['value']} {item['unit']} ← `{item['source']}` "
                      f"选择器 `{item['selector']}` 列 `{item['column']}`")
-    (ROOT / "docs/number_consistency_table.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    report_table.parent.mkdir(parents=True, exist_ok=True)
+    report_table.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     print(json.dumps({"verdict": report["verdict"], "failures": report["failures"],
                       "uncited_rows": report["uncited_rows"],

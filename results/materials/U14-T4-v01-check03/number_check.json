@@ -1,0 +1,723 @@
+{
+  "unit": "U14-materials",
+  "table": "docs\\revisions\\U14-T4-v01\\number_sources.csv",
+  "source_checks": {
+    "P01": {
+      "source": "config/storage.json",
+      "selector": "key=energy_capacity_MWh",
+      "column": "",
+      "passed": true,
+      "detail": "40.0 vs 40.0"
+    },
+    "P02": {
+      "source": "config/storage.json",
+      "selector": "key=power_capacity_MW",
+      "column": "",
+      "passed": true,
+      "detail": "20.0 vs 20.0"
+    },
+    "P03": {
+      "source": "config/storage.json",
+      "selector": "key=soc_initial",
+      "column": "",
+      "passed": true,
+      "detail": "0.5 vs 0.5"
+    },
+    "P04": {
+      "source": "config/storage.json",
+      "selector": "key=soc_min",
+      "column": "",
+      "passed": true,
+      "detail": "0.1 vs 0.1"
+    },
+    "P05": {
+      "source": "config/storage.json",
+      "selector": "key=soc_max",
+      "column": "",
+      "passed": true,
+      "detail": "0.9 vs 0.9"
+    },
+    "P06": {
+      "source": "config/storage.json",
+      "selector": "key=eta_charge",
+      "column": "",
+      "passed": true,
+      "detail": "0.95 vs 0.95"
+    },
+    "P07": {
+      "source": "config/storage.json",
+      "selector": "key=eta_discharge",
+      "column": "",
+      "passed": true,
+      "detail": "0.95 vs 0.95"
+    },
+    "P08": {
+      "source": "config/optimization.json",
+      "selector": "key=thermal_min_MW",
+      "column": "",
+      "passed": true,
+      "detail": "30.0 vs 30.0"
+    },
+    "P09": {
+      "source": "config/optimization.json",
+      "selector": "key=thermal_ramp_MW_per_h",
+      "column": "",
+      "passed": true,
+      "detail": "30.0 vs 30.0"
+    },
+    "P10": {
+      "source": "config/no_storage.json",
+      "selector": "key=thermal_max_MW",
+      "column": "",
+      "passed": true,
+      "detail": "120.0 vs 120.0"
+    },
+    "P11": {
+      "source": "config/economics.json",
+      "selector": "key=parameters.thermal_cost_CNY_per_MWh",
+      "column": "",
+      "passed": true,
+      "detail": "350.0 vs 350.0"
+    },
+    "P12": {
+      "source": "config/economics.json",
+      "selector": "key=parameters.storage_energy_capex_CNY_per_kWh",
+      "column": "",
+      "passed": true,
+      "detail": "800.0 vs 800.0"
+    },
+    "P13": {
+      "source": "config/economics.json",
+      "selector": "key=parameters.storage_power_capex_CNY_per_kW",
+      "column": "",
+      "passed": true,
+      "detail": "300.0 vs 300.0"
+    },
+    "P14": {
+      "source": "config/economics.json",
+      "selector": "key=parameters.curtailment_penalty_CNY_per_MWh",
+      "column": "",
+      "passed": true,
+      "detail": "200.0 vs 200.0"
+    },
+    "P15": {
+      "source": "config/economics.json",
+      "selector": "key=parameters.load_shedding_penalty_CNY_per_MWh",
+      "column": "",
+      "passed": true,
+      "detail": "10000.0 vs 10000.0"
+    },
+    "P16": {
+      "source": "config/economics.json",
+      "selector": "key=parameters.storage_lifetime_years",
+      "column": "",
+      "passed": true,
+      "detail": "15.0 vs 15.0"
+    },
+    "P17": {
+      "source": "config/economics.json",
+      "selector": "key=parameters.discount_rate",
+      "column": "",
+      "passed": true,
+      "detail": "0.05 vs 0.05"
+    },
+    "P18": {
+      "source": "config/economics.json",
+      "selector": "key=parameters.storage_variable_om_CNY_per_MWh_discharged",
+      "column": "",
+      "passed": true,
+      "detail": "10.0 vs 10.0"
+    },
+    "P19": {
+      "source": "config/economics.json",
+      "selector": "key=parameters.hours_per_year",
+      "column": "",
+      "passed": true,
+      "detail": "8760.0 vs 8760.0"
+    },
+    "N01": {
+      "source": "results/optimization/U06R01-v03/summary.csv",
+      "selector": "scenario=main",
+      "column": "renewable_utilization_pct",
+      "passed": true,
+      "detail": "81.8231 vs 81.82310053554028"
+    },
+    "N02": {
+      "source": "results/optimization/U06R01-v03/summary.csv",
+      "selector": "scenario=main",
+      "column": "curtailment_MWh",
+      "passed": true,
+      "detail": "395.5002 vs 395.5002493075001"
+    },
+    "N03": {
+      "source": "results/optimization/U06R01-v03/summary.csv",
+      "selector": "scenario=main",
+      "column": "unserved_MWh",
+      "passed": true,
+      "detail": "0.0 vs 0.0"
+    },
+    "N04": {
+      "source": "results/optimization/U06R01-v03/summary.csv",
+      "selector": "scenario=main",
+      "column": "total_cost_CNY",
+      "passed": true,
+      "detail": "496637.54 vs 496637.5386098228"
+    },
+    "N05": {
+      "source": "results/optimization/U06R01-v03/summary.csv",
+      "selector": "scenario=main",
+      "column": "max_residual",
+      "passed": true,
+      "detail": "7.37365724035044e-12 vs 7.373657240350438e-12"
+    },
+    "N06": {
+      "source": "results/optimization/U06R01-v03/summary.csv",
+      "selector": "count",
+      "column": "",
+      "passed": true,
+      "detail": "7.0 vs 7.0"
+    },
+    "N07": {
+      "source": "results/optimization/U06R01-v03/summary.csv",
+      "selector": "scenario=method",
+      "column": "renewable_utilization_pct",
+      "passed": true,
+      "detail": "91.2939 vs 91.29393705419476"
+    },
+    "N08": {
+      "source": "results/optimization/U06R01-v03/summary.csv",
+      "selector": "scenario=zero_storage",
+      "column": "renewable_utilization_pct",
+      "passed": true,
+      "detail": "78.2654 vs 78.26540554452531"
+    },
+    "N09": {
+      "source": "instructions/studies/U07R01-factorial-audit/findings.md",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: 共17场景"
+    },
+    "N10": {
+      "source": "instructions/studies/U07R01-factorial-audit/findings.md",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: 1.4551915228366852e-11"
+    },
+    "N11": {
+      "source": "results/penetration/U08-master-v01/summary.csv",
+      "selector": "scenario=R080_E000",
+      "column": "renewable_utilization_pct",
+      "passed": true,
+      "detail": "87.1135 vs 87.11348260901536"
+    },
+    "N12": {
+      "source": "results/penetration/U08-master-v01/summary.csv",
+      "selector": "scenario=R140_E000",
+      "column": "renewable_utilization_pct",
+      "passed": true,
+      "detail": "62.9123 vs 62.91232023363062"
+    },
+    "N13": {
+      "source": "results/penetration/U08-master-v01/marginal.csv",
+      "selector": "factor=1.0",
+      "column": "gain_0_40_pp",
+      "passed": true,
+      "detail": "3.557695 vs 3.557694991014955"
+    },
+    "N14": {
+      "source": "results/penetration/U08-master-v01/marginal.csv",
+      "selector": "factor=1.0",
+      "column": "gain_40_80_pp",
+      "passed": true,
+      "detail": "2.004261 vs 2.004260636804986"
+    },
+    "N15": {
+      "source": "results/penetration/U08-master-v01/summary.csv",
+      "selector": "count",
+      "column": "",
+      "passed": true,
+      "detail": "12.0 vs 12.0"
+    },
+    "N16": {
+      "source": "results/grid_search/U09R01-v01/summary.csv",
+      "selector": "scenario=E070_P25",
+      "column": "total_cost_CNY",
+      "passed": true,
+      "detail": "486358.65 vs 486358.6477398961"
+    },
+    "N17": {
+      "source": "results/grid_search/U09R01-v01/summary.csv",
+      "selector": "scenario=E070_P25",
+      "column": "renewable_utilization_pct",
+      "passed": true,
+      "detail": "83.466 vs 83.46602716518099"
+    },
+    "N18": {
+      "source": "results/grid_search/U09R01-v01/summary.csv",
+      "selector": "scenario=E070_P25",
+      "column": "curtailment_MWh",
+      "passed": true,
+      "detail": "359.7528 vs 359.75279452912537"
+    },
+    "N19": {
+      "source": "results/grid_search/U09R01-v01/robustness_summary.csv",
+      "selector": "scenario=E070_P20",
+      "column": "total_cost_CNY",
+      "passed": true,
+      "detail": "496610.8326 vs 496610.83263430226"
+    },
+    "N20": {
+      "source": "results/grid_search/U09R01-v01/summary.csv",
+      "selector": "count",
+      "column": "",
+      "passed": true,
+      "detail": "101.0 vs 101.0"
+    },
+    "N21": {
+      "source": "instructions/studies/U09R01-grid-clarification/findings.md",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: 共303次"
+    },
+    "N22": {
+      "source": "results/real_data/U10-master-v01/input_168h.csv",
+      "selector": "count",
+      "column": "",
+      "passed": true,
+      "detail": "168.0 vs 168.0"
+    },
+    "N23": {
+      "source": "results/real_data/U10-master-v01/robustness.csv",
+      "selector": "count",
+      "column": "",
+      "passed": true,
+      "detail": "16.0 vs 16.0"
+    },
+    "N24": {
+      "source": "results/real_data/U10-master-v01/robustness.csv",
+      "selector": "max:relative_difference",
+      "column": "",
+      "passed": true,
+      "detail": "0.0 vs 0.0"
+    },
+    "N25": {
+      "source": "config/study_sequence_v02.json",
+      "selector": "key=U10.latitude",
+      "column": "",
+      "passed": true,
+      "detail": "30.59 vs 30.59"
+    },
+    "N26": {
+      "source": "config/study_sequence_v02.json",
+      "selector": "key=U10.longitude",
+      "column": "",
+      "passed": true,
+      "detail": "114.3 vs 114.3"
+    },
+    "N27": {
+      "source": "results/annual/U11R02-v01/comparison.csv",
+      "selector": "seed=42;N=12",
+      "column": "worst_error_pp",
+      "passed": true,
+      "detail": "6.4346 vs 6.434639902077116"
+    },
+    "N28": {
+      "source": "results/annual/U11R02-v01/comparison.csv",
+      "selector": "seed=42;N=8",
+      "column": "worst_error_pp",
+      "passed": true,
+      "detail": "6.7137 vs 6.713739322644235"
+    },
+    "N29": {
+      "source": "results/annual/U11R02-v01/comparison.csv",
+      "selector": "seed=7;N=12",
+      "column": "worst_error_pp",
+      "passed": true,
+      "detail": "6.6054 vs 6.605393401408747"
+    },
+    "N30": {
+      "source": "results/annual/U11R02-v01/daily_summary.csv",
+      "selector": "count",
+      "column": "",
+      "passed": true,
+      "detail": "365.0 vs 365.0"
+    },
+    "N31": {
+      "source": "instructions/studies/U11R02-annual-coherent/findings.md",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: 425次Optimal"
+    },
+    "N32": {
+      "source": "results/annual/U11R02-v01/input_8760h.csv",
+      "selector": "count",
+      "column": "",
+      "passed": true,
+      "detail": "8760.0 vs 8760.0"
+    },
+    "N33": {
+      "source": "instructions/studies/U11R02-annual-coherent/findings.md",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: 触发0小时"
+    },
+    "N34": {
+      "source": "instructions/studies/U11R02-annual-coherent/findings.md",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: 均超过1个百分点"
+    },
+    "N35": {
+      "source": "results/ga/U12R01-v01/summary.csv",
+      "selector": "seed=42",
+      "column": "evaluations",
+      "passed": true,
+      "detail": "1480.0 vs 1480.0"
+    },
+    "N36": {
+      "source": "instructions/studies/U12R01-ga-baseline/findings.md",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: 共4440次"
+    },
+    "N37": {
+      "source": "results/ga/U12R01-v01/summary.csv",
+      "selector": "seed=42",
+      "column": "cost",
+      "passed": true,
+      "detail": "485969.51 vs 485969.51074261055"
+    },
+    "N38": {
+      "source": "results/ga/U12R01-v01/summary.csv",
+      "selector": "seed=42",
+      "column": "relative_error",
+      "passed": true,
+      "detail": "0.0800103 vs 0.08001029674168"
+    },
+    "N39": {
+      "source": "results/ga/U12R01-v01/summary.csv",
+      "selector": "seed=7",
+      "column": "relative_error",
+      "passed": true,
+      "detail": "0.079306 vs 0.07930603259803"
+    },
+    "N40": {
+      "source": "results/ga/U12R01-v01/summary.csv",
+      "selector": "seed=2026",
+      "column": "relative_error",
+      "passed": true,
+      "detail": "0.0777284 vs 0.07772841130781999"
+    },
+    "N41": {
+      "source": "instructions/studies/U12R01-ga-baseline/findings.md",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: 全部低于0.5%"
+    },
+    "N42": {
+      "source": "instructions/studies/U12R01-ga-baseline/findings.md",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: 评估次数均超过101"
+    },
+    "N43": {
+      "source": "results/prototype/U13R01-v01/checks.json",
+      "selector": "key=milp_24h_max_diff",
+      "column": "",
+      "passed": true,
+      "detail": "1.4210854715202004e-14 vs 1.4210854715202004e-14"
+    },
+    "N44": {
+      "source": "results/prototype/U13R01-v01/checks.json",
+      "selector": "key=rule_24h_max_diff",
+      "column": "",
+      "passed": true,
+      "detail": "4.2105180453333446e-11 vs 4.2105180453333446e-11"
+    },
+    "N45": {
+      "source": "results/prototype/U13R01-v01/checks.json",
+      "selector": "key=grid_max_diff",
+      "column": "",
+      "passed": true,
+      "detail": "5.820766091346741e-11 vs 5.820766091346741e-11"
+    },
+    "N46": {
+      "source": "results/prototype/audit_v01/unit_tests_20260916.txt",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: Ran 44 tests"
+    },
+    "N47": {
+      "source": "results/prototype/browser_check_v02/browser_checks.json",
+      "selector": "count:console_error_events",
+      "column": "",
+      "passed": true,
+      "detail": "0.0 vs 0.0"
+    },
+    "N48": {
+      "source": "results/prototype/browser_check_v02/browser_checks.json",
+      "selector": "count:steps",
+      "column": "",
+      "passed": true,
+      "detail": "5.0 vs 5.0"
+    },
+    "N49": {
+      "source": "results/capacity_sensitivity/summary.csv",
+      "selector": "scenario=E40_P20",
+      "column": "renewable_utilization_pct",
+      "passed": true,
+      "detail": "91.176 vs 91.1760152643"
+    },
+    "N50": {
+      "source": "config/study_sequence_v02.json",
+      "selector": "key=U09.robust_energy_capex",
+      "column": "",
+      "passed": true,
+      "detail": "1200.0 vs 1200.0"
+    },
+    "N51": {
+      "source": "config/study_sequence_v02.json",
+      "selector": "key=U09.robust_power_capex",
+      "column": "",
+      "passed": true,
+      "detail": "500.0 vs 500.0"
+    },
+    "N52": {
+      "source": "config/study_sequence_v02.json",
+      "selector": "key=U08.factors.0",
+      "column": "",
+      "passed": true,
+      "detail": "0.8 vs 0.8"
+    },
+    "N53": {
+      "source": "config/study_sequence_v02.json",
+      "selector": "key=U08.factors.3",
+      "column": "",
+      "passed": true,
+      "detail": "1.4 vs 1.4"
+    },
+    "N54": {
+      "source": "results/annual/U11R03-v01/run_manifest.json",
+      "selector": "key=details.solves",
+      "column": "",
+      "passed": true,
+      "detail": "252.0 vs 252.0"
+    },
+    "N55": {
+      "source": "results/annual/U11R03-v01/comparison.csv",
+      "selector": "N=48;seed=42",
+      "column": "worst_error_pp",
+      "passed": true,
+      "detail": "0.013143 vs 0.0131432316028394"
+    },
+    "N56": {
+      "source": "results/annual/U11R03-v01/comparison.csv",
+      "selector": "N=48;seed=7",
+      "column": "worst_error_pp",
+      "passed": true,
+      "detail": "0.077019 vs 0.0770185708115747"
+    },
+    "N57": {
+      "source": "results/annual/U11R03-v01/comparison.csv",
+      "selector": "N=48;seed=2026",
+      "column": "worst_error_pp",
+      "passed": true,
+      "detail": "0.234675 vs 0.2346751396646027"
+    },
+    "N58": {
+      "source": "results/annual/U11R03-v01/comparison.csv",
+      "selector": "N=48;seed=42",
+      "column": "wind_relative_error",
+      "passed": true,
+      "detail": "7.1236 vs 7.123599680386359"
+    },
+    "N59": {
+      "source": "results/annual/U11R03-v01/comparison.csv",
+      "selector": "N=48;seed=7",
+      "column": "wind_relative_error",
+      "passed": true,
+      "detail": "10.30309 vs 10.30308987823756"
+    },
+    "N60": {
+      "source": "results/annual/U11R03-v01/comparison.csv",
+      "selector": "N=48;seed=2026",
+      "column": "wind_relative_error",
+      "passed": true,
+      "detail": "3.225039 vs 3.22503948903079"
+    },
+    "N61": {
+      "source": "results/ga/U12R02-v02/summary.csv",
+      "selector": "seed=42",
+      "column": "evaluations",
+      "passed": true,
+      "detail": "89.0 vs 89.0"
+    },
+    "N62": {
+      "source": "results/ga/U12R02-v02/run_manifest.json",
+      "selector": "key=details.successful_seeds",
+      "column": "",
+      "passed": true,
+      "detail": "10.0 vs 10.0"
+    },
+    "N63": {
+      "source": "results/ga/U12R02-v02/run_manifest.json",
+      "selector": "key=details.primary_calls",
+      "column": "",
+      "passed": true,
+      "detail": "890.0 vs 890.0"
+    },
+    "N64": {
+      "source": "results/ga/U12R02-v02/run_manifest.json",
+      "selector": "key=details.total_calls",
+      "column": "",
+      "passed": true,
+      "detail": "979.0 vs 979.0"
+    },
+    "N65": {
+      "source": "results/ga/U12R02-v02/run_manifest.json",
+      "selector": "key=details.evaluation_reduction_fraction",
+      "column": "",
+      "passed": true,
+      "detail": "11.881188 vs 11.881188118811881"
+    },
+    "N66": {
+      "source": "results/ga/U12R02-v02-independent-audit.json",
+      "selector": "key=repeat_difference",
+      "column": "",
+      "passed": true,
+      "detail": "0.0 vs 0.0"
+    },
+    "N67": {
+      "source": "instructions/studies/U11R03-amplitude-representative-days/decision-rule.md",
+      "selector": "text",
+      "column": "",
+      "passed": true,
+      "detail": "needle found: 新增2%"
+    }
+  },
+  "unmatched_numbers": {},
+  "unknown_tags": {},
+  "uncited_rows": [],
+  "materials": {
+    "docs/revisions/U14-T4-v01/stage_report.md": {
+      "characters": 6730,
+      "sha256": "d81ce6bb390060c71c9f9b2ee706af6d0cdaaf8c2bd57e2d9977831231c9cf88"
+    },
+    "docs/revisions/U14-T4-v01/汇报PPT大纲.md": {
+      "characters": 2851,
+      "sha256": "a18ad09b5b8f8f78ee513b1e320b82d4cda246a9a9364dad99283f99aed6d341"
+    },
+    "docs/revisions/U14-T4-v01/汇报稿.md": {
+      "characters": 3630,
+      "sha256": "b0786d82805c91c0d243ab5d4194c45f58cad5e3ce94902fcdb4b611fa5c4398"
+    },
+    "docs/revisions/U14-T4-v01/paper_draft.md": {
+      "characters": 4649,
+      "sha256": "30e5546924b605387d057c3e46c49838d3272aa3de5c8cca117a9bfe2c549cf0"
+    },
+    "docs/revisions/U14-T4-v01/patent_disclosure_draft.md": {
+      "characters": 3555,
+      "sha256": "4a812c080f799384922de35d868fdd2e8cf4cbfe73f9581c0649aee566411d45"
+    },
+    "docs/revisions/U14-T4-v01/software_copyright_materials.md": {
+      "characters": 3384,
+      "sha256": "221f3cb1d2ffb63a296295ae6e4eb968161f002fb3c364211113b6497fa6d8a0"
+    }
+  },
+  "failures": [],
+  "tag_value_mismatches": {},
+  "redline_issues": {},
+  "external_audit_sample": [
+    {
+      "id": "P16",
+      "value": "15",
+      "unit": "年",
+      "source": "config/economics.json",
+      "selector": "key=parameters.storage_lifetime_years",
+      "column": ""
+    },
+    {
+      "id": "N22",
+      "value": "168",
+      "unit": "小时",
+      "source": "results/real_data/U10-master-v01/input_168h.csv",
+      "selector": "count",
+      "column": ""
+    },
+    {
+      "id": "N46",
+      "value": "44",
+      "unit": "项",
+      "source": "results/prototype/audit_v01/unit_tests_20260916.txt",
+      "selector": "text",
+      "column": ""
+    },
+    {
+      "id": "N47",
+      "value": "0",
+      "unit": "个",
+      "source": "results/prototype/browser_check_v02/browser_checks.json",
+      "selector": "count:console_error_events",
+      "column": ""
+    },
+    {
+      "id": "N64",
+      "value": "979",
+      "unit": "次",
+      "source": "results/ga/U12R02-v02/run_manifest.json",
+      "selector": "key=details.total_calls",
+      "column": ""
+    },
+    {
+      "id": "P14",
+      "value": "200",
+      "unit": "元/MWh",
+      "source": "config/economics.json",
+      "selector": "key=parameters.curtailment_penalty_CNY_per_MWh",
+      "column": ""
+    },
+    {
+      "id": "N10",
+      "value": "1.4551915228366852e-11",
+      "unit": "-",
+      "source": "instructions/studies/U07R01-factorial-audit/findings.md",
+      "selector": "text",
+      "column": ""
+    },
+    {
+      "id": "N58",
+      "value": "7.123600",
+      "unit": "%",
+      "source": "results/annual/U11R03-v01/comparison.csv",
+      "selector": "N=48;seed=42",
+      "column": "wind_relative_error"
+    },
+    {
+      "id": "N61",
+      "value": "89",
+      "unit": "次",
+      "source": "results/ga/U12R02-v02/summary.csv",
+      "selector": "seed=42",
+      "column": "evaluations"
+    },
+    {
+      "id": "N53",
+      "value": "1.4",
+      "unit": "-",
+      "source": "config/study_sequence_v02.json",
+      "selector": "key=U08.factors.3",
+      "column": ""
+    }
+  ],
+  "verdict": "consistency_passed"
+}

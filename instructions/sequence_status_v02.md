@@ -15,4 +15,6 @@
 | U11R03 | complete / inconclusive（比例改善，输入电量未达2%门槛） | results/annual/U11R03-v01/、results/annual/U11R03-v01-independent-audit.json |
 | U12R02 | complete / supported（10/10种子，89次/种子，复现差0） | results/ga/U12R02-v02/、results/ga/U12R02-v02-independent-audit.json；v01失败保留 |
 | U13R01 | complete / supported（人工操作验收已由用户确认） | results/prototype/U13R01-v01/、results/prototype/browser_check_v02/、results/prototype/audit_v01/audit_report.json、results/prototype/human_acceptance_v01/ |
-| U14 | complete / 材料单元不设verdict | docs/number_sources.csv、docs/number_consistency_table.md、results/materials/U14-v01/number_check.json |
+| U14 | complete / 材料单元不设verdict（T4同步完成，换人抽查待办） | docs/revisions/U14-T4-v01/README.md；results/materials/U14-T4-v01-check04/number_check.json；旧版全部保留 |
+
+- 2026-09-23 T4：六份修订材料和86行出处同步完成，最终check04为consistency_passed，56项测试通过；历史研究判定不变。机器抽样不等于decision-rule C外部换人审查，正式排版和新UI集成不在本轮范围。

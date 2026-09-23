@@ -44,3 +44,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-09-22 | U11R03 | 用户确认继续并要求每阶段上传；冻结后完成幅值保留与真实代表日完整矩阵 | 252次Optimal，51项测试通过，另进程561项哈希及逐时复核通过；全部9组输入电量偏差超过2%，verdict=inconclusive | results/annual/U11R03-v01/、results/annual/U11R03-v01-independent-audit.json。旧基准365日只读复核通过。每阶段完成即提交推送的授权持续有效。
 
 2026-09-23 | U12R02 | 固定89次预算GA及10种子主试验、种子42独立复现 | supported：10/10质量达标，979次Optimal，重复成本/轨迹差0，53项测试通过；逐时读回与另进程审计 | results/ga/U12R02-v02/、results/ga/U12R02-v02-independent-audit.json。v01基准路径缺main_前缀在求解前失败并保留，v02修正入口；无门槛、算子、数据调整。
+
+2026-09-23 | U14 / T4 | 六份材料及数字出处版本化同步 | complete（材料单元，verdict null）：86行出处、最终check04 consistency_passed，56项unittest通过；新增独立输出与防覆盖测试。check01格式识别失败和check02/03中间通过记录均保留 | docs/revisions/U14-T4-v01/、results/materials/U14-T4-v01/run_manifest.json。旧研究判定、原材料、冻结规则及既有结果均不改；无新研究实验；外部换人10项数字抽查与正式排版仍待办。按用户持续授权提交并推送master。
