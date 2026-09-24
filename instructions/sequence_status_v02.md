@@ -4,6 +4,7 @@
 
 | 单元 | 当前状态 | 证据 |
 |---|---|---|
+| U11R04 | not_started / null（权重校准草案待确认） | instructions/studies/U11R04-energy-calibrated-weights/；无冻结、实现或求解 |
 | U00 | partial / null（T1补证时未提交；后续发布不追溯改判） | results/baseline/U00-T1-v02/；最终登记后快照U00-T1-v03/ |
 | U06R01 | complete / supported | results/optimization/U06R01-v03/ |
 | U07R01 | complete / supported | results/validation/U07R01-v01/ |

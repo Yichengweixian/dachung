@@ -46,3 +46,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-09-23 | U12R02 | 固定89次预算GA及10种子主试验、种子42独立复现 | supported：10/10质量达标，979次Optimal，重复成本/轨迹差0，53项测试通过；逐时读回与另进程审计 | results/ga/U12R02-v02/、results/ga/U12R02-v02-independent-audit.json。v01基准路径缺main_前缀在求解前失败并保留，v02修正入口；无门槛、算子、数据调整。
 
 2026-09-23 | U14 / T4 | 六份材料及数字出处版本化同步 | complete（材料单元，verdict null）：86行出处、最终check04 consistency_passed，56项unittest通过；新增独立输出与防覆盖测试。check01格式识别失败和check02/03中间通过记录均保留 | docs/revisions/U14-T4-v01/、results/materials/U14-T4-v01/run_manifest.json。旧研究判定、原材料、冻结规则及既有结果均不改；无新研究实验；外部换人10项数字抽查与正式排版仍待办。按用户持续授权提交并推送master。
+
+2026-09-24 | U11R04草案 | 用户选择继续研究、不做PPT；基于U11R03结果与现有代码提出受限权重校准 | not_started/null，五份草案待方法与数值确认，无freeze、实现或新求解 | instructions/studies/U11R04-energy-calibrated-weights/。原1个百分点与2%不放宽，新权重边界为提案；旧研究判定不变，按持续授权发布草案不等于批准实验。
