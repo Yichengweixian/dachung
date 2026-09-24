@@ -52,3 +52,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-09-24 | U11R04前置核验 | 用户明确“同意”，登记方法审批后只读核验 | blocked/null：U11R03审计因T4材料检查器源码漂移退出；两旧运行产物哈希检查893+561项通过，但本轮物理重审未完成 | results/annual/U11R04-preflight-v01/failure.json、U11R04-preflight-hash-audit-v01.json。无freeze、无实现、无新求解；依plan冻结前异常只报告，保留旧manifest及所有判据。
 
 2026-09-24 | U11R04执行 | 用户要求继续；隔离历史源码复核通过后按原批准方案冻结、实现、测试、运行 | blocked/invalid：专项6项与全量62项测试通过；正式101次LP（1次Infeasible）+36次Optimal调度后立即停止，耗时28.920328秒；另进程313项哈希与部分物理/成本审计通过但研究无效 | results/annual/U11R04-isolated-preflight-v01/（审计入口遗漏失败）、v02/（通过）、U11R04-v01/、U11R04-v01-partial-audit.json。首次隔离入口遗漏修复仅影响审计准备；正式求解失败后没有重试或改容差。全部失败保留，无PPT，按持续授权提交推送。
+
+2026-09-24 | U11R04只读诊断与U11R05草案 | 重放21阶段、Decimal核对内存与MPS模型，不调用优化器 | LP全部逐字节一致，简单边界无冲突，上一解非严格可行，根因未确定；诊断3项测试通过，U11R04 invalid不变 | results/annual/U11R04-diagnosis-v01/（RHS解析器错误保留）、v02/（完成）；scripts/diagnose_u11r04_serialization.py。U11R05五份草案待确认，拟仅关闭presolve单实例最多2次诊断，未冻结未运行。

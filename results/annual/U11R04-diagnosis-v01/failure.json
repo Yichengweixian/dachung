@@ -1,0 +1,11 @@
+{
+  "phase": "no_solve_MPS_parser",
+  "command": ".venv/Scripts/python.exe -X utf8 scripts/diagnose_u11r04_serialization.py --output results/annual/U11R04-diagnosis-v01",
+  "exit_code": 1,
+  "error": "KeyError: C0000000",
+  "cause": "Parser treated RHS data lines as section headers because their first token was RHS.",
+  "new_solver_calls": 0,
+  "saved_replay_models_preserved": true,
+  "scientific_rule_changed": false,
+  "retry_uses_new_directory": "results/annual/U11R04-diagnosis-v02"
+}
