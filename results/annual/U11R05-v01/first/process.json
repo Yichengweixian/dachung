@@ -1,0 +1,28 @@
+{
+  "command": [
+    "E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\solverdir\\cbc\\win\\i64\\cbc.exe",
+    "model.mps",
+    "-primalTolerance",
+    "1e-9",
+    "-integerTolerance",
+    "1e-9",
+    "-ratioGap",
+    "0",
+    "-allowableGap",
+    "0",
+    "-threads",
+    "0",
+    "-presolve",
+    "off",
+    "-branch",
+    "-printingOptions",
+    "all",
+    "-solution",
+    "solution.txt",
+    "-saveSolution",
+    "solution.bin",
+    "-quit"
+  ],
+  "returncode": 0,
+  "seconds": 0.036942199993063696
+}

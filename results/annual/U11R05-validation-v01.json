@@ -1,0 +1,30 @@
+{
+  "unit": "U11R05",
+  "date": "2026-09-24",
+  "focused": {
+    "command": ".venv/Scripts/python.exe -X utf8 -m unittest discover -s tests -p test_cbc_presolve_diagnostic.py -v",
+    "tests": 5,
+    "exit_code": 0,
+    "real_solver_calls": 0
+  },
+  "regression": {
+    "command": ".venv/Scripts/python.exe -X utf8 -m unittest discover -s tests -p test_*.py",
+    "tests": 70,
+    "exit_code": 0,
+    "elapsed_seconds": 2.445,
+    "note": "Existing regression tests run their own toy solves; these are separate from the diagnostic budget."
+  },
+  "run": {
+    "command": ".venv/Scripts/python.exe -X utf8 run_cbc_presolve_diagnostic.py --run-id U11R05-v01",
+    "exit_code": 0,
+    "calls": 2,
+    "verdict": "supported"
+  },
+  "audit": {
+    "command": ".venv/Scripts/python.exe -X utf8 scripts/audit_cbc_presolve_diagnostic.py U11R05-v01 --output results/annual/U11R05-v01-independent-audit.json",
+    "exit_code": 0,
+    "new_solver_calls": 0,
+    "checked_hashes": 42
+  },
+  "scope": "Single reconstructed failed LP only; not a full annual representative-day matrix or a change to U11R04 verdict."
+}

@@ -2,6 +2,8 @@
 
 ## master 当前执行状态（2026-09-23）
 
+2026-09-24最新：U11R05单模型诊断complete/supported，关闭presolve后两次Optimal且重复差0，独立审计通过。此结论仅限一个重建模型，U11R04历史invalid不变，完整代表日矩阵仍待新的修订验证。详见[U11R05结果](instructions/studies/U11R05-cbc-presolve-diagnostic/findings.md)。
+
 2026-09-24研究更新：U11R04已完成前置隔离审计并实际运行，但权重LP在N48/seed42阶段Infeasible，按冻结规则立即停止，判定invalid。101次权重LP和36次调度的证据全部保留，62项测试通过不代表研究通过。详见[instructions/studies/U11R04-energy-calibrated-weights/findings.md](instructions/studies/U11R04-energy-calibrated-weights/findings.md)。项目尚未完成，当前不制作PPT。
 
 T4 最新六份成果材料见[修订版入口](docs/revisions/U14-T4-v01/README.md)：已同步 U11R03/U12R02，86 行数字出处核对通过，56 项测试通过。原材料保留；换人数字抽查及正式排版仍待办。

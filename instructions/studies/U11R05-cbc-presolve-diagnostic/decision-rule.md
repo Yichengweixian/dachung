@@ -1,10 +1,12 @@
 ---
 unit: U11R05
-freeze_status: draft_pending_approval
-user_approval: null
+freeze_status: approved_for_freeze
+user_approval: confirmed_2026-09-24
 ---
 
 # 单模型数值诊断判据草案
+
+2026-09-24用户明确“同意”，批准design与本判据。下方待确认措辞为原草案记录；本次按原设置冻结，未改任何门槛或停止规则。
 
 以下是待用户确认的诊断设计，不是已运行结果。不得因U11R04已获批准就自动批准本单元的presolve变化。
 

@@ -54,3 +54,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-09-24 | U11R04执行 | 用户要求继续；隔离历史源码复核通过后按原批准方案冻结、实现、测试、运行 | blocked/invalid：专项6项与全量62项测试通过；正式101次LP（1次Infeasible）+36次Optimal调度后立即停止，耗时28.920328秒；另进程313项哈希与部分物理/成本审计通过但研究无效 | results/annual/U11R04-isolated-preflight-v01/（审计入口遗漏失败）、v02/（通过）、U11R04-v01/、U11R04-v01-partial-audit.json。首次隔离入口遗漏修复仅影响审计准备；正式求解失败后没有重试或改容差。全部失败保留，无PPT，按持续授权提交推送。
 
 2026-09-24 | U11R04只读诊断与U11R05草案 | 重放21阶段、Decimal核对内存与MPS模型，不调用优化器 | LP全部逐字节一致，简单边界无冲突，上一解非严格可行，根因未确定；诊断3项测试通过，U11R04 invalid不变 | results/annual/U11R04-diagnosis-v01/（RHS解析器错误保留）、v02/（完成）；scripts/diagnose_u11r04_serialization.py。U11R05五份草案待确认，拟仅关闭presolve单实例最多2次诊断，未冻结未运行。
+
+2026-09-24 | U11R05执行 | 用户同意后冻结，仅关闭presolve执行单模型诊断 | complete/supported：2次独立Optimal、变量/目标重复差0，最大归一化残差5.89640994078061e-10，耗时0.1669681000057608秒；专项5项及全量70项测试通过，独立审计42项哈希通过 | results/annual/U11R05-v01/、U11R05-v01-independent-audit.json。没有失败重试；仅支持单模型配置可解性，不改U11R04 invalid、不补跑完整矩阵、不做PPT。按持续授权提交上传。
