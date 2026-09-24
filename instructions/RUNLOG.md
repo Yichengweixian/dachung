@@ -48,3 +48,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-09-23 | U14 / T4 | 六份材料及数字出处版本化同步 | complete（材料单元，verdict null）：86行出处、最终check04 consistency_passed，56项unittest通过；新增独立输出与防覆盖测试。check01格式识别失败和check02/03中间通过记录均保留 | docs/revisions/U14-T4-v01/、results/materials/U14-T4-v01/run_manifest.json。旧研究判定、原材料、冻结规则及既有结果均不改；无新研究实验；外部换人10项数字抽查与正式排版仍待办。按用户持续授权提交并推送master。
 
 2026-09-24 | U11R04草案 | 用户选择继续研究、不做PPT；基于U11R03结果与现有代码提出受限权重校准 | not_started/null，五份草案待方法与数值确认，无freeze、实现或新求解 | instructions/studies/U11R04-energy-calibrated-weights/。原1个百分点与2%不放宽，新权重边界为提案；旧研究判定不变，按持续授权发布草案不等于批准实验。
+
+2026-09-24 | U11R04前置核验 | 用户明确“同意”，登记方法审批后只读核验 | blocked/null：U11R03审计因T4材料检查器源码漂移退出；两旧运行产物哈希检查893+561项通过，但本轮物理重审未完成 | results/annual/U11R04-preflight-v01/failure.json、U11R04-preflight-hash-audit-v01.json。无freeze、无实现、无新求解；依plan冻结前异常只报告，保留旧manifest及所有判据。

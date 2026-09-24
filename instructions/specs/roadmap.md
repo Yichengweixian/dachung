@@ -22,7 +22,7 @@
 | U11R01 | 年度光伏转换输出上限修订 | exploratory | 规格草案（未实施） | 实际U11转换基线、原始年度数据及U10历史证据 | — |
 | U11R02 | 全年逐日仿真与典型日对照 | exploratory | complete / inconclusive | U11R01、U10 | results/annual/U11R02-v01/ |
 | U11R03 | 幅值保留与真实代表日 | exploratory | complete / inconclusive | U11R02 | results/annual/U11R03-v01/ |
-| U11R04 | 固定日集合的受限电量校准权重 | exploratory | not_started / null（草案待确认） | U11R03、U11R02 | instructions/studies/U11R04-energy-calibrated-weights/ |
+| U11R04 | 固定日集合的受限电量校准权重 | exploratory | blocked / null（已确认，前置源码漂移） | U11R03、U11R02 | results/annual/U11R04-preflight-v01/ |
 | U12 | 遗传算法/粒子群增强 | exploratory | 由 U12R01 覆盖 | U09R01 | — |
 | U12R01 | 三种子 GA 与网格对照 | exploratory | complete / inconclusive | U09R01 | results/ga/U12R01-v01/ |
 | U12R02 | 固定89次预算GA及10种子验证 | exploratory | complete / supported | U09R01、U12R01 | results/ga/U12R02-v02/ |
@@ -39,6 +39,8 @@ U00 → U06 → U07 → U08。完成后即可支撑一次有"优化模型 + 渗�
 继续 U09 → U10 → U11 → U12 → U13 → U14。U09 是本项目核心创新点；U10/U11 把结论从构造数据搬到真实数据与全年尺度。
 
 ## Backlog（意外发现与暂缓项，进入前先在本表登记）
+
+- 2026-09-24用户已同意U11R04。冻结前审计发现旧manifest全量scripts快照包含T4后来修改的材料检查器，严格零源码漂移闸门停止；模型/产物哈希未报错。不改旧manifest，不静默豁免检查；后续建议隔离历史代码复核旧基准。原方法及数值已确认，无需重新审批同一方案。证据见U11R04 findings及preflight failure。
 
 - 2026-09-24：用户要求继续研究且不做PPT。U11R04受限权重校准草案已登记，待确认后冻结；不同时加入极端日以隔离权重效果。0.5至2倍边界与LP层级为拟议设计；沿用1个百分点/2%门槛。输入电量拟合不能当作独立验证；跨年、极端日与跨日耦合仍不在本单元范围。无新实验，旧判定不改。
 

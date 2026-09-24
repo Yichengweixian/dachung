@@ -1,10 +1,12 @@
 ---
 unit: U11R04
-freeze_status: draft_pending_approval
-user_approval: null
+freeze_status: approved_pending_preflight
+user_approval: confirmed_2026-09-24
 ---
 
 # 判据草案：固定日集合的受限权重校准
+
+2026-09-24：用户明确回复“同意”，确认本文件及design中的方法和数值。以下草案正文作为原提案保留，未修改任何数值或闸门；冻结前核验仍须通过。首次核验发现旧运行的材料检查器源码漂移，当前未生成freeze.json。
 
 所有以下数字都是待确认的实验设计，不是观测结果。用户确认方法、边界和判据后才能生成freeze.json、实现和运行。继承U11R03的1个百分点与2%门槛，不修改历史判定。
 

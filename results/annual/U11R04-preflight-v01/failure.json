@@ -1,0 +1,19 @@
+{
+  "unit": "U11R04-energy-calibrated-weights",
+  "phase": "pre_freeze_audit",
+  "date": "2026-09-24",
+  "status": "blocked",
+  "verdict": null,
+  "user_approval": "confirmed_2026-09-24",
+  "command": ".venv/Scripts/python.exe -X utf8 scripts/audit_representative_days.py U11R03-v01 --output results/annual/U11R04-preflight-U11R03-audit-v01.json",
+  "exit_code": 1,
+  "error": "ValueError: {'run_id': 'U11R03-v01', 'checked_hashes': 561, 'cases': 252, 'errors': [], 'source_drift_since_run': ['scripts/check_materials_numbers.py'], 'passed': True}",
+  "failure_location": "scripts/audit_representative_days.py:28",
+  "requested_audit_output_created": false,
+  "diagnostic_report": "results/annual/U11R04-preflight-hash-audit-v01.json",
+  "source_change_commit": "41f1ea08c7066a9223fd9bc6ff0035d72b2c3b3e",
+  "freeze_created": false,
+  "new_research_solves": 0,
+  "historical_physical_reaudit_completed_this_attempt": false,
+  "notes": "Hash/state checks pass but strict source-drift gate fails; original results and manifests left unchanged. This is not a numerical verdict on the proposed method."
+}

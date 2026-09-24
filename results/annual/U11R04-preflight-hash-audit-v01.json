@@ -1,0 +1,20 @@
+[
+  {
+    "run_id": "U11R02-v01",
+    "checked_hashes": 893,
+    "cases": 425,
+    "errors": [],
+    "source_drift_since_run": [],
+    "passed": true
+  },
+  {
+    "run_id": "U11R03-v01",
+    "checked_hashes": 561,
+    "cases": 252,
+    "errors": [],
+    "source_drift_since_run": [
+      "scripts/check_materials_numbers.py"
+    ],
+    "passed": true
+  }
+]
