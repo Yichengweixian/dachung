@@ -1,0 +1,78 @@
+{
+  "stage": "lex_007",
+  "t_limit": 0.00020550860372902567,
+  "l_limit": 5.822048375408107,
+  "pins": [
+    {
+      "index": 0,
+      "lower": 12.05584704786088,
+      "upper": 12.05584704986088
+    },
+    {
+      "index": 3,
+      "lower": 32.4448884221653,
+      "upper": 32.44488842416529
+    },
+    {
+      "index": 9,
+      "lower": 19.9999999989716,
+      "upper": 20.0
+    },
+    {
+      "index": 5,
+      "lower": 13.999999998179392,
+      "upper": 14.0
+    },
+    {
+      "index": 8,
+      "lower": 6.5,
+      "upper": 6.500000001000001
+    },
+    {
+      "index": 4,
+      "lower": 54.9999999984034,
+      "upper": 55.000000000403396
+    },
+    {
+      "index": 11,
+      "lower": 1.5000072978600107,
+      "upper": 1.500007299860011
+    }
+  ],
+  "status": "Optimal",
+  "solution_status": 1,
+  "seconds": 0.0628605000092648,
+  "log": "Welcome to the CBC MILP Solver \nVersion: 2.10.3 \nBuild Date: Dec 15 2019 \n\ncommand line - E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)\nAt line 2 NAME          MODEL\nAt line 3 ROWS\nAt line 52 COLUMNS\nAt line 219 RHS\nAt line 267 BOUNDS\nAt line 292 ENDATA\nProblem MODEL has 47 rows, 25 columns and 165 elements\nCoin0008I MODEL read with 0 errors\nprimalTolerance was changed from 1e-07 to 1e-09\nintegerTolerance was changed from 1e-07 to 1e-09\nratioGap was changed from 0 to 0\nallowableGap was changed from 1e-10 to 0\nPresolve 18 (-29) rows, 17 (-8) columns and 115 (-50) elements\nPerturbing problem by 0.001% of 0.85232015 - largest nonzero change 5.2888768e-05 ( 0.0062052701%) - largest zero change 3.4519184e-05\n0  Obj 24.841146 Primal inf 700.74652 (10)\n15  Obj 42.844204\n15  Obj 24 Dual inf 2.127794e-05 (1)\n16  Obj 24\nOptimal - objective value 24\nAfter Postsolve, objective 24, infeasibilities - dual 0 (0), primal 8.6228277e-10 (1)\nPresolved model was optimal, full model needs cleaning up\nOptimal - objective value 24\nOptimal objective 24 - 16 iterations time 0.002, Presolve 0.00\nOption for printingOptions changed from normal to all\nTotal time (CPU seconds):       0.01   (Wallclock seconds):       0.01\n\n",
+  "weights": [
+    12.05584704986,
+    12.499999998137925,
+    77.99925714529427,
+    32.44488842217,
+    54.9999999984,
+    14.0,
+    63.00000002639963,
+    23.999999997002742,
+    6.500000001000001,
+    20.0,
+    46.00000006187544,
+    1.50000729986
+  ],
+  "t": 0.00020550860372899998,
+  "deviations": [
+    0.5069808812324997,
+    0.500000000074483,
+    0.3220213075471354,
+    0.49304861840359365,
+    0.0,
+    0.9999999999994004,
+    4.193018964194044e-10,
+    0.9999999997501483,
+    0.4999999999230569,
+    1.0,
+    1.3449982741092459e-09,
+    0.4999975667133833
+  ],
+  "objective": 23.999999997002742,
+  "bounds_residual": 1.8620749386855096e-09,
+  "normalized_residual": 2.90909114979017e-11
+}

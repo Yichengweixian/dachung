@@ -1,0 +1,102 @@
+{
+  "stage": "lex_035",
+  "t_limit": 1e-09,
+  "l_limit": 3.0005726671392328,
+  "pins": [
+    {
+      "index": 2,
+      "lower": 11.999999988549986,
+      "upper": 11.999999990549986
+    },
+    {
+      "index": 9,
+      "lower": 19.999999995800874,
+      "upper": 19.999999997800874
+    },
+    {
+      "index": 4,
+      "lower": 4.091327398701462,
+      "upper": 4.091327400701462
+    },
+    {
+      "index": 10,
+      "lower": 0.9999999989983132,
+      "upper": 1.0000000009983132
+    },
+    {
+      "index": 38,
+      "lower": 18.999999998673967,
+      "upper": 19.000000000673968
+    },
+    {
+      "index": 5,
+      "lower": 3.9999999988721697,
+      "upper": 4.00000000087217
+    },
+    {
+      "index": 0,
+      "lower": 2.9999999985758397,
+      "upper": 3.00000000057584
+    },
+    {
+      "index": 3,
+      "lower": 19.99999997626908,
+      "upper": 19.99999997826908
+    },
+    {
+      "index": 37,
+      "lower": 0.9999999989861998,
+      "upper": 1.0000000009861998
+    },
+    {
+      "index": 42,
+      "lower": 0.9999999989865028,
+      "upper": 1.0000000009865029
+    },
+    {
+      "index": 19,
+      "lower": 17.999999998711463,
+      "upper": 18.000000000711463
+    },
+    {
+      "index": 15,
+      "lower": 0.9999999989827398,
+      "upper": 1.00000000098274
+    },
+    {
+      "index": 26,
+      "lower": 1.9999999989749133,
+      "upper": 2.0000000009749135
+    },
+    {
+      "index": 22,
+      "lower": 7.999999998890798,
+      "upper": 8.000000000890799
+    },
+    {
+      "index": 23,
+      "lower": 2.9999999987964516,
+      "upper": 3.000000000796452
+    },
+    {
+      "index": 18,
+      "lower": 7.999999997600352,
+      "upper": 7.999999999600353
+    },
+    {
+      "index": 14,
+      "lower": 7.999999993672863,
+      "upper": 7.999999995672863
+    },
+    {
+      "index": 40,
+      "lower": 3.9999999988402015,
+      "upper": 4.000000000840202
+    }
+  ],
+  "status": "Infeasible",
+  "solution_status": -1,
+  "seconds": 0.08657650000532158,
+  "log": "Welcome to the CBC MILP Solver \nVersion: 2.10.3 \nBuild Date: Dec 15 2019 \n\ncommand line - E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)\nAt line 2 NAME          MODEL\nAt line 3 ROWS\nAt line 146 COLUMNS\nAt line 767 RHS\nAt line 909 BOUNDS\nAt line 1006 ENDATA\nProblem MODEL has 141 rows, 97 columns and 619 elements\nCoin0008I MODEL read with 0 errors\nprimalTolerance was changed from 1e-07 to 1e-09\nintegerTolerance was changed from 1e-07 to 1e-09\nratioGap was changed from 0 to 0\nallowableGap was changed from 1e-10 to 0\nPresolve 92 (-49) rows, 92 (-5) columns and 550 (-69) elements\nPerturbing problem by 0.001% of 1.0599813 - largest nonzero change 6.7242376e-05 ( 0.0063437322%) - largest zero change 4.4111784e-05\n0  Obj 18.670731 Primal inf 898.55972 (47)\n33  Obj 18.67219 Primal inf 5.9673704 (18)\n67  Obj 19.172359 Primal inf 6.8691136e-09 (9)\n81  Obj 19.172359 Primal inf 0.00056895266 (2)\n81  Obj 0 Primal inf 0.00056895266 (2)\nPrimal infeasible - objective value 0\nPresolved problem not optimal, resolve after postsolve\nAfter Postsolve, objective 1, infeasibilities - dual 5000.9996 (2), primal 2.4946217e-07 (2)\nPerturbing problem by 1e-08% of 7.7420904 - largest nonzero change 0 ( 0%) - largest zero change 9.8244348e-06\n0  Obj 1 Primal inf 4.2462143e-08 (2) Dual inf 0.98876032 (1)\n0  Obj 1 Primal inf 4.2462143e-08 (2)\nPrimal infeasible - objective value 1\nPrimalInfeasible objective 1 - 81 iterations time 0.002, Presolve 0.00\n\nResult - Linear relaxation infeasible\n\nEnumerated nodes:           0\nTotal iterations:           0\nTime (CPU seconds):         0.03\nTime (Wallclock Seconds):   0.03\n\nOption for printingOptions changed from normal to all\nTotal time (CPU seconds):       0.03   (Wallclock seconds):       0.03\n\n",
+  "error": "RuntimeError('Weight CBC did not prove Optimal: Infeasible')"
+}

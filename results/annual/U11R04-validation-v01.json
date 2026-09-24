@@ -1,0 +1,44 @@
+{
+  "unit": "U11R04",
+  "date": "2026-09-24",
+  "focused_tests": {
+    "command": ".venv/Scripts/python.exe -X utf8 -m unittest discover -s tests -p test_energy_calibrated_weights.py -v",
+    "tests": 6,
+    "exit_code": 0,
+    "elapsed_seconds": 2.115,
+    "real_small_lp_calls": 18,
+    "mocked_failure_calls": 1
+  },
+  "regression": {
+    "command": ".venv/Scripts/python.exe -X utf8 -m unittest discover -s tests -p test_*.py",
+    "tests": 62,
+    "exit_code": 0,
+    "elapsed_seconds": 4.674,
+    "new_module_real_small_lp_calls": 18,
+    "new_module_mocked_failure_calls": 1,
+    "note": "Existing tests also run their own solvers; these are not formal U11R04 research calls."
+  },
+  "formal_run": {
+    "command": ".venv/Scripts/python.exe -X utf8 run_energy_calibrated_days.py --run-id U11R04-v01",
+    "exit_code": 1,
+    "weight_lp_attempts": 101,
+    "optimal_weight_lp": 100,
+    "infeasible_weight_lp": 1,
+    "dispatch_milp_attempts": 36,
+    "optimal_dispatch_milp": 36,
+    "status": "blocked",
+    "verdict": "invalid"
+  },
+  "partial_readonly_audit": {
+    "command": ".venv/Scripts/python.exe -X utf8 scripts/audit_u11r04_partial.py U11R04-v01 --output results/annual/U11R04-v01-partial-audit.json",
+    "exit_code": 0,
+    "integrity_passed": true,
+    "research_valid": false,
+    "new_solver_calls": 0
+  },
+  "limitations": [
+    "Full nine-group matrix not completed; full-success audit not run.",
+    "Infeasible CBC stage was not retried or reconfigured.",
+    "Partial integrity audit is not a supported research conclusion."
+  ]
+}

@@ -1,0 +1,1 @@
+E:\dachuang\.venv\Scripts\python.exe: can't open file 'C:\\Users\\16482\\AppData\\Local\\Temp\\dachuang-u11-audit-bu371jq8\\scripts\\audit_representative_days.py': [Errno 2] No such file or directory

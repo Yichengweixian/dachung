@@ -50,3 +50,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-09-24 | U11R04草案 | 用户选择继续研究、不做PPT；基于U11R03结果与现有代码提出受限权重校准 | not_started/null，五份草案待方法与数值确认，无freeze、实现或新求解 | instructions/studies/U11R04-energy-calibrated-weights/。原1个百分点与2%不放宽，新权重边界为提案；旧研究判定不变，按持续授权发布草案不等于批准实验。
 
 2026-09-24 | U11R04前置核验 | 用户明确“同意”，登记方法审批后只读核验 | blocked/null：U11R03审计因T4材料检查器源码漂移退出；两旧运行产物哈希检查893+561项通过，但本轮物理重审未完成 | results/annual/U11R04-preflight-v01/failure.json、U11R04-preflight-hash-audit-v01.json。无freeze、无实现、无新求解；依plan冻结前异常只报告，保留旧manifest及所有判据。
+
+2026-09-24 | U11R04执行 | 用户要求继续；隔离历史源码复核通过后按原批准方案冻结、实现、测试、运行 | blocked/invalid：专项6项与全量62项测试通过；正式101次LP（1次Infeasible）+36次Optimal调度后立即停止，耗时28.920328秒；另进程313项哈希与部分物理/成本审计通过但研究无效 | results/annual/U11R04-isolated-preflight-v01/（审计入口遗漏失败）、v02/（通过）、U11R04-v01/、U11R04-v01-partial-audit.json。首次隔离入口遗漏修复仅影响审计准备；正式求解失败后没有重试或改容差。全部失败保留，无PPT，按持续授权提交推送。

@@ -1,0 +1,5 @@
+{
+  "error": "RuntimeError('Weight CBC did not prove Optimal: Infeasible')",
+  "lp_calls": 101,
+  "dispatch_calls": 36
+}

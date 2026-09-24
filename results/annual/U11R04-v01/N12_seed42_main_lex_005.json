@@ -1,0 +1,58 @@
+{
+  "stage": "lex_005",
+  "t_limit": 0.00020550860372902567,
+  "l_limit": 5.822048375408107,
+  "pins": [
+    {
+      "index": 0,
+      "lower": 12.05584704786088,
+      "upper": 12.05584704986088
+    },
+    {
+      "index": 3,
+      "lower": 32.4448884221653,
+      "upper": 32.44488842416529
+    },
+    {
+      "index": 9,
+      "lower": 19.9999999989716,
+      "upper": 20.0
+    }
+  ],
+  "status": "Optimal",
+  "solution_status": 1,
+  "seconds": 0.06436800000665244,
+  "log": "Welcome to the CBC MILP Solver \nVersion: 2.10.3 \nBuild Date: Dec 15 2019 \n\ncommand line - E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)\nAt line 2 NAME          MODEL\nAt line 3 ROWS\nAt line 44 COLUMNS\nAt line 203 RHS\nAt line 243 BOUNDS\nAt line 268 ENDATA\nProblem MODEL has 39 rows, 25 columns and 157 elements\nCoin0008I MODEL read with 0 errors\nprimalTolerance was changed from 1e-07 to 1e-09\nintegerTolerance was changed from 1e-07 to 1e-09\nratioGap was changed from 0 to 0\nallowableGap was changed from 1e-10 to 0\nPresolve 26 (-13) rows, 21 (-4) columns and 132 (-25) elements\nPerturbing problem by 0.001% of 0.88195776 - largest nonzero change 5.0462542e-05 ( 0.0057216507%) - largest zero change 3.9014118e-05\n0  Obj 13.735499 Primal inf 878.12015 (14)\n31  Obj 21.987809 Primal inf 8.9452583 (4)\n35  Obj 24.238951\n35  Obj 14 Dual inf 5.0830025e-06 (1)\n36  Obj 14\nOptimal - objective value 14\nAfter Postsolve, objective 14, infeasibilities - dual 0 (0), primal 0 (0)\nOptimal objective 14 - 36 iterations time 0.002, Presolve 0.00\nOption for printingOptions changed from normal to all\nTotal time (CPU seconds):       0.02   (Wallclock seconds):       0.02\n\n",
+  "weights": [
+    12.055847049859999,
+    12.5,
+    77.99925718629615,
+    32.44488842417,
+    54.99999999876637,
+    13.999999999179392,
+    63.00000004272422,
+    24.0,
+    6.500000000000001,
+    20.0,
+    46.000000000005514,
+    1.5000072989984112
+  ],
+  "t": 0.00020550860372900003,
+  "deviations": [
+    0.5069808812325007,
+    0.5,
+    0.32202130824208286,
+    0.4930486183723435,
+    0.0,
+    0.9999999998821713,
+    6.784222767514452e-10,
+    0.9999999999999202,
+    0.4999999999999801,
+    1.0000000000000002,
+    0.0,
+    0.49999756700057957
+  ],
+  "objective": 13.999999999179392,
+  "bounds_residual": 5.684341886080802e-14,
+  "normalized_residual": 2.242963794494492e-11
+}
