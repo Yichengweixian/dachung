@@ -1,5 +1,9 @@
 # 当前状态
 
+## 2026-09-26 U11R06 presolve-off 完整矩阵修订停止
+
+用户要求继续后，独立冻结完整九组方案，仅对权重 LP 关闭 CBC presolve。73 项测试通过；正式运行第 44 次权重 LP（N24/seed42 主计算 lex_014）Infeasible，立即停止。43 次 LP 和 12 次调度 Optimal，但只有 N12/seed42 一组完成，不能判定原双门槛。独立部分审计 150 项哈希、源码、日志和已完成日解通过；工程 blocked、verdict=invalid。U11R04 invalid、U11R05 单模型 supported 均不改写。证据见 results/annual/U11R06-v01/、U11R06-v01-partial-audit.json；项目仍未完成，无 PPT。
+
 ## 2026-09-24 U11R05单模型诊断完成
 
 用户确认后冻结并执行U11R05-v01：仅关闭presolve，其他模型和设置不变；2次独立求解均Optimal，全部变量/目标重复差0，归一化最大残差约5.8964e-10，另进程42项哈希及结果读回通过。专项5项、全量70项测试通过。判定complete/supported仅限这个重建单模型的配置可解性，不代表完整代表日矩阵通过。

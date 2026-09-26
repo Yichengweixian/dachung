@@ -1,0 +1,98 @@
+{
+  "stage": "lex_010",
+  "t_limit": 0.00020550860372893896,
+  "l_limit": 5.82204837540706,
+  "pins": [
+    {
+      "index": 0,
+      "lower": 12.055847047860857,
+      "upper": 12.055847049860857
+    },
+    {
+      "index": 3,
+      "lower": 32.44488842221472,
+      "upper": 32.44488842421471
+    },
+    {
+      "index": 9,
+      "lower": 19.999999998865768,
+      "upper": 20.0
+    },
+    {
+      "index": 5,
+      "lower": 13.999999998197874,
+      "upper": 14.0
+    },
+    {
+      "index": 8,
+      "lower": 6.5,
+      "upper": 6.500000001
+    },
+    {
+      "index": 4,
+      "lower": 54.99999999254866,
+      "upper": 54.99999999454865
+    },
+    {
+      "index": 11,
+      "lower": 1.5000072975529146,
+      "upper": 1.5000072995529148
+    },
+    {
+      "index": 7,
+      "lower": 23.999999997048693,
+      "upper": 23.999999999048693
+    },
+    {
+      "index": 1,
+      "lower": 12.5,
+      "upper": 12.500000001000002
+    },
+    {
+      "index": 2,
+      "lower": 77.99925707411006,
+      "upper": 77.99925707611007
+    },
+    {
+      "index": 6,
+      "lower": 63.00000000075656,
+      "upper": 63.00000000275655
+    }
+  ],
+  "status": "Optimal",
+  "solution_status": 1,
+  "seconds": 0.055852500001492444,
+  "log": "Welcome to the CBC MILP Solver \nVersion: 2.10.3 \nBuild Date: Dec 15 2019 \n\ncommand line - E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -presolve off -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)\nAt line 2 NAME          MODEL\nAt line 3 ROWS\nAt line 60 COLUMNS\nAt line 235 RHS\nAt line 291 BOUNDS\nAt line 316 ENDATA\nProblem MODEL has 55 rows, 25 columns and 173 elements\nCoin0008I MODEL read with 0 errors\nprimalTolerance was changed from 1e-07 to 1e-09\nintegerTolerance was changed from 1e-07 to 1e-09\nratioGap was changed from 0 to 0\nallowableGap was changed from 1e-10 to 0\nOption for presolve changed from on to off\nPerturbing problem by 0.001% of 29.52226 - largest nonzero change 1.1140723e-05 ( 3.7736688e-05%) - largest zero change 1.08254e-05\n0  Obj 23.000073 Primal inf 168.21832 (25)\n29  Obj 46.000185\nOptimal - objective value 46\nOptimal objective 46.00000016 - 29 iterations time 0.002\nOption for printingOptions changed from normal to all\nTotal time (CPU seconds):       0.02   (Wallclock seconds):       0.02\n\n",
+  "weights": [
+    12.05584704986,
+    12.500000000999998,
+    77.99925707611001,
+    32.444888424210006,
+    54.99999999455,
+    13.999999995447507,
+    63.00000000276002,
+    23.999999999999996,
+    6.500000001000001,
+    20.0,
+    46.000000155509554,
+    1.500007299553
+  ],
+  "t": 0.00020550860348624562,
+  "deviations": [
+    0.5069808812324997,
+    0.49999999996,
+    0.3220213063745211,
+    0.4930486183717187,
+    0.0,
+    0.9999999993490445,
+    0.0,
+    0.9999999999999197,
+    0.4999999999230569,
+    1.0,
+    3.380522352201072e-09,
+    0.49999756681571667
+  ],
+  "objective": 46.000000155509554,
+  "bounds_residual": 5.684341886080802e-14,
+  "normalized_residual": 2.7503670452233564e-09
+}

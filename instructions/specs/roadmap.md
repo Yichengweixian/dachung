@@ -24,6 +24,7 @@
 | U11R03 | 幅值保留与真实代表日 | exploratory | complete / inconclusive | U11R02 | results/annual/U11R03-v01/ |
 | U11R04 | 固定日集合的受限电量校准权重 | exploratory | blocked / invalid（N48/seed42权重LP Infeasible） | U11R03、U11R02 | results/annual/U11R04-v01/；部分审计与失败全部保留 |
 | U11R05 | 单模型CBC presolve诊断 | exploratory | complete / supported（仅单实例） | U11R04及只读诊断v02 | results/annual/U11R05-v01/、独立审计 |
+| U11R06 | CBC presolve off 的完整受限权重矩阵修订 | exploratory | blocked / invalid（N24/seed42主计算lex_014 Infeasible） | U11R04、U11R05 | results/annual/U11R06-v01/、部分审计 |
 | U12 | 遗传算法/粒子群增强 | exploratory | 由 U12R01 覆盖 | U09R01 | — |
 | U12R01 | 三种子 GA 与网格对照 | exploratory | complete / inconclusive | U09R01 | results/ga/U12R01-v01/ |
 | U12R02 | 固定89次预算GA及10种子验证 | exploratory | complete / supported | U09R01、U12R01 | results/ga/U12R02-v02/ |
@@ -40,6 +41,8 @@ U00 → U06 → U07 → U08。完成后即可支撑一次有"优化模型 + 渗�
 继续 U09 → U10 → U11 → U12 → U13 → U14。U09 是本项目核心创新点；U10/U11 把结论从构造数据搬到真实数据与全年尺度。
 
 ## Backlog（意外发现与暂缓项，进入前先在本表登记）
+
+- 2026-09-26 U11R06：沿用原 9 组、权重界限和 1 个百分点/2% 双门槛，只对权重 LP 加 `presolve off`。第 44 次 LP 在 N24/seed42 lex_014 Infeasible 即停；43 次 LP、12 次调度 Optimal，部分独立审计 150 项哈希通过，73 项测试通过。研究 invalid、矩阵未完成，不能将 U11R05 单模型成功外推。若再改数值方法须另建单元冻结；无 PPT。
 
 - 2026-09-24 U11R05已确认并完成：presolve off下2次独立Optimal、重复差0，原单位/Decimal残差通过，70项测试与42项哈希审计通过。仅支持单模型配置可解性，不证明唯一根因或完整矩阵通过。后续拟将同一presolve变化用于新的完整矩阵修订，仍需先给出方法/预算/原门槛并确认冻结；不得补跑U11R04或改写其invalid。无PPT。
 

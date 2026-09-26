@@ -2,6 +2,8 @@
 
 ## master 当前执行状态（2026-09-23）
 
+2026-09-26最新：U11R06 仅将权重 LP 改为 CBC `presolve off` 后尝试完整 9 组矩阵，但第 44 次权重 LP 在 N24/seed42 阶段 Infeasible，按冻结规则停止并保留证据；43 次 LP 与 12 次调度 Optimal，独立部分审计通过，研究判定 blocked/invalid。U11R04 invalid 与 U11R05 单模型 supported 均保持历史结论，研究仍未完成、不制作 PPT。详见[U11R06 结果](instructions/studies/U11R06-presolve-off-weight-matrix/findings.md)。
+
 2026-09-24最新：U11R05单模型诊断complete/supported，关闭presolve后两次Optimal且重复差0，独立审计通过。此结论仅限一个重建模型，U11R04历史invalid不变，完整代表日矩阵仍待新的修订验证。详见[U11R05结果](instructions/studies/U11R05-cbc-presolve-diagnostic/findings.md)。
 
 2026-09-24研究更新：U11R04已完成前置隔离审计并实际运行，但权重LP在N48/seed42阶段Infeasible，按冻结规则立即停止，判定invalid。101次权重LP和36次调度的证据全部保留，62项测试通过不代表研究通过。详见[instructions/studies/U11R04-energy-calibrated-weights/findings.md](instructions/studies/U11R04-energy-calibrated-weights/findings.md)。项目尚未完成，当前不制作PPT。

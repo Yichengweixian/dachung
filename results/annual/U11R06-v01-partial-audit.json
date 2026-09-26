@@ -1,0 +1,44 @@
+{
+  "evidence_integrity_passed": true,
+  "research_valid": false,
+  "research_verdict": "invalid",
+  "hashes": {
+    "run_id": "U11R06-v01",
+    "checked_hashes": 150,
+    "cases": 12,
+    "errors": [
+      "not_complete"
+    ],
+    "source_drift_since_run": [],
+    "passed": false
+  },
+  "lp_attempts": 44,
+  "optimal_lp_stages": 43,
+  "dispatch_cases": 12,
+  "completed_groups": [
+    {
+      "N": 12,
+      "seed": 42,
+      "ratio_error_pp": 1.5615946626977184,
+      "input_energy_error": 0.00020550860413116564,
+      "dispatch_cases": 12,
+      "cost_error_CNY": 40207333.68922591
+    }
+  ],
+  "failures": [
+    {
+      "file": "N24_seed42_main_lex_014.json",
+      "status": "Infeasible",
+      "error": "RuntimeError('Weight CBC did not prove Optimal: Infeasible')",
+      "previous_solution_in_next_bands": {
+        "bounds_residual": 1.1368683772161603e-13,
+        "normalized_residual": 2.9979974058846892e-09
+      }
+    }
+  ],
+  "max_weight_bound_residual": 2.712077673550084e-09,
+  "max_normalized_residual": 3.761464029139461e-09,
+  "new_solver_calls": 0,
+  "run_manifest_sha256": "e76c143a4c85eee4bdd32bcaee96f1d43412ef244c8d48a5a16333481fa1c81d",
+  "audit_source_sha256": "cd4e060022d7f33958cefdaf31ee67130350fa0e0214c0884922f03098673fa9"
+}

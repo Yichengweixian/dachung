@@ -1,0 +1,107 @@
+{
+  "stage": "lex_020",
+  "t_limit": 1e-09,
+  "l_limit": 5.860454419198252,
+  "pins": [
+    {
+      "index": 10,
+      "lower": 4.999999995002003,
+      "upper": 4.9999999970020035
+    },
+    {
+      "index": 15,
+      "lower": 4.999999995992916,
+      "upper": 4.999999997992916
+    },
+    {
+      "index": 18,
+      "lower": 14.5,
+      "upper": 14.500000001
+    },
+    {
+      "index": 2,
+      "lower": 39.79650255747555,
+      "upper": 39.79650255947554
+    },
+    {
+      "index": 8,
+      "lower": 49.999999998744556,
+      "upper": 50.0
+    },
+    {
+      "index": 12,
+      "lower": 11.999999998382355,
+      "upper": 12.000000000382355
+    },
+    {
+      "index": 16,
+      "lower": 4.999999998256075,
+      "upper": 5.000000000256075
+    },
+    {
+      "index": 1,
+      "lower": 9.999999996030926,
+      "upper": 9.999999998030926
+    }
+  ],
+  "status": "Optimal",
+  "solution_status": 1,
+  "seconds": 0.06740700000227662,
+  "log": "Welcome to the CBC MILP Solver \nVersion: 2.10.3 \nBuild Date: Dec 15 2019 \n\ncommand line - E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -presolve off -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)\nAt line 2 NAME          MODEL\nAt line 3 ROWS\nAt line 78 COLUMNS\nAt line 389 RHS\nAt line 463 BOUNDS\nAt line 512 ENDATA\nProblem MODEL has 73 rows, 49 columns and 309 elements\nCoin0008I MODEL read with 0 errors\nprimalTolerance was changed from 1e-07 to 1e-09\nintegerTolerance was changed from 1e-07 to 1e-09\nratioGap was changed from 0 to 0\nallowableGap was changed from 1e-10 to 0\nOption for presolve changed from on to off\nPerturbing problem by 0.001% of 3.4358144 - largest nonzero change 1.2442417e-05 ( 0.00036213879%) - largest zero change 1.2388684e-05\n0  Obj 1.5000962 Primal inf 172.59954 (35)\n31  Obj 1.5002325 Primal inf 9.476098 (9)\n62  Obj 3.5927804 Primal inf 2.8425746 (6)\n73  Obj 6.0002439\nOptimal - objective value 6\nOptimal objective 5.999999994 - 73 iterations time 0.002\nOption for printingOptions changed from normal to all\nTotal time (CPU seconds):       0.02   (Wallclock seconds):       0.02\n\n",
+  "weights": [
+    12.00000000000048,
+    9.999999996031,
+    39.796502559480004,
+    0.9999999999999999,
+    45.00000002636451,
+    5.5,
+    7.499992701266372,
+    33.00000000000033,
+    49.99999999999999,
+    10.247695013745249,
+    5.0,
+    12.0,
+    11.99999999838,
+    14.499999999999998,
+    3.0000000000003,
+    5.0,
+    5.0,
+    34.955809710619995,
+    14.5,
+    8.0,
+    5.999999994111522,
+    1.0,
+    14.000000000000279,
+    15.999999999999998
+  ],
+  "t": 1e-09,
+  "deviations": [
+    0.0,
+    0.0,
+    0.00508743601299978,
+    0.0,
+    5.857778888888227e-10,
+    0.500000000000005,
+    0.4999985402532743,
+    0.0,
+    0.9999999999999997,
+    0.707949168957883,
+    0.0,
+    1.0000000000004001,
+    0.0,
+    0.499999999999995,
+    0.0,
+    0.0,
+    0.0,
+    0.14741927535069746,
+    0.499999999999995,
+    0.0,
+    0.9999999980369743,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "objective": 5.999999994111522,
+  "bounds_residual": 5.684341886080802e-14,
+  "normalized_residual": 2.9979965177062695e-09
+}
