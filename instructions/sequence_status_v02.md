@@ -4,6 +4,7 @@
 
 | 单元 | 当前状态 | 证据 |
 |---|---|---|
+| U11R07 | complete / inconclusive（只读诊断，数值根因未证实） | results/annual/U11R07-v01/、U11R07-v01-independent-audit.json；16份LP逐字节一致、零求解调用 |
 | U11R06 | blocked / invalid（presolve off 全矩阵在第44次权重LP停） | results/annual/U11R06-v01/、U11R06-v01-partial-audit.json；43次LP与12次调度Optimal，矩阵未完成 |
 | U11R05 | complete / supported（只限单模型presolve off诊断） | results/annual/U11R05-v01/、U11R05-v01-independent-audit.json；2次Optimal且重复差0 |
 | U11R04 | blocked / invalid（隔离核验后已运行，权重LP非Optimal即停） | results/annual/U11R04-v01/、U11R04-v01-partial-audit.json；101次LP与36次调度，未完成矩阵 |

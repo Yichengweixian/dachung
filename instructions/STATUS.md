@@ -1,5 +1,9 @@
 # 当前状态
 
+## 2026-09-26 U11R07只读诊断完成
+
+对U11R06的N24/seed42失败LP重放16阶段，保存的LP逐字节一致；前一阶段解代入失败阶段最大违约约3.0e-9，主要是w_010固定上界。简单区间无矛盾，尚不能证明数学无解或CBC根因。独立审计26项冻结哈希、120项产物哈希和16份LP通过；零新增优化调用，75项测试通过。工程complete、verdict=inconclusive。U11R06仍invalid，全项目研究未完成，无PPT。证据见results/annual/U11R07-v01/、U11R07-v01-independent-audit.json。
+
 ## 2026-09-26 U11R06 presolve-off 完整矩阵修订停止
 
 用户要求继续后，独立冻结完整九组方案，仅对权重 LP 关闭 CBC presolve。73 项测试通过；正式运行第 44 次权重 LP（N24/seed42 主计算 lex_014）Infeasible，立即停止。43 次 LP 和 12 次调度 Optimal，但只有 N12/seed42 一组完成，不能判定原双门槛。独立部分审计 150 项哈希、源码、日志和已完成日解通过；工程 blocked、verdict=invalid。U11R04 invalid、U11R05 单模型 supported 均不改写。证据见 results/annual/U11R06-v01/、U11R06-v01-partial-audit.json；项目仍未完成，无 PPT。

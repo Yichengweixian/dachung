@@ -58,3 +58,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-09-24 | U11R05执行 | 用户同意后冻结，仅关闭presolve执行单模型诊断 | complete/supported：2次独立Optimal、变量/目标重复差0，最大归一化残差5.89640994078061e-10，耗时0.1669681000057608秒；专项5项及全量70项测试通过，独立审计42项哈希通过 | results/annual/U11R05-v01/、U11R05-v01-independent-audit.json。没有失败重试；仅支持单模型配置可解性，不改U11R04 invalid、不补跑完整矩阵、不做PPT。按持续授权提交上传。
 
 2026-09-26 | U11R06执行 | 新单元冻结后，仅对权重LP设置CBC presolve off，尝试原完整矩阵 | blocked/invalid：第44次LP（N24/seed42主lex_014）Infeasible立即停止；43次LP、12次调度Optimal，73项测试通过；只读部分审计150项哈希及完成组重建通过 | results/annual/U11R06-v01/、U11R06-v01-partial-audit.json。未重试或修改冻结参数；U11R04/U11R05结论保持。按持续授权提交推送，无PPT。
+
+2026-09-26 | U11R07只读诊断 | 冻结后核对U11R06失败LP固定带、序列化与旧解残差，不调用求解器 | complete/inconclusive：16阶段LP逐字节一致；旧解新固定带最大违约约3.0e-9，简单区间无矛盾，数学/数值根因未证实；独立审计26项冻结哈希、120项原产物哈希和16份LP通过，75项测试通过 | results/annual/U11R07-v01/、U11R07-v01-independent-audit.json。首次预检残留48日循环导致读取报错，尚未重放或求解，修正后完成；历史invalid不改，无PPT，按持续授权提交推送。

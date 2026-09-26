@@ -1,0 +1,220 @@
+{
+  "frozen_at": "2026-09-26T14:21:23.139873+00:00",
+  "unit": "U11R07-u11r06-band-diagnosis",
+  "git_head": "407cca1f55a245a0fc4a385ff5bf3154faabb5d1",
+  "sha256": {
+    "instructions/studies/U11R07-u11r06-band-diagnosis/decision-rule.md": "51a6e235b984311cd742930e4357deefee53d865638cb109420b2778ec1ea0e2",
+    "instructions/studies/U11R07-u11r06-band-diagnosis/design.md": "f4e615891777df1ba33cf3f7bcab6d2332ea045b3948486b7ae4b78a184cdd19",
+    "instructions/studies/U11R07-u11r06-band-diagnosis/execution-note.md": "394c58a469dd43f0a9a12962d84c1d3607cfdbffe6598cab0c167e490eeca4b3",
+    "instructions/studies/U11R07-u11r06-band-diagnosis/plan.md": "e61239403fcda11f4171f6bdf33cb0a752039a8ae3f9bfcd9f7eb1fb086a5fc6",
+    "instructions/studies/U11R07-u11r06-band-diagnosis/question.md": "116fd04d3a66c905266b24dd9268d53d3e478720cbcea2fb9ebc1e024c651c2e",
+    "config/capacity_sensitivity.json": "b129373e8401816e8c92ccb4273ed43eaba92d569546206d5b2ec0cfea0703ec",
+    "config/data_24h.json": "0079eac60d933431fbd3ae5663b132a44e32d2e47b409f13e2c3732245ec25fd",
+    "config/economics.json": "a4f85c6d224c14e0db834cc9f72ce8959bce4f1ee7979cdadb326ee78c155a79",
+    "config/no_storage.json": "c4bd45f88e83981270cbdf536e49e5053ab81c3eacab71dec2f339688476f270",
+    "config/optimization.json": "d33a065d19675ec041d9c23c3d890d2b2fa117d430d7de9f1af131fa391b924f",
+    "config/simulation.json": "2f806ee61963aa9277f55af7b694db5ae41f7954ef411ab111a40f57df599761",
+    "config/storage.json": "5ba124bdeed9e4f94c5679c7e15b651784b26381d9ba9142bccfc7608e7a9cf8",
+    "config/study_sequence_v02.json": "0293db61b9d989d0362a4c39b2206e3096041fae044971302c2696b8978f466a",
+    "data/input_24h.csv": "30c0504459f1b72e8a5ac77d0fd1267c8f6293819ce67e87eb64ea7610bdb622",
+    "results/annual/U11R06-v01/run_manifest.json": "e76c143a4c85eee4bdd32bcaee96f1d43412ef244c8d48a5a16333481fa1c81d",
+    "results/annual/U11R06-v01/N24_seed42_main_lex_014.json": "cfa8452735a341db7ec8a56be675f55b5f2396e8637a5e00af6b5c07500226fd",
+    "results/annual/U11R06-v01/N24_seed42_main_models/lex_014.lp": "8a98f4fca85f55ff0383b972cfd4cfd04e90e3b4298a000c5a90a1879958d8a7",
+    "results/annual/U11R06-v01/N24_seed42_main_lex_006.json": "6b1b84b7d708e0b4dc1ff37ccbddf8d06d991b94f60b61dcdcb70689a212c8f1",
+    "results/annual/U11R06-v01/N24_seed42_inputs.csv": "560d2d2c3e859d4ca3337ab0ffeb1c9d809991406bd11237520fa8d2df2df0a3",
+    "results/annual/U11R03-v01/N24_seed42_representatives.csv": "18ea304d4ad8f87fc2b5d000acd72f4ead6403ab6db36df22ab76b3bc337ccef",
+    "results/annual/U11R02-v01/input_8760h.csv": "a0f74f241e231b26561299171b018d07c8adab7d87a39c4f738bab128d16fab1",
+    "src/energy_calibrated_weights_presolve_off.py": "b5b050cebd305c43e85db96f0773ecc9ab533e57beb88b0c0e2422a63351fab8",
+    "src/cbc_presolve_off.py": "79531dc13689c1c89ed0ca9d73228f369b8837935c6c1934d3da700401898a6d",
+    "scripts/diagnose_u11r04_serialization.py": "5bf7d51b8557edb232c653fb53f009c95af36ce26c2c93ad5fb9ea4c57a3c3c0",
+    "results/annual/U11R06-v01-partial-audit.json": "b0029cd328b9e17f30c65070ebdafad48ff2e1d80c8fa35a7d41fa1999e19e33",
+    "requirements.txt": "37db4c34cac57cc732ea9b9adac48a41f63a36715de0a52cb0e96ca601eb47f2"
+  },
+  "config": {
+    "capacity_sensitivity.json": {
+      "energy_capacities_MWh": [
+        0,
+        20,
+        40,
+        60,
+        80
+      ],
+      "fixed_power_capacity_MW": 20.0
+    },
+    "data_24h.json": {
+      "random_seed": 20260910,
+      "wind_capacity_MW": 100.0,
+      "solar_capacity_MW": 150.0,
+      "wind_mean_capacity_factor": 0.5,
+      "wind_daily_amplitude": 0.12,
+      "wind_noise_std_MW": 4.0,
+      "solar_start_hour": 6,
+      "solar_end_hour": 18,
+      "solar_shape_exponent": 1.6,
+      "load_MW": [
+        92,
+        87,
+        83,
+        81,
+        82,
+        89,
+        103,
+        122,
+        139,
+        145,
+        141,
+        134,
+        128,
+        125,
+        127,
+        133,
+        143,
+        154,
+        160,
+        162,
+        151,
+        132,
+        112,
+        99
+      ]
+    },
+    "economics.json": {
+      "metadata": {
+        "parameter_status": "synthetic_test_assumptions",
+        "currency": "CNY",
+        "source": "人为设置的模型测试参数，非文献引用、市场报价或实际工程数据。",
+        "capital_cost_scope": "能量侧和功率侧投资分别计价；不得将完整系统报价同时填入两项。",
+        "allocation_method": "投资按资本回收系数年化，再按仿真小时数/全年小时数分摊；固定运维采用相同时间比例。",
+        "variable_om_basis": "仅按电网侧放电量计费，不重复对充电量收费。"
+      },
+      "parameters": {
+        "thermal_cost_CNY_per_MWh": 350.0,
+        "storage_energy_capex_CNY_per_kWh": 800.0,
+        "storage_power_capex_CNY_per_kW": 300.0,
+        "storage_lifetime_years": 15.0,
+        "discount_rate": 0.05,
+        "storage_fixed_om_fraction_per_year": 0.02,
+        "storage_variable_om_CNY_per_MWh_discharged": 10.0,
+        "curtailment_penalty_CNY_per_MWh": 200.0,
+        "load_shedding_penalty_CNY_per_MWh": 10000.0,
+        "hours_per_year": 8760.0
+      }
+    },
+    "no_storage.json": {
+      "thermal_max_MW": 120.0
+    },
+    "optimization.json": {
+      "thermal_min_MW": 30.0,
+      "thermal_ramp_MW_per_h": 30.0,
+      "objective_terms": [
+        "thermal",
+        "curtailment",
+        "load_shedding",
+        "storage_variable_om"
+      ]
+    },
+    "simulation.json": {
+      "num_steps": 24,
+      "time_step_hours": 1.0
+    },
+    "storage.json": {
+      "energy_capacity_MWh": 40.0,
+      "power_capacity_MW": 20.0,
+      "soc_initial": 0.5,
+      "soc_min": 0.1,
+      "soc_max": 0.9,
+      "eta_charge": 0.95,
+      "eta_discharge": 0.95
+    },
+    "study_sequence_v02.json": {
+      "tolerance": 1e-06,
+      "U08": {
+        "factors": [
+          0.8,
+          1,
+          1.2,
+          1.4
+        ],
+        "energies": [
+          0,
+          40,
+          80
+        ],
+        "power_ratio": 0.5
+      },
+      "U09": {
+        "energies": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ],
+        "powers": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ],
+        "robust_energy_capex": 1200,
+        "robust_power_capex": 500
+      },
+      "U10": {
+        "latitude": 30.59,
+        "longitude": 114.3,
+        "start": "20230101",
+        "end": "20230107",
+        "parameters": [
+          "ALLSKY_SFC_SW_DWN",
+          "WS50M"
+        ],
+        "community": "RE",
+        "time_standard": "UTC",
+        "load_day_factors": [
+          0.95,
+          1,
+          1.05
+        ]
+      },
+      "U11": {
+        "year": 2023,
+        "clusters": [
+          8,
+          10,
+          12
+        ],
+        "seeds": [
+          42,
+          7
+        ],
+        "n_init": 10,
+        "solar_limit_MW": 150
+      },
+      "U12": {
+        "population": 30,
+        "generations": 50,
+        "seeds": [
+          42,
+          7,
+          2026
+        ],
+        "crossover_probability": 0.9,
+        "eta_c": 15,
+        "eta_m": 20,
+        "mutation_probability": 0.5
+      }
+    }
+  }
+}
