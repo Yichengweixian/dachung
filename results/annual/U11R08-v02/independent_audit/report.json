@@ -1,0 +1,899 @@
+{
+  "verdict": "supported",
+  "common_N": [
+    12,
+    24,
+    48
+  ],
+  "groups": [
+    {
+      "N": 12,
+      "seed": 42,
+      "D_min": 0.00020550760378140745,
+      "CBC_t": 0.00020550760372933967,
+      "status": "reachable",
+      "certificate": {
+        "lower": "3458764513813959227/16830348124250752155648",
+        "upper": "9762831729218733/47505939194340966400",
+        "gap": "1570254975139/2840542004670420695069491200",
+        "lower_float": 0.00020550760378094886,
+        "upper_float": 0.00020550760378150164,
+        "proof_weights": [
+          "16",
+          "1759218604441601/140737488355328",
+          "4540644632284875/70368744177664",
+          "4564883458898053/140737488355328",
+          "110",
+          "14",
+          "1426307981347449/35184372088832",
+          "24",
+          "13/2",
+          "20",
+          "23",
+          "3/2"
+        ],
+        "max_repair": "1/140737488355328",
+        "dual_y": [
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "dual_z": "3159121810129737/1152921504606846976",
+        "dual_scale": "4503599627370497/4503599627370496",
+        "optimality_certified": true,
+        "evidence_note": null
+      },
+      "residuals": {
+        "original": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 0.0,
+          "nonnegative_t": 0.0
+        },
+        "solution": {
+          "sum": 7.105427357601002e-15,
+          "bounds": 0.0,
+          "energy": 1.0850443428103726e-16,
+          "nonnegative_t": 0.0
+        },
+        "readback": {
+          "sum": 7.105427357601002e-15,
+          "bounds": 0.0,
+          "energy": 1.0850443428103726e-16,
+          "nonnegative_t": 0.0
+        }
+      },
+      "diagnostics": {
+        "renewable_available_MWh": 301349.94756473484,
+        "renewable_used_MWh": 238405.91934858786,
+        "curtailment_MWh": 62944.02821614697,
+        "renewable_utilization_pct": 79.11264670035305,
+        "curtailment_rate_pct": 20.887353299646943,
+        "worst_error_pp": 0.24135168483366343
+      },
+      "input_relative_errors": [
+        0.00020550760378132044,
+        0.00020550760378142962,
+        0.00020550760378151595
+      ]
+    },
+    {
+      "N": 12,
+      "seed": 7,
+      "D_min": 0.0005480202767501563,
+      "CBC_t": 0.0005480202766990498,
+      "status": "reachable",
+      "certificate": {
+        "lower": "576460752302482171/1051896757765672009728",
+        "upper": "4/7299",
+        "gap": "941317/1051896757765672009728",
+        "lower_float": 0.0005480202767493449,
+        "upper_float": 0.0005480202767502398,
+        "proof_weights": [
+          "35249031889406049/562949953421312",
+          "65/2",
+          "16",
+          "20",
+          "11/2",
+          "3",
+          "21/2",
+          "7295176239499623/562949953421312",
+          "81/2",
+          "4",
+          "48",
+          "7700191656754631/70368744177664"
+        ],
+        "max_repair": "7/562949953421312",
+        "dual_y": [
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "dual_z": "3159121810129739/1152921504606846976",
+        "dual_scale": "4503599627370499/4503599627370496",
+        "optimality_certified": true,
+        "evidence_note": null
+      },
+      "residuals": {
+        "original": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 0.0,
+          "nonnegative_t": 0.0
+        },
+        "solution": {
+          "sum": 1.2434497875801753e-14,
+          "bounds": 0.0,
+          "energy": 1.1753617544901875e-16,
+          "nonnegative_t": 0.0
+        },
+        "readback": {
+          "sum": 1.2434497875801753e-14,
+          "bounds": 0.0,
+          "energy": 1.1753617544901875e-16,
+          "nonnegative_t": 0.0
+        }
+      },
+      "diagnostics": {
+        "renewable_available_MWh": 301246.71017262636,
+        "renewable_used_MWh": 234382.495303337,
+        "curtailment_MWh": 66864.2148692894,
+        "renewable_utilization_pct": 77.80416761033722,
+        "curtailment_rate_pct": 22.19583238966279,
+        "worst_error_pp": 1.5498307748495108
+      },
+      "input_relative_errors": [
+        0.0005480202767502738,
+        0.0005480202767500912,
+        0.0005480202767502037
+      ]
+    },
+    {
+      "N": 12,
+      "seed": 2026,
+      "D_min": 0.0,
+      "CBC_t": 0.0,
+      "status": "reachable",
+      "certificate": {
+        "lower": "0",
+        "upper": "276675/927759256161854947328",
+        "gap": "276675/927759256161854947328",
+        "lower_float": 0.0,
+        "upper_float": 2.982185283115428e-16,
+        "proof_weights": [
+          "4503599627370491/562949953421312",
+          "7057653613744629/70368744177664",
+          "23",
+          "14",
+          "7599824371187719/562949953421312",
+          "63/2",
+          "678595941745363/8796093022208",
+          "11/2",
+          "36",
+          "16",
+          "8038160611565003/281474976710656",
+          "23/2"
+        ],
+        "max_repair": "5/562949953421312",
+        "dual_y": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "dual_z": "0",
+        "dual_scale": "1",
+        "optimality_certified": true,
+        "evidence_note": null
+      },
+      "residuals": {
+        "original": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 0.0,
+          "nonnegative_t": 0.0
+        },
+        "solution": {
+          "sum": 8.881784197001252e-15,
+          "bounds": 0.0,
+          "energy": 1.586205318774994e-16,
+          "nonnegative_t": 0.0
+        },
+        "readback": {
+          "sum": 8.881784197001252e-15,
+          "bounds": 0.0,
+          "energy": 1.586205318774994e-16,
+          "nonnegative_t": 0.0
+        }
+      },
+      "diagnostics": {
+        "renewable_available_MWh": 301411.88999999996,
+        "renewable_used_MWh": 240432.5002958017,
+        "curtailment_MWh": 60979.389704198264,
+        "renewable_utilization_pct": 79.76875109200294,
+        "curtailment_rate_pct": 20.23124890799705,
+        "worst_error_pp": 0.41475270681625886
+      },
+      "input_relative_errors": [
+        2.2633399926595875e-17,
+        1.586205318774994e-16,
+        1.1899652469853858e-17
+      ]
+    },
+    {
+      "N": 24,
+      "seed": 42,
+      "D_min": 0.0,
+      "CBC_t": 0.0,
+      "status": "reachable",
+      "certificate": {
+        "lower": "0",
+        "upper": "83/1027242927505539072",
+        "gap": "83/1027242927505539072",
+        "lower_float": 0.0,
+        "upper_float": 8.079880403903043e-17,
+        "proof_weights": [
+          "6",
+          "5",
+          "22517998136852477/281474976710656",
+          "2",
+          "5829039671908625/140737488355328",
+          "11/2",
+          "5/2",
+          "2417104277040807/70368744177664",
+          "50",
+          "2739614056780447/281474976710656",
+          "10",
+          "12",
+          "6",
+          "2814749767106643/140737488355328",
+          "6",
+          "10",
+          "5/2",
+          "41/2",
+          "29/2",
+          "4",
+          "6",
+          "2",
+          "7",
+          "8"
+        ],
+        "max_repair": "3/281474976710656",
+        "dual_y": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "dual_z": "0",
+        "dual_scale": "1",
+        "optimality_certified": true,
+        "evidence_note": null
+      },
+      "residuals": {
+        "original": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 0.0,
+          "nonnegative_t": 0.0
+        },
+        "solution": {
+          "sum": 1.0658141036401503e-14,
+          "bounds": 0.0,
+          "energy": 5.159441703697124e-17,
+          "nonnegative_t": 0.0
+        },
+        "readback": {
+          "sum": 1.0658141036401503e-14,
+          "bounds": 0.0,
+          "energy": 5.159441703697124e-17,
+          "nonnegative_t": 0.0
+        }
+      },
+      "diagnostics": {
+        "renewable_available_MWh": 301411.8900000001,
+        "renewable_used_MWh": 241407.10920830205,
+        "curtailment_MWh": 60004.780791697995,
+        "renewable_utilization_pct": 80.09209895744391,
+        "curtailment_rate_pct": 19.90790104255608,
+        "worst_error_pp": 0.738100572257224
+      },
+      "input_relative_errors": [
+        5.159441703697124e-17,
+        2.0386035717474697e-18,
+        1.6690369248843692e-17
+      ]
+    },
+    {
+      "N": 24,
+      "seed": 7,
+      "D_min": 0.0,
+      "CBC_t": 0.0,
+      "status": "reachable",
+      "certificate": {
+        "lower": "0",
+        "upper": "2512373/11133111073942259367936",
+        "gap": "2512373/11133111073942259367936",
+        "lower_float": 0.0,
+        "upper_float": 2.2566675058873396e-16,
+        "proof_weights": [
+          "10133099161583625/1125899906842624",
+          "1563553275344817/70368744177664",
+          "15/2",
+          "5/2",
+          "4",
+          "6",
+          "19/2",
+          "11",
+          "2274089125681865/70368744177664",
+          "7/2",
+          "4158604315042597/70368744177664",
+          "8",
+          "24",
+          "5/2",
+          "33/2",
+          "3/2",
+          "2",
+          "8293941270849031/1125899906842624",
+          "35/2",
+          "6",
+          "2",
+          "70",
+          "11",
+          "30"
+        ],
+        "max_repair": "9/1125899906842624",
+        "dual_y": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "dual_z": "0",
+        "dual_scale": "1",
+        "optimality_certified": true,
+        "evidence_note": null
+      },
+      "residuals": {
+        "original": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 5.045186797019044e-18,
+          "nonnegative_t": 0.0
+        },
+        "solution": {
+          "sum": 7.993605777301127e-15,
+          "bounds": 0.0,
+          "energy": 2.3248559929111363e-16,
+          "nonnegative_t": 0.0
+        },
+        "readback": {
+          "sum": 7.993605777301127e-15,
+          "bounds": 0.0,
+          "energy": 2.3248559929111363e-16,
+          "nonnegative_t": 0.0
+        }
+      },
+      "diagnostics": {
+        "renewable_available_MWh": 301411.89,
+        "renewable_used_MWh": 234559.94400725054,
+        "curtailment_MWh": 66851.9459927495,
+        "renewable_utilization_pct": 77.82040184521273,
+        "curtailment_rate_pct": 22.17959815478729,
+        "worst_error_pp": 1.5335965399740097
+      },
+      "input_relative_errors": [
+        4.7213758986662366e-17,
+        2.3248559929111363e-16,
+        1.434430732711083e-16
+      ]
+    },
+    {
+      "N": 24,
+      "seed": 2026,
+      "D_min": 0.0,
+      "CBC_t": 0.0,
+      "status": "reachable",
+      "certificate": {
+        "lower": "0",
+        "upper": "11767/16435886840088625152",
+        "gap": "11767/16435886840088625152",
+        "lower_float": 0.0,
+        "upper_float": 7.159333788608969e-16,
+        "proof_weights": [
+          "22517998136852985/2251799813685248",
+          "6804769841799265/140737488355328",
+          "18",
+          "4",
+          "6436292532018295/2251799813685248",
+          "3/2",
+          "8",
+          "2",
+          "9",
+          "56",
+          "43/2",
+          "4",
+          "3",
+          "15/2",
+          "9",
+          "4534570061712427/70368744177664",
+          "12",
+          "12",
+          "27/2",
+          "4",
+          "6",
+          "2557959990767281/70368744177664",
+          "6",
+          "6"
+        ],
+        "max_repair": "505/2251799813685248",
+        "dual_y": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "dual_z": "0",
+        "dual_scale": "1",
+        "optimality_certified": true,
+        "evidence_note": null
+      },
+      "residuals": {
+        "original": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 2.3065329474797962e-17,
+          "nonnegative_t": 0.0
+        },
+        "solution": {
+          "sum": 2.2426505097428162e-13,
+          "bounds": 0.0,
+          "energy": 2.9939681910399174e-16,
+          "nonnegative_t": 0.0
+        },
+        "readback": {
+          "sum": 2.2426505097428162e-13,
+          "bounds": 0.0,
+          "energy": 2.9939681910399174e-16,
+          "nonnegative_t": 0.0
+        }
+      },
+      "diagnostics": {
+        "renewable_available_MWh": 301411.88999999996,
+        "renewable_used_MWh": 238723.18043737946,
+        "curtailment_MWh": 62688.70956262043,
+        "renewable_utilization_pct": 79.20164676893783,
+        "curtailment_rate_pct": 20.79835323106213,
+        "worst_error_pp": 0.15235161624885052
+      },
+      "input_relative_errors": [
+        1.3214985118431785e-16,
+        3.10858750713471e-17,
+        2.9939681910399174e-16
+      ]
+    },
+    {
+      "N": 48,
+      "seed": 42,
+      "D_min": 0.0,
+      "CBC_t": 0.0,
+      "status": "reachable",
+      "certificate": {
+        "lower": "0",
+        "upper": "659/2054485855011078144",
+        "gap": "659/2054485855011078144",
+        "lower_float": 0.0,
+        "upper_float": 3.2076151723928348e-16,
+        "proof_weights": [
+          "844424930131967/140737488355328",
+          "5",
+          "6",
+          "5449236797401269/140737488355328",
+          "2128425830800027/562949953421312",
+          "2",
+          "15/2",
+          "4",
+          "4",
+          "40",
+          "2",
+          "5/2",
+          "36",
+          "11",
+          "8",
+          "1/2",
+          "2",
+          "6",
+          "4",
+          "36",
+          "2",
+          "1",
+          "4",
+          "6",
+          "6",
+          "2",
+          "4",
+          "5/2",
+          "6",
+          "1/2",
+          "8",
+          "5/2",
+          "2",
+          "8",
+          "5",
+          "2",
+          "1/2",
+          "2",
+          "19/2",
+          "608968969017159/17592186044416",
+          "2",
+          "6408690848831925/562949953421312",
+          "2",
+          "2",
+          "13/2",
+          "2",
+          "2",
+          "4"
+        ],
+        "max_repair": "1/140737488355328",
+        "dual_y": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "dual_z": "0",
+        "dual_scale": "1",
+        "optimality_certified": true,
+        "evidence_note": null
+      },
+      "residuals": {
+        "original": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 0.0,
+          "nonnegative_t": 0.0
+        },
+        "solution": {
+          "sum": 7.105427357601002e-15,
+          "bounds": 0.0,
+          "energy": 3.402311085739896e-16,
+          "nonnegative_t": 0.0
+        },
+        "readback": {
+          "sum": 7.105427357601002e-15,
+          "bounds": 0.0,
+          "energy": 3.402311085739896e-16,
+          "nonnegative_t": 0.0
+        }
+      },
+      "diagnostics": {
+        "renewable_available_MWh": 301411.8900000001,
+        "renewable_used_MWh": 233798.14466357886,
+        "curtailment_MWh": 67613.74533642113,
+        "renewable_utilization_pct": 77.56765821798828,
+        "curtailment_rate_pct": 22.432341782011687,
+        "worst_error_pp": 1.7863401671984072
+      },
+      "input_relative_errors": [
+        3.402311085739896e-16,
+        1.74689535304468e-16,
+        2.684580121198659e-16
+      ]
+    },
+    {
+      "N": 48,
+      "seed": 7,
+      "D_min": 0.0,
+      "CBC_t": 0.0,
+      "status": "reachable",
+      "certificate": {
+        "lower": "0",
+        "upper": "29/114138103056171008",
+        "gap": "29/114138103056171008",
+        "lower_float": 0.0,
+        "upper_float": 2.54078166917915e-16,
+        "proof_weights": [
+          "19/2",
+          "5/2",
+          "13/2",
+          "26",
+          "2",
+          "1",
+          "5/2",
+          "7247980650299653/281474976710656",
+          "4",
+          "4",
+          "9/2",
+          "3324558077064333/70368744177664",
+          "2",
+          "2",
+          "24",
+          "32",
+          "11",
+          "2",
+          "6",
+          "1",
+          "10",
+          "6",
+          "6",
+          "3/2",
+          "3",
+          "1/2",
+          "15",
+          "2",
+          "6734308156711735/562949953421312",
+          "1",
+          "1/2",
+          "1/2",
+          "2",
+          "2",
+          "1/2",
+          "4",
+          "11",
+          "2",
+          "1",
+          "10",
+          "1/2",
+          "2",
+          "1/2",
+          "42",
+          "7",
+          "1/2",
+          "2",
+          "2557286757381719/562949953421312"
+        ],
+        "max_repair": "0",
+        "dual_y": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "dual_z": "0",
+        "dual_scale": "1",
+        "optimality_certified": true,
+        "evidence_note": null
+      },
+      "residuals": {
+        "original": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 2.941760823410416e-17,
+          "nonnegative_t": 0.0
+        },
+        "solution": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 2.54078166917915e-16,
+          "nonnegative_t": 0.0
+        },
+        "readback": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 2.54078166917915e-16,
+          "nonnegative_t": 0.0
+        }
+      },
+      "diagnostics": {
+        "renewable_available_MWh": 301411.89,
+        "renewable_used_MWh": 241313.27467432583,
+        "curtailment_MWh": 60098.61532567413,
+        "renewable_utilization_pct": 80.06096729439766,
+        "curtailment_rate_pct": 19.939032705602333,
+        "worst_error_pp": 0.7069689092109712
+      },
+      "input_relative_errors": [
+        2.54078166917915e-16,
+        1.3071063338315413e-16,
+        2.6291975723085738e-17
+      ]
+    },
+    {
+      "N": 48,
+      "seed": 2026,
+      "D_min": 0.0,
+      "CBC_t": 0.0,
+      "status": "reachable",
+      "certificate": {
+        "lower": "0",
+        "upper": "265/4108971710022156288",
+        "gap": "265/4108971710022156288",
+        "lower_float": 0.0,
+        "upper_float": 6.449302129621405e-17,
+        "proof_weights": [
+          "3",
+          "19/2",
+          "7/2",
+          "2251799813685247/281474976710656",
+          "8",
+          "3/2",
+          "1/2",
+          "3/2",
+          "1",
+          "3/2",
+          "15/2",
+          "2",
+          "2",
+          "16",
+          "8",
+          "7145470476827791/562949953421312",
+          "9",
+          "5/2",
+          "32",
+          "9/2",
+          "1",
+          "1/2",
+          "908707788720111/562949953421312",
+          "3",
+          "23/2",
+          "2",
+          "5",
+          "2",
+          "28",
+          "2",
+          "3/2",
+          "26",
+          "2",
+          "5855819231577683/281474976710656",
+          "2",
+          "2",
+          "3",
+          "1/2",
+          "10",
+          "2",
+          "7568540191709039/281474976710656",
+          "18",
+          "4",
+          "1",
+          "38",
+          "6",
+          "1/2",
+          "10"
+        ],
+        "max_repair": "1/281474976710656",
+        "dual_y": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "dual_z": "0",
+        "dual_scale": "1",
+        "optimality_certified": true,
+        "evidence_note": null
+      },
+      "residuals": {
+        "original": {
+          "sum": 0.0,
+          "bounds": 0.0,
+          "energy": 1.3492982689411645e-17,
+          "nonnegative_t": 0.0
+        },
+        "solution": {
+          "sum": 3.552713678800501e-15,
+          "bounds": 0.0,
+          "energy": 7.471455674693477e-17,
+          "nonnegative_t": 0.0
+        },
+        "readback": {
+          "sum": 3.552713678800501e-15,
+          "bounds": 0.0,
+          "energy": 7.471455674693477e-17,
+          "nonnegative_t": 0.0
+        }
+      },
+      "diagnostics": {
+        "renewable_available_MWh": 301411.88999999996,
+        "renewable_used_MWh": 239607.20320315592,
+        "curtailment_MWh": 61804.68679684411,
+        "renewable_utilization_pct": 79.49494069499248,
+        "curtailment_rate_pct": 20.50505930500755,
+        "worst_error_pp": 0.14094230980579425
+      },
+      "input_relative_errors": [
+        7.471455674693477e-17,
+        4.936158422835207e-17,
+        4.14311354196837e-17
+      ]
+    }
+  ],
+  "independent_lp_calls": 9,
+  "dispatch_calls": 0,
+  "main_manifest_sha256": "f6b5eb45e928bf795313745c56a22e984e70e3b8665e7dceb280789b1bb464c4",
+  "freeze_sha256": "609bfc8407bf9ca1b6a3437c7b3b2aa31e98b8e7cededf431f22e0ba089fc2bc",
+  "audit_source_sha256": "70640e53df2c3eb6360a61d057312b717f128def5666195cfb3e8d2eeda13136",
+  "artifacts": {
+    "N12_seed2026/audit.json": "8036fad0d24493919a7238049f49ee195c1589643a2cd9e1d8f2ee7f8434fdd2",
+    "N12_seed2026/cbc.log": "1e8788aa992c0e5df332764bd02f05929155bdab206452f6c193c312b64cef93",
+    "N12_seed2026/certificate.json": "11fc028faf757783b681f6c692c669845fe9824e0f96bd2e9a8e728deb26f1f6",
+    "N12_seed2026/model.lp": "211ecebee29e4588c5dd9ae7e6ce01eb6b0eb10b443bc9fe44303d70387812f2",
+    "N12_seed2026/model.mps": "59f3a7291e9d71c190a98479daa7a5304e60af2fdfc414d11e2768ababc75b96",
+    "N12_seed2026/solution.json": "ef6f8ade6bc030156adf74eb5eac51fd4d9f9e04c4eeea373bee2e45a59c8d21",
+    "N12_seed2026/weights.csv": "c766c24b74ffa72f2be66ac31c72ccd25c11f86d1c756c2e8904df78be848354",
+    "N12_seed2026/weights_native.npy": "e8126a1a401bef3dfdf9231afe6d961562231f910ea2ed8ae96090e9e84712a4",
+    "N12_seed42/audit.json": "70128556298dc21e78116e2a125d68a3818999d1f4664ecafe0bf21abd51ec57",
+    "N12_seed42/cbc.log": "ffaba11864736cc7cc3a75bf986c1c4aa7bd3854d89b66b8e0ea5fa92be20c17",
+    "N12_seed42/certificate.json": "7e8863a8808072dc02fbee04327e578f282ae8db9814e39438b710bb204e41e3",
+    "N12_seed42/model.lp": "15c559cc841b9d851ee2f0a79ab3af8d64abc329efac4a4a760c935991fdc0b8",
+    "N12_seed42/model.mps": "4d8c0d1c61e322bcb18e80790806f4179f00d1c5ee93f279450da309557b3dcf",
+    "N12_seed42/solution.json": "716025bf2da6315d7a3929b03a71406557e4ebe253ed6c37ad251d833bf41131",
+    "N12_seed42/weights.csv": "10cc24eb57c87b24adc620125aecaf9629af7664c667f87f2125baa8cd3472c9",
+    "N12_seed42/weights_native.npy": "069910a4e0749fe164e5501b1391917379539e98f0a8c482d22a1d063b3ca7ef",
+    "N12_seed7/audit.json": "b1af2349dec1b57641d0428a17585632cf4130d1ff9fe6c653cf538a5fb9f08b",
+    "N12_seed7/cbc.log": "3eb5ad009346385063902cc1d898ba97074a438c8e8b0c8ef21efdb95bb2306e",
+    "N12_seed7/certificate.json": "2ded0d4846704d2620bc94e26831af4b19c587cfc4538d2abfeaef3da9d08eab",
+    "N12_seed7/model.lp": "c1436e09146daf9ffdb0ecc7882fe40018f49c7a2776a47bea74fd9877f47d10",
+    "N12_seed7/model.mps": "fa2117b39a7148e5241759ccf30c71d623dbcca1a07c2dbad022d17dfa54eb8b",
+    "N12_seed7/solution.json": "50b73b996d390743afb292a35ba9e03c330b9a5a4aa601c5d2d4a6a159c7ec61",
+    "N12_seed7/weights.csv": "b55b1cd8801350504034da5b417c88d1af240662b8bde880a9dd16e4c99e2a2a",
+    "N12_seed7/weights_native.npy": "d81efa0ad5fba9d924dacb4eae73a16f3ae29d00fcaa3d939408053bc523b23f",
+    "N24_seed2026/audit.json": "e11d2a540e12db3f6864badf859fd3faa6bec10804232cdfe6e7ab8997bc314c",
+    "N24_seed2026/cbc.log": "988e9932bd930e87cafad6f643e6e1be753b5534e4acd47244aab4559acde428",
+    "N24_seed2026/certificate.json": "ed52ae2faf5ad0cd2f008bc990351b5ac83b2afa300b3d37d9a97c931a295758",
+    "N24_seed2026/model.lp": "a7c8979c623bb13b156b14df7fee9f18f739606c80898645bb523bcb86166a91",
+    "N24_seed2026/model.mps": "a18fb35fe4c1f070d7726b24ad25ff4a25e8a637a5e75e1ab7618fe445ebab84",
+    "N24_seed2026/solution.json": "2852323057152ff5587a83a1cc4a2bcf70d0a861b4d92c5f7935c99626d35946",
+    "N24_seed2026/weights.csv": "758997b2f33ce24e78311306c283f6b06e8f62fcbbbad722e7f5a5d09c449079",
+    "N24_seed2026/weights_native.npy": "e54dd3f66d9d8ac774f665b7925ae784dc74d308e8431b669ae2a26f9861fc40",
+    "N24_seed42/audit.json": "e7efffa2dc2dfb24f53dbe7a6280e6a630f171e4a66b8810f32c700ba381caf9",
+    "N24_seed42/cbc.log": "8344508f8a0dcc63b7977a51fcbffb18b6bdb751983f8fe4da45ee10182fb920",
+    "N24_seed42/certificate.json": "f8da4e2dfbc7d9942015033e7da58773241992289948668a3d093a9188db72a3",
+    "N24_seed42/model.lp": "cb80aa72f2f16590ba1d2c7b4e65555e9f524d2c3ed68771940c1390fb91ba94",
+    "N24_seed42/model.mps": "ae045992449c30e4769e27e8ff82dec160a5b4efda7213a1fdfe52b30436a004",
+    "N24_seed42/solution.json": "f101b7b2ab11db57a2220a25cdba994e71cda8a9aa16b50e9d1803044e6d901a",
+    "N24_seed42/weights.csv": "e35de8616de3b90e2bbc1d4302d8ac02df8c5fa9966d5f8b904c0e670231f209",
+    "N24_seed42/weights_native.npy": "91e494878ecf077c0fb1688f0913523e69e636473880c2d451449c0ab5862873",
+    "N24_seed7/audit.json": "3cdaf9f9fd16ee3d0e95a908120654cc79cfa4df43951cb1021650246fa05279",
+    "N24_seed7/cbc.log": "f5f87aa856b9eb3565beffa68036839a765bbaf6ea9b27caf7ab623f47bc23ab",
+    "N24_seed7/certificate.json": "96da131f034532324d4d22eae7786c25ce8e938381d08fcc23b642c278ac4a30",
+    "N24_seed7/model.lp": "c334b211005efb4cc21f297072df8fe831c929b13d7820c21d2058e8639cda81",
+    "N24_seed7/model.mps": "516e2d1391a9c834d43dddead43ff90667df7cc657f66c5292433fd9c0961cb9",
+    "N24_seed7/solution.json": "f3b4a77c541ef4de94719f74ae98f8a93b406c41befc34df9e11e7e4c0f33a94",
+    "N24_seed7/weights.csv": "af62ec72af818c207996f9c2877d9f2479d1869a4beb590bd51cff629f913be9",
+    "N24_seed7/weights_native.npy": "138a108b8ec6ee19d1bf2f174381736993c21b0cd39834868b3ee76fc8e54196",
+    "N48_seed2026/audit.json": "8830e066965ce2eda113fd7936cf546e82b2a2bb0e6f6df1012e7281462dcc5c",
+    "N48_seed2026/cbc.log": "123c4e211841e93c82cdd4189bbd90c89a3e90854ef132baba9ad75157156b05",
+    "N48_seed2026/certificate.json": "33bc9835201e73f9bbd05f06a867494393c573ec034afb7d4170fb1476ca475f",
+    "N48_seed2026/model.lp": "47467c17114ccf6ebfaf51cff900241c3faa39ffe7d9d89b930dcdf7099921a7",
+    "N48_seed2026/model.mps": "b345a66962695f043259942354fcd800dc19aee526ed30e98e7d35f7a5081b2b",
+    "N48_seed2026/solution.json": "9e7f97d0abc5661b4a9bd6fe5bc3d57dc8ce94ad7f2878b187241f2e4fb3a060",
+    "N48_seed2026/weights.csv": "12390e522015185591a22288e2eb428443f9a69ec8ee9955bccd2130fcf0edef",
+    "N48_seed2026/weights_native.npy": "8e40c7c6c0e98bc77da591f90bea09085e7cead67381a4b443715b8fcb56a4c7",
+    "N48_seed42/audit.json": "fa0c11558c7af3268270fbec2b1babcfa6a11326d53a5c5ff33ef9149b28880e",
+    "N48_seed42/cbc.log": "97d696b594a44ef731b9ef55363839d8e009738a867238d6e25b29244acfd88a",
+    "N48_seed42/certificate.json": "db8d0415ed618d035167238645355dabd61bb1a2170a06418c06db1dbec14ff9",
+    "N48_seed42/model.lp": "5d42cf957ba0d3a177b41d2ea335683ed4a73187bfc69a593c73b2774c7d8ca2",
+    "N48_seed42/model.mps": "92189c4fa960f6bd7971316aa4f47ac5445b2ca777c37063f7b4c49a7ea1ac16",
+    "N48_seed42/solution.json": "945a6bb77ba11d2d72c5804797c8af1c41da6dad0f0d6b6af7352b831d61876c",
+    "N48_seed42/weights.csv": "aff03ffdce2cd2fad5231158622a3283ba6148037d0b92b904e268b7fb532864",
+    "N48_seed42/weights_native.npy": "6c77ccddde4d0f80c55dff9b5d27695e4be6c7848621c0f099d50eb3e529a552",
+    "N48_seed7/audit.json": "7436211cff79e971d8da36b1dfd924929fd10b5d214a70d1c45c433797762e63",
+    "N48_seed7/cbc.log": "870387a62b1e38342ae288321fb1783a8516b40607bad105a808df3b3abede42",
+    "N48_seed7/certificate.json": "2e1b66da41dfd8d621504d6f773ae118230d8acc29f72e143e67d655e43a0dee",
+    "N48_seed7/model.lp": "6a8adb6f6be9cbc6ca2f9ce47577ae355d595f9f65270699077126c9d073c3f2",
+    "N48_seed7/model.mps": "6746d1b2eba725d515a3d5da502ae990176838d90c454f91a5c3ba40296033db",
+    "N48_seed7/solution.json": "76db47656f20284e23aa74170cbd77b79732ca7479a883b0b38d9deda01f0dc9",
+    "N48_seed7/weights.csv": "ff3ecf78e82291e000cf920a1e39d9ec2a320f552bce60fe100178e478cfe897",
+    "N48_seed7/weights_native.npy": "77fe751a7c37cd32ac4dd20d63ce85c051efa407ae0efa16fdd15e7f8e073c62"
+  }
+}

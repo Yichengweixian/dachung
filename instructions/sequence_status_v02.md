@@ -4,6 +4,7 @@
 
 | 单元 | 当前状态 | 证据 |
 |---|---|---|
+| U11R08 | complete / supported（固定日集合的输入电量可行性；U11比例门槛仍未共同通过） | results/annual/U11R08-v02/、independent_audit/report.json；9次主LP与9次独立LP均Optimal，零新增调度 |
 | U11R07 | complete / inconclusive（只读诊断，数值根因未证实） | results/annual/U11R07-v01/、U11R07-v01-independent-audit.json；16份LP逐字节一致、零求解调用 |
 | U11R06 | blocked / invalid（presolve off 全矩阵在第44次权重LP停） | results/annual/U11R06-v01/、U11R06-v01-partial-audit.json；43次LP与12次调度Optimal，矩阵未完成 |
 | U11R05 | complete / supported（只限单模型presolve off诊断） | results/annual/U11R05-v01/、U11R05-v01-independent-audit.json；2次Optimal且重复差0 |
@@ -22,3 +23,4 @@
 | U14 | complete / 材料单元不设verdict（T4同步完成，换人抽查待办） | docs/revisions/U14-T4-v01/README.md；results/materials/U14-T4-v01-check04/number_check.json；旧版全部保留 |
 
 - 2026-09-23 T4：六份修订材料和86行出处同步完成，最终check04为consistency_passed，56项测试通过；历史研究判定不变。机器抽样不等于decision-rule C外部换人审查，正式排版和新UI集成不在本轮范围。
+- 2026-09-27 U11R08：三个N均在三seed下满足2%输入电量门槛；附加比例重建没有共同N满足1个百分点。下一步只研究代表日选取，不改权重流程和验收标准。

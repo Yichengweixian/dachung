@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "original_artifact_hashes": {
+    "U11R02": 879,
+    "U11R03": 542
+  },
+  "freeze_hashes": 574,
+  "groups": 9,
+  "representative_days": 252,
+  "annual_hours": 8760,
+  "time_step_hours": 1,
+  "power_unit": "MW",
+  "energy_unit": "MWh",
+  "clustering_calls": 0,
+  "saved_curves_exact_match": true,
+  "annual_target_MWh": [
+    1067113.8,
+    98881.89,
+    202530.0
+  ]
+}

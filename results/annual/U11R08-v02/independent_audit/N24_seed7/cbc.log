@@ -1,0 +1,26 @@
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - C:\Users\lenovo\Documents\ChatGPT\大创\u11r08-env\Lib\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 12 COLUMNS
+At line 188 RHS
+At line 196 BOUNDS
+At line 245 ENDATA
+Problem MODEL has 7 rows, 25 columns and 174 elements
+Coin0008I MODEL read with 0 errors
+primalTolerance was changed from 1e-07 to 1e-09
+integerTolerance was changed from 1e-07 to 1e-09
+ratioGap was changed from 0 to 0
+allowableGap was changed from 1e-10 to 0
+Presolve 7 (0) rows, 25 (0) columns and 174 (0) elements
+Perturbing problem by 0.001% of 0.038077523 - largest nonzero change 8.83261e-06 ( 0.023196388%) - largest zero change 8.7196078e-06
+0  Obj 0.00013570653 Primal inf 262.56842 (4)
+7  Obj 0.00026242432
+Optimal - objective value 0
+Optimal objective 0 - 7 iterations time 0.002
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.00   (Wallclock seconds):       0.00
+

@@ -1,0 +1,15 @@
+{
+  "failed_run": "U11R08-v01",
+  "replacement_run": "U11R08-v02",
+  "failed_run_unchanged": true,
+  "cause": "NumPy bool in supplementary ratio JSON",
+  "minimal_fix": "Convert supplementary ratio error to builtin float before comparison",
+  "frozen_model_changed": false,
+  "v01_lp_calls": 1,
+  "v01_dispatch_calls": 0,
+  "regression_test": "test_saved_dispatch_diagnostic_serializes_without_solver",
+  "failed_source_sha256": {
+    "run_u11r08_feasibility.py": "9084548f3f3b7942e128131799ef11f1b7ce92f68b782f419b47af3bdd5211be",
+    "src/input_energy_feasibility.py": "01cbe4eb5796391e327aa234797f54a68de544ac1ea2278f2ac251297110710c"
+  }
+}

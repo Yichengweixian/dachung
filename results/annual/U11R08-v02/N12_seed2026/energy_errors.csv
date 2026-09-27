@@ -1,0 +1,4 @@
+channel,target_MWh,weighted_MWh,signed_relative_error,absolute_relative_error
+load,1067113.8,1067113.8,0,0
+wind,98881.889999999999,98881.889999999985,-1.1102230246251565e-16,1.1102230246251565e-16
+solar,202530,202530,0,0

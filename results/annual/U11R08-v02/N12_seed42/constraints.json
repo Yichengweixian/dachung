@@ -1,0 +1,71 @@
+{
+  "original": {
+    "passed": true,
+    "bound_residual": 0.0,
+    "sum_residual": 0.0,
+    "weight_sum": 365.0,
+    "normalized_residual": 0.0,
+    "weighted_MWh": [
+      1071792.2,
+      76929.45,
+      193994.38
+    ],
+    "signed_relative_errors": [
+      0.00438416221400173,
+      -0.22200667887719383,
+      -0.04214496617785013
+    ],
+    "absolute_relative_errors": [
+      0.00438416221400173,
+      0.22200667887719383,
+      0.04214496617785013
+    ],
+    "max_input_relative_error": 0.22200667887719383
+  },
+  "solution": {
+    "passed": true,
+    "bound_residual": 0.0,
+    "sum_residual": 0.0,
+    "weight_sum": 365.0,
+    "normalized_residual": 1.6650634863946134e-16,
+    "weighted_MWh": [
+      1067333.1,
+      98861.56901972872,
+      202488.37854500613
+    ],
+    "signed_relative_errors": [
+      0.00020550760378146293,
+      -0.00020550760378146293,
+      -0.00020550760378157396
+    ],
+    "absolute_relative_errors": [
+      0.00020550760378146293,
+      0.00020550760378146293,
+      0.00020550760378157396
+    ],
+    "max_input_relative_error": 0.00020550760378157396
+  },
+  "readback": {
+    "passed": true,
+    "bound_residual": 0.0,
+    "sum_residual": 0.0,
+    "weight_sum": 365.0,
+    "normalized_residual": 1.6650634863946134e-16,
+    "weighted_MWh": [
+      1067333.1,
+      98861.56901972872,
+      202488.37854500613
+    ],
+    "signed_relative_errors": [
+      0.00020550760378146293,
+      -0.00020550760378146293,
+      -0.00020550760378157396
+    ],
+    "absolute_relative_errors": [
+      0.00020550760378146293,
+      0.00020550760378146293,
+      0.00020550760378157396
+    ],
+    "max_input_relative_error": 0.00020550760378157396
+  }
+}
