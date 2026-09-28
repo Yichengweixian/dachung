@@ -1,5 +1,14 @@
 # 当前状态
 
+## 2026-09-28 U11R09固定权重双门槛验证完成
+
+原样使用U11R08-v02九组正式权重，对相同代表日重新执行252次调度MILP及9次重复性
+调度；九组D均≤2%，但N=12/24/48分别在seed=7/7/42的E超过1个百分点，没有共同N
+通过双门槛。261次CBC均Optimal，重复最大差0，物理最大残差约7.37e-12；独立只读
+审计零求解调用并通过，107项全量测试通过。工程complete、verdict=inconclusive。
+U11R06 invalid、U11R07 inconclusive、U11R08 supported保持原样。证据见
+results/annual/U11R09-v01/、U11R09-v01-independent-audit.json及本单元findings。
+
 ## 2026-09-26 U11R07只读诊断完成
 
 对U11R06的N24/seed42失败LP重放16阶段，保存的LP逐字节一致；前一阶段解代入失败阶段最大违约约3.0e-9，主要是w_010固定上界。简单区间无矛盾，尚不能证明数学无解或CBC根因。独立审计26项冻结哈希、120项产物哈希和16份LP通过；零新增优化调用，75项测试通过。工程complete、verdict=inconclusive。U11R06仍invalid，全项目研究未完成，无PPT。证据见results/annual/U11R07-v01/、U11R07-v01-independent-audit.json。

@@ -26,6 +26,8 @@
 | U11R05 | 单模型CBC presolve诊断 | exploratory | complete / supported（仅单实例） | U11R04及只读诊断v02 | results/annual/U11R05-v01/、独立审计 |
 | U11R06 | CBC presolve off 的完整受限权重矩阵修订 | exploratory | blocked / invalid（N24/seed42主计算lex_014 Infeasible） | U11R04、U11R05 | results/annual/U11R06-v01/、部分审计 |
 | U11R07 | U11R06失败LP固定带与序列化只读诊断 | exploratory | complete / inconclusive（根因未证实） | U11R06 | results/annual/U11R07-v01/、独立审计 |
+| U11R08 | 现有代表日集合的年度输入电量保真可行性 | exploratory | complete / supported（九组输入电量可达） | U11R03、U11R07 | results/annual/U11R08-v02/、独立审计 |
+| U11R09 | R08固定权重的调度双门槛验证 | exploratory | complete / inconclusive（无共同N通过双门槛） | U11R08、U11R02、U11R03 | results/annual/U11R09-v01/、独立审计 |
 | U12 | 遗传算法/粒子群增强 | exploratory | 由 U12R01 覆盖 | U09R01 | — |
 | U12R01 | 三种子 GA 与网格对照 | exploratory | complete / inconclusive | U09R01 | results/ga/U12R01-v01/ |
 | U12R02 | 固定89次预算GA及10种子验证 | exploratory | complete / supported | U09R01、U12R01 | results/ga/U12R02-v02/ |
@@ -42,6 +44,8 @@ U00 → U06 → U07 → U08。完成后即可支撑一次有"优化模型 + 渗�
 继续 U09 → U10 → U11 → U12 → U13 → U14。U09 是本项目核心创新点；U10/U11 把结论从构造数据搬到真实数据与全年尺度。
 
 ## Backlog（意外发现与暂缓项，进入前先在本表登记）
+
+- 2026-09-28 U11R09：原样使用U11R08-v02权重重新完成252次主调度和9次重复调度。九组D均≤2%，但N=12/24/48分别在seed=7/7/42的E为1.549830774849525、1.5335965399740132、1.7863401671984178个百分点，没有共同N通过。独立只读审计通过，107项测试通过，研究complete/inconclusive。下一步仅改进代表日选取以保留调度相关日内形状与极端状态，不改变权重流程、边界或门槛。
 
 - 2026-09-26 U11R07：失败LP的16个重放模型与保存LP逐字节一致；上一解违反下一固定上界约3.0e-9，简单权重界限仍可行。26项冻结及120项旧产物哈希通过，零新增求解、75项测试通过。没有数学不可行证明或CBC唯一根因；如需改变固定带、算法或求解器，再建并冻结新单元，不在U11R06补考。
 

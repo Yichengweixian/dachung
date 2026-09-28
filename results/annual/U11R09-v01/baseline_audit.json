@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "days": 365,
+  "max_residual": 7.37365724035044e-12,
+  "annual_difference": 5.820766091346741e-11,
+  "annual": {
+    "renewable_available_MWh": 301411.89,
+    "renewable_used_MWh": 239182.38632336078,
+    "curtailment_MWh": 62229.50367663923,
+    "total_load_MWh": 1067113.8,
+    "thermal_generation_MWh": 778838.2356936218,
+    "unserved_MWh": 51884.90244999621,
+    "total_cost_CNY": 808567728.127102,
+    "renewable_utilization_pct": 79.35399838518673,
+    "curtailment_rate_pct": 20.64600161481328
+  }
+}
