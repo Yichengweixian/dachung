@@ -1,0 +1,28 @@
+{
+  "unit": "U11R10-fixed-weights-capacity-transfer",
+  "phase": "pre_run",
+  "tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "count": 117,
+    "elapsed_seconds": 8.870,
+    "new_tests": 7,
+    "formal_solver_calls": 0,
+    "scope": "Test-only solver calls are separate from the 1020-call formal run."
+  },
+  "compile": {
+    "command": ".\\.venv\\Scripts\\python.exe -m compileall -q run_fixed_weights_capacity_transfer.py src/fixed_weights_capacity_transfer.py scripts/audit_fixed_weights_capacity_transfer.py tests/test_fixed_weights_capacity_transfer.py",
+    "exit_code": 0
+  },
+  "diff_check": {
+    "command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --check",
+    "exit_code": 0
+  },
+  "predecessor_audit": {
+    "command": ".\\.venv\\Scripts\\python.exe scripts/audit_energy_calibrated_days_resolved_v02.py U11R08B-v01 --output results/annual/U11R10-predecessor-audit-v01.json",
+    "exit_code": 0,
+    "checked_hashes": 5432,
+    "new_solver_calls": 0
+  },
+  "freeze_sha256": "38e67491c1a997887770cb21c9dfac833ec0ca1168c5bc841c9ff9691fba5e42"
+}

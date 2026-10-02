@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "hashes": {
+    "run_id": "U11R08-v01",
+    "checked_hashes": 5432,
+    "cases": 252,
+    "errors": [],
+    "source_drift_since_run": [],
+    "passed": true
+  },
+  "weight_lp_calls": 540,
+  "dispatch_calls": 252,
+  "max_residual": 7.37365724035044e-12,
+  "max_cost_difference": 0.0,
+  "passing_N": [
+    48
+  ],
+  "max_weight_bound_residual": 2.4799717834866897e-11,
+  "max_lp_normalized_residual": 3.2944333680815263e-10,
+  "max_mps_residual": 3.2952333680817896e-10,
+  "fixed_band": 1e-06,
+  "new_solver_calls": 0,
+  "verdict": "supported",
+  "audit_source_sha256": "9229e1fb525910fbf3f7bd323b07edea90e964944b47c54424f193860c471f9c",
+  "run_manifest_sha256": "d0044037d1c1df24c27a1dcdbd5f3c15708507b7fe34e8706770205b84cc1d74"
+}

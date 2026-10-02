@@ -27,9 +27,9 @@
 | U11R06 | CBC presolve off 的完整受限权重矩阵修订 | exploratory | blocked / invalid（N24/seed42主计算lex_014 Infeasible） | U11R04、U11R05 | results/annual/U11R06-v01/、部分审计 |
 | U11R07 | U11R06失败LP固定带与序列化只读诊断 | exploratory | complete / inconclusive（根因未证实） | U11R06 | results/annual/U11R07-v01/、独立审计 |
 | U11R08B | 1e-6固定带的受限权重完整矩阵修订 | exploratory | complete / supported（当前年度，共同N=48） | U11R06、U11R07 | results/annual/U11R08B-v01/、独立审计v02 |
-
 | U11R08 | 现有代表日集合的年度输入电量保真可行性 | exploratory | complete / supported（九组输入电量可达） | U11R03、U11R07 | results/annual/U11R08-v02/、独立审计 |
 | U11R09 | R08固定权重的调度双门槛验证 | exploratory | complete / inconclusive（无共同N通过双门槛） | U11R08、U11R02、U11R03 | results/annual/U11R09-v01/、独立审计 |
+| U11R10 | R08B固定N48权重的容量迁移验证 | exploratory | complete / supported（两配置六组双门槛） | U11R08B、U11R02 | results/annual/U11R10-v01/、独立审计 |
 | U12 | 遗传算法/粒子群增强 | exploratory | 由 U12R01 覆盖 | U09R01 | — |
 | U12R01 | 三种子 GA 与网格对照 | exploratory | complete / inconclusive | U09R01 | results/ga/U12R01-v01/ |
 | U12R02 | 固定89次预算GA及10种子验证 | exploratory | complete / supported | U09R01、U12R01 | results/ga/U12R02-v02/ |
@@ -46,6 +46,8 @@ U00 → U06 → U07 → U08。完成后即可支撑一次有"优化模型 + 渗�
 继续 U09 → U10 → U11 → U12 → U13 → U14。U09 是本项目核心创新点；U10/U11 把结论从构造数据搬到真实数据与全年尺度。
 
 ## Backlog（意外发现与暂缓项，进入前先在本表登记）
+
+- 2026-10-02 U11R10：不重求权重/聚类，将U11R08B三个N48种子迁移至现有E0_P0、E80_P20；730全年日+288代表日+2重复共1020次全部Optimal，六组E/D均通过，最大E=0.950136672210018，complete/supported仅限两个同年度配置。117项测试、2180项哈希与另进程小时解/成本审计通过，重复差0。E80/seed7仍高估成本3.034236%、缺供5.266373%，未证明容量寻优成本精度；后续先独立分解代表日替代和权重贡献，再决定新方法，跨年/极端日/跨日耦合仍待验证。旧冻结findings/旧verdict不改，无PPT。
 
 - 2026-10-02 U11R08B：预先固定BAND=1e-6，仅修订分层目标/逐权重固定带，完整9组540 LP+252 MILP均Optimal，共同N=48满足原1个百分点/2%双门槛；78项测试与5432项哈希/原生解独立审计通过。审计v01遇Python/PuLP浮点求和8.88e-16的精确比较差，v02按已保存目标形成的实际带核对并独立重算目标，未改正式产物或数值判据。支持限于当前年度样本内输入拟合和近似分层最优，不推广成本/缺供、跨年/极端日或跨日储能；后续新方向需新单元。旧U11R06仍invalid，无PPT。
 

@@ -12,3 +12,10 @@ scripts/audit_energy_calibrated_days_resolved.py -text
 scripts/audit_energy_calibrated_days_resolved_v02.py -text
 scripts/audit_u11r08_partial.py -text
 tests/test_resolved_weight_bands.py -text
+instructions/studies/U11R10-fixed-weights-capacity-transfer/** -text
+results/annual/U11R10-* -text
+results/annual/U11R10-v01/** -text
+run_fixed_weights_capacity_transfer.py -text
+src/fixed_weights_capacity_transfer.py -text
+scripts/audit_fixed_weights_capacity_transfer.py -text
+tests/test_fixed_weights_capacity_transfer.py -text

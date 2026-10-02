@@ -1,0 +1,34 @@
+{
+  "unit": "U11R10-fixed-weights-capacity-transfer",
+  "base_git_head": "a6a80283a084abc07279996ce41cc3e020ad07fb",
+  "remote_master_before_publication": "a6a80283a084abc07279996ce41cc3e020ad07fb",
+  "index_snapshot": {
+    "new_index_files": 2073,
+    "pinned_files": 2067,
+    "working_tree_byte_mismatches": [],
+    "pinned_hash_mismatches": [],
+    "maximum_file_bytes": 1167867,
+    "total_new_bytes": 9102804,
+    "credential_markers": [],
+    "index_verified": true,
+    "scope": "Snapshot before this report and final publication prose; this report is not self-hashed. Frozen specifications, source, run manifest and numerical artifacts are unchanged afterward."
+  },
+  "whitespace": {
+    "full_cached_check_exit_code": 1,
+    "cause": "CBC original logs contain trailing spaces and a final blank line; retained unchanged as numerical evidence.",
+    "code_documents_and_other_artifacts_check": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check -- . ':(exclude)results/annual/U11R10-v01/*_cbc.log'",
+    "scoped_check_exit_code": 0,
+    "log_hashes": "Included in all artifact hashes and Git index byte checks. No log trimming or tolerance change."
+  },
+  "publication_audit": {
+    "command": ".\\.venv\\Scripts\\python.exe scripts/audit_fixed_weights_capacity_transfer.py U11R10-v01 --output results/annual/U11R10-v01-publication-audit.json",
+    "exit_code": 0,
+    "checked_hashes": 2180,
+    "new_solver_calls": 0
+  },
+  "unverified_scope": [
+    "Independent years or real-grid loads and costs",
+    "Cost or unserved-energy precision acceptance",
+    "Unregistered capacities, extreme days, cross-day SOC coupling"
+  ]
+}

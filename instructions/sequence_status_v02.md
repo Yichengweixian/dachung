@@ -4,8 +4,8 @@
 
 | 单元 | 当前状态 | 证据 |
 |---|---|---|
+| U11R10 | complete / supported（固定N48权重的两配置迁移双门槛） | results/annual/U11R10-v01/、U11R10-v01-independent-audit.json；1020次全Optimal，六组均通过，成本/缺供只诊断 |
 | U11R08B | complete / supported（仅当前年度固定日集合双门槛，BAND=1e-6） | results/annual/U11R08B-v01/、独立审计；540 LP+252 MILP全Optimal，共同通过N=48 |
-
 | U11R09 | complete / inconclusive（R08固定权重重新调度；无共同N通过双门槛） | results/annual/U11R09-v01/、U11R09-v01-independent-audit.json；252次主MILP+9次重复，零权重LP |
 | U11R08 | complete / supported（固定日集合的输入电量可行性；U11比例门槛仍未共同通过） | results/annual/U11R08-v02/、independent_audit/report.json；9次主LP与9次独立LP均Optimal，零新增调度 |
 | U11R07 | complete / inconclusive（只读诊断，数值根因未证实） | results/annual/U11R07-v01/、U11R07-v01-independent-audit.json；16份LP逐字节一致、零求解调用 |

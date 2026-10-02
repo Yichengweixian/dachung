@@ -62,3 +62,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-09-26 | U11R07只读诊断 | 冻结后核对U11R06失败LP固定带、序列化与旧解残差，不调用求解器 | complete/inconclusive：16阶段LP逐字节一致；旧解新固定带最大违约约3.0e-9，简单区间无矛盾，数学/数值根因未证实；独立审计26项冻结哈希、120项原产物哈希和16份LP通过，75项测试通过 | results/annual/U11R07-v01/、U11R07-v01-independent-audit.json。首次预检残留48日循环导致读取报错，尚未重放或求解，修正后完成；历史invalid不改，无PPT，按持续授权提交推送。
 
 2026-10-02 | U11R08B执行 | 新单元冻结1e-6固定带，保留原双门槛与其余方法，执行完整矩阵 | complete/supported：540次权重LP+252次调度全Optimal，共同N=48，重复权重与旧控制差0；78项测试通过，独立审计5432项哈希、原生解/MPS及252个日解通过 | results/annual/U11R08B-v01/、U11R08B-v01-independent-audit.json。审计v01因Python/PuLP求和8.88e-16差造成固定带精确比较错误，原版本保留、v02核对实际目标带并独立重算后通过；没有求解重试、改判据或改旧失败。限当前年度双门槛，成本/缺供精度与跨年等未验证，无PPT；按持续授权提交推送。
+
+2026-10-02 | U11R10容量迁移 | 冻结原N48日/权重与现有E0_P0、E80_P20后独立求全年基准及代表日 | complete/supported：1020次全Optimal、六组双门槛通过、最大E0.950136672210018、重复差0；117项测试与2180项哈希及另进程小时物理/成本审计通过 | results/annual/U11R10-v01/、U11R10-v01-independent-audit.json、U11R10-validation-v01.json。没有重校准/重聚类，零权重LP；成本/缺供仍仅诊断，不保证成本精度/任意容量/跨年。旧判定与冻结findings保持，无PPT；按持续授权提交推送。
