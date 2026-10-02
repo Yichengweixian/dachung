@@ -1,0 +1,14 @@
+# Preserve the byte-level SHA-256 evidence of the parallel U11R08B study.
+# Existing research units keep their current line-ending policy.
+instructions/studies/U11R08-resolved-weight-bands/** -text
+results/annual/U11R08B-v01/** -text
+results/annual/U11R08B-*.json -text
+results/annual/U11R08-preflight-v01.json -text
+results/annual/U11R08-audit-attempt-v01.json -text
+run_energy_calibrated_days_resolved.py -text
+src/cbc_weight_evidence.py -text
+src/energy_calibrated_weights_resolved.py -text
+scripts/audit_energy_calibrated_days_resolved.py -text
+scripts/audit_energy_calibrated_days_resolved_v02.py -text
+scripts/audit_u11r08_partial.py -text
+tests/test_resolved_weight_bands.py -text

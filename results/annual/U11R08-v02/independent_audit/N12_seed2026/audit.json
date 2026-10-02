@@ -1,0 +1,74 @@
+{
+  "N": 12,
+  "seed": 2026,
+  "D_min": 0.0,
+  "CBC_t": 0.0,
+  "status": "reachable",
+  "certificate": {
+    "lower": "0",
+    "upper": "276675/927759256161854947328",
+    "gap": "276675/927759256161854947328",
+    "lower_float": 0.0,
+    "upper_float": 2.982185283115428e-16,
+    "proof_weights": [
+      "4503599627370491/562949953421312",
+      "7057653613744629/70368744177664",
+      "23",
+      "14",
+      "7599824371187719/562949953421312",
+      "63/2",
+      "678595941745363/8796093022208",
+      "11/2",
+      "36",
+      "16",
+      "8038160611565003/281474976710656",
+      "23/2"
+    ],
+    "max_repair": "5/562949953421312",
+    "dual_y": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "dual_z": "0",
+    "dual_scale": "1",
+    "optimality_certified": true,
+    "evidence_note": null
+  },
+  "residuals": {
+    "original": {
+      "sum": 0.0,
+      "bounds": 0.0,
+      "energy": 0.0,
+      "nonnegative_t": 0.0
+    },
+    "solution": {
+      "sum": 8.881784197001252e-15,
+      "bounds": 0.0,
+      "energy": 1.586205318774994e-16,
+      "nonnegative_t": 0.0
+    },
+    "readback": {
+      "sum": 8.881784197001252e-15,
+      "bounds": 0.0,
+      "energy": 1.586205318774994e-16,
+      "nonnegative_t": 0.0
+    }
+  },
+  "diagnostics": {
+    "renewable_available_MWh": 301411.88999999996,
+    "renewable_used_MWh": 240432.5002958017,
+    "curtailment_MWh": 60979.389704198264,
+    "renewable_utilization_pct": 79.76875109200294,
+    "curtailment_rate_pct": 20.23124890799705,
+    "worst_error_pp": 0.41475270681625886
+  },
+  "input_relative_errors": [
+    2.2633399926595875e-17,
+    1.586205318774994e-16,
+    1.1899652469853858e-17
+  ]
+}

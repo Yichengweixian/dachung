@@ -1,0 +1,10 @@
+{
+  "renewable_available_MWh": 301411.88999999996,
+  "renewable_used_MWh": 240432.50029580173,
+  "curtailment_MWh": 60979.38970419827,
+  "renewable_utilization_pct": 79.76875109200296,
+  "curtailment_rate_pct": 20.231248907997053,
+  "worst_error_pp": 0.4147527068162731,
+  "ratio_pass": true,
+  "dispatch_solves": 0
+}

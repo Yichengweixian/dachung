@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "indexed_frozen_source_artifact_hashes_checked": 5415,
+  "mismatches": [],
+  "method": "SHA-256 of raw Git-index blobs against as-run manifest and audit hashes"
+}

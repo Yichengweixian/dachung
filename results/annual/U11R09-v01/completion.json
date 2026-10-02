@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "verdict": "inconclusive",
+  "passing_N": [],
+  "selected_N": null,
+  "run_id": "U11R09-v01",
+  "manifest_sha256": "0f9b68eb6f838ffb3d3a35ea8a5df41fe68c9b4882e57aedf59a9c5a70978264",
+  "audit_sha256": "909a0628ccaf304aa05ade018519464a41a3cd343b57c99ca2554d7deb1f8f95",
+  "audit_path": "results/annual/U11R09-v01-independent-audit.json",
+  "freeze_sha256": "6033a824edb9703bad44ae1fa9970536a08fc7a245c3c1cdd0c606b63a89aa3c",
+  "timestamp": "2026-09-28T02:00:25.120783+00:00"
+}

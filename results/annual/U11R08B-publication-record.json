@@ -10,5 +10,8 @@
   "remote_head_at_discovery": "adf262d0cd4308bcb79af3ae51cddf1aaac708f7",
   "remote_units_preserved": ["U11R08-input-energy-feasibility", "U11R09-fixed-weight-dual-threshold"],
   "reason": "Concurrent remote work already used the U11R08 display number and U11R08-v01 directory. Publish the independently frozen resolved-band experiment as U11R08B without rewriting immutable run identity or overwriting remote results.",
-  "frozen_files_and_original_manifest_modified": false
+  "frozen_files_and_original_manifest_modified": false,
+  "postmerge_read_only_audit": "results/annual/U11R08B-postmerge-audit.json",
+  "all_original_artifact_hashes_match_after_move": true,
+  "combined_regression_tests_passed": 110
 }

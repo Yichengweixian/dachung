@@ -1,0 +1,19 @@
+{
+  "published_unit_alias": "U11R08B",
+  "research_solver_calls_added_during_integration": 0,
+  "test_command": ".venv/Scripts/python.exe -X utf8 -m unittest discover -s tests -q",
+  "combined_tests_run": 110,
+  "combined_test_failures": 0,
+  "combined_test_errors": 0,
+  "test_solver_calls_are_separate_from_formal_research_budget": true,
+  "postmerge_audit": "results/annual/U11R08B-postmerge-audit.json",
+  "postmerge_audit_passed": true,
+  "original_frozen_and_artifact_hashes_checked": 5432,
+  "remote_line_ending_audit": "results/annual/U11R08B-remote-newline-check.json",
+  "remote_mismatches_other_than_LF_CRLF": 0,
+  "git_index_evidence_sha256_checks": 5415,
+  "git_index_evidence_sha256_mismatches": 0,
+  "git_index_evidence_report": "results/annual/U11R08B-git-evidence-check.json",
+  "remote_historical_raw_hash_checks_all_passed": false,
+  "note": "Remote snapshots from another Windows checkout have only LF/CRLF byte differences; original commits and verdicts are preserved. Scoped Git attributes preserve this study's published byte-level evidence without rewriting remote research sources."
+}

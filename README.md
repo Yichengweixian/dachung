@@ -4,6 +4,16 @@
 
 2026-10-02最新：U11R08B预先将分层目标固定带从1e-9改为1e-6，保留原模型、真实日、权重界限、CBC设置和双门槛。完整九组540次权重LP与252次日调度全部Optimal；共同通过N=48，三个种子比例误差为0.460、0.371、0.802个百分点，输入电量误差均约0.0001%。独立审计v02通过5432项哈希及原生解/日解重建，78项测试通过，complete/supported。结论限于当前年度；成本/缺供精度与跨年/跨日储能尚未验证，旧失败判定保持，无PPT。详见[U11R08B结果](instructions/studies/U11R08-resolved-weight-bands/findings.md)。下方日期段落为历史记录。
 
+U11R08B是本轮分层权重修订的并行发布别名；远端原U11R08采用单次输入误差LP，U11R09固定使用那组权重，两方案不同。两边冻结文件、原运行身份与判定完整保留；本轮发布目录为results/annual/U11R08B-v01，映射见results/annual/U11R08B-publication-record.json，不能用本轮supported追溯改判原U11R09。
+
+整合远端后110项全量测试通过，本轮迁移后5432项哈希/原生解审计通过，上传前Git索引5415项字节级证据匹配。远端旧快照的LF/CRLF差异单独记录，未改源文件或旧判定。
+
+2026-09-28最新：U11R09原样恢复U11R08-v02九组正式权重并重新运行252次代表日调度
+与9次重复调度，九组D均≤2%，但N=12/24/48分别在seed=7/7/42的E超过1个百分点，
+没有同一个N在三个seed下通过双门槛。独立只读审计通过，结论complete/inconclusive；
+U11R06 invalid、U11R07 inconclusive、U11R08 supported均不改变。详见
+[U11R09结果](instructions/studies/U11R09-fixed-weight-dual-threshold/findings.md)。
+
 2026-09-26后续：U11R07只读重放U11R06失败LP，16个模型与原保存文件逐字节一致、零新增优化调用；上一阶段解在新固定带最大违约约3.0e-9，不能据此证明数学无解或CBC根因。独立审计通过；诊断结论complete/inconclusive，U11R06仍invalid，完整研究未完成。详见[U11R07结果](instructions/studies/U11R07-u11r06-band-diagnosis/findings.md)。
 
 2026-09-26最新：U11R06 仅将权重 LP 改为 CBC `presolve off` 后尝试完整 9 组矩阵，但第 44 次权重 LP 在 N24/seed42 阶段 Infeasible，按冻结规则停止并保留证据；43 次 LP 与 12 次调度 Optimal，独立部分审计通过，研究判定 blocked/invalid。U11R04 invalid 与 U11R05 单模型 supported 均保持历史结论，研究仍未完成、不制作 PPT。详见[U11R06 结果](instructions/studies/U11R06-presolve-off-weight-matrix/findings.md)。

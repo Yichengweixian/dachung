@@ -1,0 +1,65 @@
+[
+  {
+    "group": "N12_seed42",
+    "cluster": 0,
+    "hourly_difference": 0.0,
+    "objective_difference": 0.0,
+    "summary_difference": 0.0
+  },
+  {
+    "group": "N12_seed7",
+    "cluster": 0,
+    "hourly_difference": 0.0,
+    "objective_difference": 0.0,
+    "summary_difference": 0.0
+  },
+  {
+    "group": "N12_seed2026",
+    "cluster": 0,
+    "hourly_difference": 0.0,
+    "objective_difference": 0.0,
+    "summary_difference": 0.0
+  },
+  {
+    "group": "N24_seed42",
+    "cluster": 0,
+    "hourly_difference": 0.0,
+    "objective_difference": 0.0,
+    "summary_difference": 0.0
+  },
+  {
+    "group": "N24_seed7",
+    "cluster": 0,
+    "hourly_difference": 0.0,
+    "objective_difference": 0.0,
+    "summary_difference": 0.0
+  },
+  {
+    "group": "N24_seed2026",
+    "cluster": 0,
+    "hourly_difference": 0.0,
+    "objective_difference": 0.0,
+    "summary_difference": 0.0
+  },
+  {
+    "group": "N48_seed42",
+    "cluster": 0,
+    "hourly_difference": 0.0,
+    "objective_difference": 0.0,
+    "summary_difference": 0.0
+  },
+  {
+    "group": "N48_seed7",
+    "cluster": 0,
+    "hourly_difference": 0.0,
+    "objective_difference": 0.0,
+    "summary_difference": 0.0
+  },
+  {
+    "group": "N48_seed2026",
+    "cluster": 0,
+    "hourly_difference": 0.0,
+    "objective_difference": 0.0,
+    "summary_difference": 0.0
+  }
+]

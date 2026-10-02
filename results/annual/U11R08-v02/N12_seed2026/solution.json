@@ -1,0 +1,64 @@
+{
+  "success": true,
+  "status": 0,
+  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "iterations": 6,
+  "scipy_version": "1.18.1",
+  "weights": [
+    8.0,
+    100.29529013514532,
+    23.0,
+    14.0,
+    13.500000000000012,
+    31.5,
+    77.14742670775229,
+    5.5,
+    36.0,
+    16.0,
+    28.557283157102386,
+    11.5
+  ],
+  "t": 0.0,
+  "objective": 0.0,
+  "inequality_marginals": [
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0
+  ],
+  "equality_marginals": [
+    -0.0
+  ],
+  "lower_marginals": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "upper_marginals": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}
