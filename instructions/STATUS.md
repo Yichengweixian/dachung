@@ -1,5 +1,9 @@
 # 当前状态
 
+## 2026-10-02 U11R08B完整矩阵通过
+
+新单元预先冻结固定带1e-6，其余方法/求解设置/年度1个百分点与2%门槛不变。完整九组540次权重LP+252次调度MILP全部Optimal，重复权重与旧控制最大差均0；仅N=48在三个固定种子下共同通过，complete/supported。78项测试通过，独立审计v02核对5432项哈希、原生LP/MPS和252日物理解通过。首轮审计因Python/PuLP浮点求和最后一位差导致精确比较错误，原源码保留，另写v02审计完成；没有重跑求解或改判据。旧invalid/inconclusive结论不改。证据见results/annual/U11R08B-v01/、U11R08B-v01-independent-audit.json。结论限于当前年度和近似分层最优化，成本/缺供精度、跨年与跨日储能仍未验证，无PPT。
+
 ## 2026-09-26 U11R07只读诊断完成
 
 对U11R06的N24/seed42失败LP重放16阶段，保存的LP逐字节一致；前一阶段解代入失败阶段最大违约约3.0e-9，主要是w_010固定上界。简单区间无矛盾，尚不能证明数学无解或CBC根因。独立审计26项冻结哈希、120项产物哈希和16份LP通过；零新增优化调用，75项测试通过。工程complete、verdict=inconclusive。U11R06仍invalid，全项目研究未完成，无PPT。证据见results/annual/U11R07-v01/、U11R07-v01-independent-audit.json。

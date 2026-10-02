@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "new_solver_calls": 0,
+  "frozen_hashes": 26,
+  "run_artifact_hashes": 120,
+  "matched_lp_files": 16,
+  "top_mps_residual": {
+    "row": "C0000058",
+    "sense": "L",
+    "violation": "2.99800088817841970012523233890533447265625000000000000E-9",
+    "signed_residual": "2.99800088817841970012523233890533447265625000000000000E-9"
+  },
+  "run_manifest_sha256": "e76c143a4c85eee4bdd32bcaee96f1d43412ef244c8d48a5a16333481fa1c81d",
+  "diagnosis_sha256": "9e138efc2f4a3a094352110f9e3b25a304d8a1a3da7b892d2d9571ff42939446",
+  "audit_source_sha256": "13bb49e44766f7e878a05d348af79caf59cda120b340686903757880d678191a"
+}

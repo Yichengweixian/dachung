@@ -1,0 +1,14 @@
+{
+  "run_id": "U11R08-v01",
+  "audit_script": "scripts/audit_energy_calibrated_days_resolved.py",
+  "audit_status": "failed",
+  "new_solver_calls": 0,
+  "error": "ValueError('Changed lexicographic bands/order')",
+  "first_mismatch": "N24_seed42_main_lex_010",
+  "secondary_recorded_objective": 5.859404569223189,
+  "secondary_python_sum": 5.85940456922319,
+  "recorded_l_limit": 5.859405569223189,
+  "reconstructed_l_limit": 5.85940556922319,
+  "diagnosed_cause": "Exact comparison propagated a different floating-point sum from Python sum than the PuLP recorded objective; difference 8.881784197001252e-16.",
+  "resolution": "Keep captured v01 source and run artifacts unchanged; use an independently hashed v02 audit, validate the recomputed objective within the existing objective guard, then derive the bands from the actual recorded solver objective."
+}

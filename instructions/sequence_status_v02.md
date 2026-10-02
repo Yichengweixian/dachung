@@ -4,6 +4,7 @@
 
 | 单元 | 当前状态 | 证据 |
 |---|---|---|
+| U11R08B | complete / supported（仅当前年度固定日集合双门槛，BAND=1e-6） | results/annual/U11R08B-v01/、独立审计；540 LP+252 MILP全Optimal，共同通过N=48 |
 | U11R07 | complete / inconclusive（只读诊断，数值根因未证实） | results/annual/U11R07-v01/、U11R07-v01-independent-audit.json；16份LP逐字节一致、零求解调用 |
 | U11R06 | blocked / invalid（presolve off 全矩阵在第44次权重LP停） | results/annual/U11R06-v01/、U11R06-v01-partial-audit.json；43次LP与12次调度Optimal，矩阵未完成 |
 | U11R05 | complete / supported（只限单模型presolve off诊断） | results/annual/U11R05-v01/、U11R05-v01-independent-audit.json；2次Optimal且重复差0 |

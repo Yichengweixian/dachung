@@ -1,0 +1,88 @@
+{
+  "stage": "lex_001",
+  "band": 1e-06,
+  "t_limit": 0.00020650760372893897,
+  "l_limit": 5.8172487389619825,
+  "pins": [
+    {
+      "index": 0,
+      "lower": 12.039084455271196,
+      "upper": 12.039086455271194
+    },
+    {
+      "index": 3,
+      "lower": 32.458221030477056,
+      "upper": 32.45822303047705
+    },
+    {
+      "index": 9,
+      "lower": 19.999998970358806,
+      "upper": 20.0
+    },
+    {
+      "index": 5,
+      "lower": 13.999998194112425,
+      "upper": 14.0
+    },
+    {
+      "index": 8,
+      "lower": 6.5,
+      "upper": 6.500001
+    },
+    {
+      "index": 4,
+      "lower": 54.99999827088854,
+      "upper": 55.000000270888535
+    },
+    {
+      "index": 11,
+      "lower": 1.507297956116764,
+      "upper": 1.507299956116764
+    },
+    {
+      "index": 7,
+      "lower": 23.99999875253944,
+      "upper": 24.0
+    }
+  ],
+  "status": "Optimal",
+  "solution_status": 1,
+  "seconds": 0.05780329999834066,
+  "log": "Welcome to the CBC MILP Solver \nVersion: 2.10.3 \nBuild Date: Dec 15 2019 \n\ncommand line - E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -presolve off -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)\nAt line 2 NAME          MODEL\nAt line 3 ROWS\nAt line 54 COLUMNS\nAt line 223 RHS\nAt line 273 BOUNDS\nAt line 298 ENDATA\nProblem MODEL has 49 rows, 25 columns and 167 elements\nCoin0008I MODEL read with 0 errors\nprimalTolerance was changed from 1e-07 to 1e-09\nintegerTolerance was changed from 1e-07 to 1e-09\nratioGap was changed from 0 to 0\nallowableGap was changed from 1e-10 to 0\nOption for presolve changed from on to off\nPerturbing problem by 0.001% of 17.631266 - largest nonzero change 5.361002e-05 ( 0.00030406223%) - largest zero change 4.5980136e-05\n0  Obj 12.500261 Primal inf 152.55422 (23)\n27  Obj 12.500625\nOptimal - objective value 12.5\nOptimal objective 12.5 - 27 iterations time 0.002\nOption for printingOptions changed from normal to all\nTotal time (CPU seconds):       0.02   (Wallclock seconds):       0.02\n\n",
+  "solver_precision": {
+    "native_objective": 12.500000000000002,
+    "max_text_rounding": 4.552700012538935e-07
+  },
+  "weights": [
+    12.03908645527,
+    12.500000000000002,
+    77.99535018486651,
+    32.458223030480006,
+    55.00000027089001,
+    13.999999278625324,
+    63.000041779864084,
+    23.999999999999996,
+    6.5,
+    20.0,
+    46.000000000005514,
+    1.507298999998592
+  ],
+  "t": 0.0002065076037289,
+  "deviations": [
+    0.5048858069087497,
+    0.49999999999999983,
+    0.32195508787886834,
+    0.49284026514874996,
+    4.925372611334861e-09,
+    0.9999998969458752,
+    6.631727057520488e-07,
+    0.9999999999999197,
+    0.49999999999998,
+    1.0,
+    0.0,
+    0.49756700000051957
+  ],
+  "objective": 12.500000000000002,
+  "bounds_residual": 0.0,
+  "normalized_residual": 2.9558577807620168e-12
+}

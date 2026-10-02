@@ -1,0 +1,14 @@
+{
+  "published_unit_alias": "U11R08B",
+  "canonical_frozen_unit": "U11R08-resolved-weight-bands",
+  "original_run_id": "U11R08-v01",
+  "original_execution_directory": "results/annual/U11R08-v01",
+  "published_directory": "results/annual/U11R08B-v01",
+  "published_original_audit": "results/annual/U11R08B-v01-independent-audit.json",
+  "run_manifest_sha256": "d0044037d1c1df24c27a1dcdbd5f3c15708507b7fe34e8706770205b84cc1d74",
+  "local_execution_git_head": "acc366383494a32af938d945334a04d5c45765f3",
+  "remote_head_at_discovery": "adf262d0cd4308bcb79af3ae51cddf1aaac708f7",
+  "remote_units_preserved": ["U11R08-input-energy-feasibility", "U11R09-fixed-weight-dual-threshold"],
+  "reason": "Concurrent remote work already used the U11R08 display number and U11R08-v01 directory. Publish the independently frozen resolved-band experiment as U11R08B without rewriting immutable run identity or overwriting remote results.",
+  "frozen_files_and_original_manifest_modified": false
+}

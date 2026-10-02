@@ -1,0 +1,137 @@
+{
+  "stage": "lex_022",
+  "band": 1e-06,
+  "t_limit": 1e-06,
+  "l_limit": 3.2255549887132453,
+  "pins": [
+    {
+      "index": 7,
+      "lower": 21.999971775583397,
+      "upper": 21.9999737755834
+    },
+    {
+      "index": 16,
+      "lower": 0.9999989747233711,
+      "upper": 1.0000009747233711
+    },
+    {
+      "index": 8,
+      "lower": 16.0,
+      "upper": 16.000001
+    },
+    {
+      "index": 17,
+      "lower": 3.999998916272496,
+      "upper": 4.000000916272496
+    },
+    {
+      "index": 10,
+      "lower": 34.99999778371002,
+      "upper": 34.99999978371002
+    },
+    {
+      "index": 4,
+      "lower": 1.9999989609463713,
+      "upper": 2.0000009609463714
+    },
+    {
+      "index": 11,
+      "lower": 3.999998928400388,
+      "upper": 4.000000928400388
+    },
+    {
+      "index": 20,
+      "lower": 0.9999989774246476,
+      "upper": 1.0000009774246477
+    },
+    {
+      "index": 9,
+      "lower": 13.999998107912608,
+      "upper": 14.0
+    },
+    {
+      "index": 6,
+      "lower": 30.97113519240897,
+      "upper": 30.97113719240897
+    },
+    {
+      "index": 23,
+      "lower": 18.021588458892452,
+      "upper": 18.021590458892454
+    },
+    {
+      "index": 5,
+      "lower": 2.999998986139786,
+      "upper": 3.0000009861397863
+    },
+    {
+      "index": 12,
+      "lower": 11.999998934081896,
+      "upper": 12.000000934081894
+    }
+  ],
+  "status": "Optimal",
+  "solution_status": 1,
+  "seconds": 0.07925560000148835,
+  "log": "Welcome to the CBC MILP Solver \nVersion: 2.10.3 \nBuild Date: Dec 15 2019 \n\ncommand line - E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -presolve off -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)\nAt line 2 NAME          MODEL\nAt line 3 ROWS\nAt line 88 COLUMNS\nAt line 411 RHS\nAt line 495 BOUNDS\nAt line 544 ENDATA\nProblem MODEL has 83 rows, 49 columns and 321 elements\nCoin0008I MODEL read with 0 errors\nprimalTolerance was changed from 1e-07 to 1e-09\nintegerTolerance was changed from 1e-07 to 1e-09\nratioGap was changed from 0 to 0\nallowableGap was changed from 1e-10 to 0\nOption for presolve changed from on to off\nPerturbing problem by 0.001% of 21.026544 - largest nonzero change 7.7027449e-05 ( 0.00036633432%) - largest zero change 6.8852703e-05\n0  Obj 11.000307 Primal inf 254.82656 (40)\n32  Obj 11.000634 Primal inf 16.593319 (17)\n63  Obj 22.000621 Primal inf 1.5283316e-05 (4)\n72  Obj 22.000692\nOptimal - objective value 22\nOptimal objective 21.9999997 - 72 iterations time 0.002\nOption for printingOptions changed from normal to all\nTotal time (CPU seconds):       0.02   (Wallclock seconds):       0.02\n\n",
+  "solver_precision": {
+    "native_objective": 21.999999696086423,
+    "max_text_rounding": 4.588899997770568e-07
+  },
+  "weights": [
+    18.000000005929945,
+    34.00000000000272,
+    14.999999999999252,
+    8.162401088297893,
+    2.0,
+    3.0000000000003,
+    30.971137192409998,
+    21.999973775580003,
+    16.0,
+    14.000000000000002,
+    34.99999978371,
+    4.000000000000001,
+    12.000000000000478,
+    5.0,
+    33.00000000000032,
+    3.0000000000002998,
+    0.9999999999999999,
+    3.999999999999999,
+    25.844897999093785,
+    3.0000000000003,
+    1.0,
+    34.99999999999825,
+    21.999999696086423,
+    18.02159045889
+  ],
+  "t": 1e-06,
+  "deviations": [
+    0.0,
+    0.0,
+    0.0,
+    0.6324802176595788,
+    0.0,
+    0.0,
+    0.630059852232154,
+    1.192018990883565e-06,
+    0.49999999999999994,
+    0.9999999999994006,
+    6.179664396023639e-09,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.26157434288299786,
+    0.0,
+    0.0,
+    0.0,
+    1.3814153512962175e-08,
+    0.20143936392606007
+  ],
+  "objective": 21.999999696086423,
+  "bounds_residual": 1.7763568394002505e-15,
+  "normalized_residual": 3.2944136307833105e-10
+}

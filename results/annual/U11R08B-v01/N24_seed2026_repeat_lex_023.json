@@ -1,0 +1,132 @@
+{
+  "stage": "lex_023",
+  "band": 1e-06,
+  "t_limit": 1e-06,
+  "l_limit": 2.3917007095419605,
+  "pins": [
+    {
+      "index": 11,
+      "lower": 1.9999979401455934,
+      "upper": 1.9999999401455932
+    },
+    {
+      "index": 16,
+      "lower": 10.080475199111097,
+      "upper": 10.080477199111096
+    },
+    {
+      "index": 9,
+      "lower": 27.99999879265718,
+      "upper": 28.000000792657183
+    },
+    {
+      "index": 15,
+      "lower": 36.70065258808855,
+      "upper": 36.70065458808855
+    },
+    {
+      "index": 21,
+      "lower": 30.605714915534367,
+      "upper": 30.60571691553437
+    },
+    {
+      "index": 3,
+      "lower": 1.9999989960874411,
+      "upper": 2.000000996087441
+    },
+    {
+      "index": 5,
+      "lower": 2.999998993216555,
+      "upper": 3.0000009932165552
+    },
+    {
+      "index": 4,
+      "lower": 3.999998993448285,
+      "upper": 4.000000993448285
+    },
+    {
+      "index": 8,
+      "lower": 35.99999884167125,
+      "upper": 36.0
+    },
+    {
+      "index": 13,
+      "lower": 14.999998977042697,
+      "upper": 15.000000977042696
+    },
+    {
+      "index": 19,
+      "lower": 7.999998983422443,
+      "upper": 8.000000983422442
+    },
+    {
+      "index": 22,
+      "lower": 3.0000651786393995,
+      "upper": 3.0000671786393998
+    }
+  ],
+  "status": "Optimal",
+  "solution_status": 1,
+  "seconds": 0.06867760000022827,
+  "log": "Welcome to the CBC MILP Solver \nVersion: 2.10.3 \nBuild Date: Dec 15 2019 \n\ncommand line - E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -presolve off -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)\nAt line 2 NAME          MODEL\nAt line 3 ROWS\nAt line 86 COLUMNS\nAt line 407 RHS\nAt line 489 BOUNDS\nAt line 538 ENDATA\nProblem MODEL has 81 rows, 49 columns and 319 elements\nCoin0008I MODEL read with 0 errors\nprimalTolerance was changed from 1e-07 to 1e-09\nintegerTolerance was changed from 1e-07 to 1e-09\nratioGap was changed from 0 to 0\nallowableGap was changed from 1e-10 to 0\nOption for presolve changed from on to off\nPerturbing problem by 0.001% of 20.804915 - largest nonzero change 9.1927344e-05 ( 0.00044185397%) - largest zero change 8.8918621e-05\n0  Obj 6.0004187 Primal inf 214.4092 (40)\n31  Obj 6.0007568 Primal inf 12.725981 (20)\n62  Obj 12.000754 Primal inf 0.0002605816 (7)\n79  Obj 12.00089\nOptimal - objective value 12\nOptimal objective 11.99999998 - 79 iterations time 0.002\nOption for printingOptions changed from normal to all\nTotal time (CPU seconds):       0.02   (Wallclock seconds):       0.02\n\n",
+  "solver_precision": {
+    "native_objective": 11.999999979825262,
+    "max_text_rounding": 4.119100012189847e-07
+  },
+  "weights": [
+    20.000001932827853,
+    25.613083636242685,
+    18.0,
+    1.9999999999999998,
+    4.0,
+    3.0000000000002998,
+    3.9999999999999996,
+    4.000000000000001,
+    36.0,
+    27.99999999999664,
+    42.99999999999699,
+    1.999999940146,
+    5.999999999998798,
+    14.99999999999925,
+    17.999999999998554,
+    36.700654588089996,
+    10.080477199109998,
+    5.999999999998799,
+    26.999999999997844,
+    8.0,
+    3.0000000000003,
+    30.60571622198478,
+    3.0000665017859616,
+    11.999999979825262
+  ],
+  "t": 1.0000000000107107e-06,
+  "deviations": [
+    9.664139253955646e-08,
+    0.051367272731676704,
+    0.49999999999996,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0000000000001603,
+    0.0,
+    0.0,
+    2.992700019892147e-08,
+    0.0,
+    0.0,
+    0.0,
+    0.10486208321728156,
+    0.680079533185336,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.05536952489603727,
+    2.2167261887095024e-05,
+    1.6812681843577443e-09
+  ],
+  "objective": 11.999999979825262,
+  "bounds_residual": 0.0,
+  "normalized_residual": 1.4495071809506044e-12
+}

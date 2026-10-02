@@ -1,0 +1,28 @@
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - E:\dachuang\.venv\Lib\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -presolve off -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 104 COLUMNS
+At line 443 RHS
+At line 543 BOUNDS
+At line 592 ENDATA
+Problem MODEL has 99 rows, 49 columns and 337 elements
+Coin0008I MODEL read with 0 errors
+primalTolerance was changed from 1e-07 to 1e-09
+integerTolerance was changed from 1e-07 to 1e-09
+ratioGap was changed from 0 to 0
+allowableGap was changed from 1e-10 to 0
+Option for presolve changed from on to off
+Perturbing problem by 0.001% of 5.5993664 - largest nonzero change 1.8638136e-05 ( 0.00033286152%) - largest zero change 1.5325377e-05
+0  Obj 1.5001116 Primal inf 228.90544 (48)
+35  Obj 2.8460776 Primal inf 1.0764853 (14)
+66  Obj 3.0002506 Primal inf 2.0577734e-07 (2)
+67  Obj 3.0002506
+Optimal - objective value 3
+Optimal objective 2.999999995 - 67 iterations time 0.002
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.02   (Wallclock seconds):       0.02
+
