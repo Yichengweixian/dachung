@@ -1,0 +1,9 @@
+{
+  "unit": "U11R12-input-shortage-proxy",
+  "phase": "before_formal_run",
+  "checks": [
+    {"command": ".\\.venv\\Scripts\\python.exe -m unittest tests.test_input_shortage_proxy -v", "exit_code": 0, "tests": 8, "seconds": 0.063},
+    {"command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -q", "exit_code": 0, "tests": 132, "seconds": 3.572}
+  ],
+  "note": "Unit-test solver calls are validation only and are separate from the frozen formal 300 LP plus 147 dispatch budget."
+}

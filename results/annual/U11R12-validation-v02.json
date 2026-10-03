@@ -1,0 +1,11 @@
+{
+  "unit": "U11R12-input-shortage-proxy",
+  "phase": "after_formal_run",
+  "checks": [
+    {"command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -q", "exit_code": 0, "tests": 132, "seconds": 5.245},
+    {"command": ".\\.venv\\Scripts\\python.exe run_input_shortage_proxy.py --run-id U11R12-v01", "exit_code": 0, "weight_lp_calls": 300, "dispatch_calls": 147, "all_optimal": true, "verdict": "refuted", "seconds": 48.101674900000035},
+    {"command": ".\\.venv\\Scripts\\python.exe scripts/audit_input_shortage_proxy.py U11R12-v01 --output results/annual/U11R12-v01-independent-audit.json", "exit_code": 0, "checked_hashes": 6326, "new_solver_calls": 0, "passed": true}
+  ],
+  "formal_run_manifest_sha256": "280deddf5e1a554e339491f3bf86564b92589923bab80ff08095ec40d464b22f",
+  "note": "Refuted is the valid scientific outcome; no failed solver calls, no rerun/tuning of the formal study. Read-only publication statistics initially omitted UTF-8 and failed under Windows GBK; explicit encoding fixed only that inspection command."
+}

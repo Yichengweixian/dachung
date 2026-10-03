@@ -66,3 +66,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-10-02 | U11R10容量迁移 | 冻结原N48日/权重与现有E0_P0、E80_P20后独立求全年基准及代表日 | complete/supported：1020次全Optimal、六组双门槛通过、最大E0.950136672210018、重复差0；117项测试与2180项哈希及另进程小时物理/成本审计通过 | results/annual/U11R10-v01/、U11R10-v01-independent-audit.json、U11R10-validation-v01.json。没有重校准/重聚类，零权重LP；成本/缺供仍仅诊断，不保证成本精度/任意容量/跨年。旧判定与冻结findings保持，无PPT；按持续授权提交推送。
 
 2026-10-03 | U11R11误差归因 | 冻结3103项旧证据后只读分解三容量/三种子成本与缺供，0正式求解 | complete/supported仅指seed7缺供罚项主导的探索性假设：1527源日重建、124项测试、3216项哈希与独立会计审计通过；全部九组校准均减少成本/缺供误差，同源日指标差0，但替代偏差未消除 | results/annual/U11R11-v01/、U11R11-v01-independent-audit.json、U11R11-validation-v01.json。冻结前Windows参数过长失败记录保留，以短入口复用原freezer解决，未改范围/判据；旧研究保持，无PPT，按持续授权提交推送。
+
+2026-10-03 | U11R12纯输入代理选日 | 3216项旧依赖冻结后，在原N48簇内按超过火电上限净负荷日累计量选实际日，沿用原校准流程拟合新权重 | complete/refuted：300LP+147调度全Optimal，E/D三组通过，42/2026成本/缺供误差增加、7减少；132项测试与6326项哈希/独立排序、MPS原生解和512日物理/成本审计通过，重复与同源成本差0 | results/annual/U11R12-v01/、U11R12-v01-independent-audit.json、U11R12-validation-v01.json、v02.json。没有正式求解失败/重试/调参，零求解会计分解登记为下一阶段；只读统计UTF-8遗漏报错保留说明，未改正式结果。旧研究保持，无PPT，按持续授权提交推送。

@@ -1,0 +1,210 @@
+{
+  "stage": "lex_001",
+  "band": 1e-06,
+  "t_limit": 1e-06,
+  "l_limit": 1.712858232524929,
+  "pins": [
+    {
+      "index": 44,
+      "lower": 13.999987755287298,
+      "upper": 13.999989755287297
+    },
+    {
+      "index": 7,
+      "lower": 28.10626068608994,
+      "upper": 28.10626268608994
+    },
+    {
+      "index": 22,
+      "lower": 2.9999989574044967,
+      "upper": 3.000000957404497
+    },
+    {
+      "index": 17,
+      "lower": 0.9999989855009919,
+      "upper": 1.000000985500992
+    },
+    {
+      "index": 19,
+      "lower": 1.999998970136566,
+      "upper": 2.0000009701365657
+    },
+    {
+      "index": 29,
+      "lower": 1.9999989653651264,
+      "upper": 2.0000009653651265
+    },
+    {
+      "index": 14,
+      "lower": 11.999998861043288,
+      "upper": 12.000000861043286
+    },
+    {
+      "index": 46,
+      "lower": 0.9999989831487103,
+      "upper": 1.0000009831487102
+    },
+    {
+      "index": 30,
+      "lower": 0.9999989838648156,
+      "upper": 1.0000009838648156
+    },
+    {
+      "index": 35,
+      "lower": 1.99999896924962,
+      "upper": 2.00000096924962
+    },
+    {
+      "index": 34,
+      "lower": 0.9999989848804369,
+      "upper": 1.000000984880437
+    },
+    {
+      "index": 28,
+      "lower": 7.999998869567188,
+      "upper": 8.000000869567188
+    },
+    {
+      "index": 36,
+      "lower": 24.318132646565537,
+      "upper": 24.31813464656554
+    },
+    {
+      "index": 15,
+      "lower": 15.99999898149572,
+      "upper": 16.00000098149572
+    },
+    {
+      "index": 25,
+      "lower": 0.9999989988612525,
+      "upper": 1.0000009988612526
+    },
+    {
+      "index": 4,
+      "lower": 0.9999989989304692,
+      "upper": 1.0000009989304692
+    },
+    {
+      "index": 38,
+      "lower": 1.9999989976266204,
+      "upper": 2.0000009976266204
+    },
+    {
+      "index": 24,
+      "lower": 5.999998993703135,
+      "upper": 6.000000993703135
+    }
+  ],
+  "status": "Optimal",
+  "solution_status": 1,
+  "seconds": 0.04111230000034993,
+  "log": "Welcome to the CBC MILP Solver \nVersion: 2.10.3 \nBuild Date: Dec 15 2019 \n\ncommand line - E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -presolve off -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)\nAt line 2 NAME          MODEL\nAt line 3 ROWS\nAt line 146 COLUMNS\nAt line 767 RHS\nAt line 909 BOUNDS\nAt line 1006 ENDATA\nProblem MODEL has 141 rows, 97 columns and 619 elements\nCoin0008I MODEL read with 0 errors\nprimalTolerance was changed from 1e-07 to 1e-09\nintegerTolerance was changed from 1e-07 to 1e-09\nratioGap was changed from 0 to 0\nallowableGap was changed from 1e-10 to 0\nOption for presolve changed from on to off\nPerturbing problem by 0.001% of 17.588501 - largest nonzero change 7.7572631e-05 ( 0.00044104173%) - largest zero change 7.5930926e-05\n0  Obj 2.5002605 Primal inf 172.16257 (70)\n34  Obj 2.5004558 Primal inf 16.91366 (42)\n83  Obj 2.5005655 Primal inf 22.074991 (12)\n106  Obj 5.0005419\nOptimal - objective value 5\nOptimal objective 4.999999995 - 106 iterations time 0.002\nOption for printingOptions changed from normal to all\nTotal time (CPU seconds):       0.01   (Wallclock seconds):       0.01\n\n",
+  "solver_precision": {
+    "native_objective": 4.999999995130365,
+    "max_text_rounding": 4.368724226821996e-07
+  },
+  "weights": [
+    18.99999999999943,
+    4.999999995130365,
+    18.731024412513232,
+    12.99999999999948,
+    1.0,
+    2.0,
+    5.0,
+    28.10626268609,
+    2.0000000000000004,
+    2.0,
+    9.000000000000899,
+    15.000000000000002,
+    1.0000000000000002,
+    1.0,
+    12.00000000000048,
+    16.0,
+    21.999999999997804,
+    1.0,
+    3.0000000000002998,
+    2.0,
+    19.999999999999996,
+    12.00000000000048,
+    3.0000000000002998,
+    3.0000000000003,
+    5.999999999998799,
+    1.0,
+    26.844598864727185,
+    1.0,
+    8.0,
+    1.9999999999999998,
+    0.9999999999999999,
+    1.0000000000000002,
+    1.0,
+    4.0,
+    1.0,
+    2.0,
+    24.31813464657,
+    4.0,
+    2.0,
+    19.99998843687242,
+    0.9999999999999998,
+    1.0,
+    0.9999999999999999,
+    21.00000120280845,
+    13.999989755289999,
+    1.0,
+    1.0,
+    4.0
+  ],
+  "t": 1.0000000000000002e-06,
+  "deviations": [
+    0.0,
+    9.739268518442424e-10,
+    0.4408480317318447,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5614590381162361,
+    0.0,
+    0.0,
+    0.0,
+    0.5000000000000498,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.10518003784251666,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.10536975666238357,
+    0.0,
+    0.0,
+    5.781563789058255e-07,
+    0.0,
+    0.0,
+    0.0,
+    5.7276642638591495e-08,
+    7.317650200455575e-07,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "objective": 4.999999995130365,
+  "bounds_residual": 5.684341886080802e-14,
+  "normalized_residual": 4.462208380573429e-12
+}

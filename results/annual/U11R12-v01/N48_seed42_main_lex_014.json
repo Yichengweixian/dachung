@@ -1,0 +1,195 @@
+{
+  "stage": "lex_014",
+  "band": 1e-06,
+  "t_limit": 1e-06,
+  "l_limit": 2.9051009261738585,
+  "pins": [
+    {
+      "index": 2,
+      "lower": 11.999990483535164,
+      "upper": 11.999992483535163
+    },
+    {
+      "index": 10,
+      "lower": 0.999998926593036,
+      "upper": 1.000000926593036
+    },
+    {
+      "index": 40,
+      "lower": 3.999998671948986,
+      "upper": 4.000000671948986
+    },
+    {
+      "index": 5,
+      "lower": 3.999998740677072,
+      "upper": 4.000000740677072
+    },
+    {
+      "index": 13,
+      "lower": 35.20995821754244,
+      "upper": 35.20996021754244
+    },
+    {
+      "index": 33,
+      "lower": 15.99999882859912,
+      "upper": 16.00000082859912
+    },
+    {
+      "index": 38,
+      "lower": 18.99999885998774,
+      "upper": 19.000000859987743
+    },
+    {
+      "index": 32,
+      "lower": 3.999998967977446,
+      "upper": 4.000000967977446
+    },
+    {
+      "index": 37,
+      "lower": 0.9999989889567195,
+      "upper": 1.0000009889567194
+    },
+    {
+      "index": 42,
+      "lower": 0.999998988737738,
+      "upper": 1.000000988737738
+    },
+    {
+      "index": 46,
+      "lower": 3.9999989667169102,
+      "upper": 4.00000096671691
+    },
+    {
+      "index": 15,
+      "lower": 0.9999989896690474,
+      "upper": 1.0000009896690474
+    },
+    {
+      "index": 26,
+      "lower": 1.9999989829105675,
+      "upper": 2.0000009829105676
+    },
+    {
+      "index": 16,
+      "lower": 4.552727174600666,
+      "upper": 4.552729174600667
+    },
+    {
+      "index": 18,
+      "lower": 15.733663497433263,
+      "upper": 15.733665497433261
+    }
+  ],
+  "status": "Optimal",
+  "solution_status": 1,
+  "seconds": 0.0351901000003636,
+  "log": "Welcome to the CBC MILP Solver \nVersion: 2.10.3 \nBuild Date: Dec 15 2019 \n\ncommand line - E:\\dachuang\\.venv\\Lib\\site-packages\\pulp\\apis\\../solverdir/cbc/win/i64/cbc.exe model.mps -primalTolerance 1e-9 -integerTolerance 1e-9 -ratioGap 0 -allowableGap 0 -threads 0 -presolve off -branch -printingOptions all -solution solution.txt -saveSolution solution.bin -quit (default strategy 1)\nAt line 2 NAME          MODEL\nAt line 3 ROWS\nAt line 140 COLUMNS\nAt line 753 RHS\nAt line 889 BOUNDS\nAt line 986 ENDATA\nProblem MODEL has 135 rows, 97 columns and 611 elements\nCoin0008I MODEL read with 0 errors\nprimalTolerance was changed from 1e-07 to 1e-09\nintegerTolerance was changed from 1e-07 to 1e-09\nratioGap was changed from 0 to 0\nallowableGap was changed from 1e-10 to 0\nOption for presolve changed from on to off\nPerturbing problem by 0.001% of 5.743104 - largest nonzero change 2.4849149e-05 ( 0.00043267802%) - largest zero change 2.4437068e-05\n0  Obj 2.0001604 Primal inf 239.79416 (67)\n41  Obj 2.000314 Primal inf 11.773662 (29)\n81  Obj 2.0003994 Primal inf 135.00339 (14)\n111  Obj 4.0003366\nOptimal - objective value 4\nOptimal objective 3.999999976 - 111 iterations time 0.002\nOption for printingOptions changed from normal to all\nTotal time (CPU seconds):       0.01   (Wallclock seconds):       0.01\n\n",
+  "solver_precision": {
+    "native_objective": 3.999999976074656,
+    "max_text_rounding": 4.957067449851138e-07
+  },
+  "weights": [
+    3.0000000000002998,
+    10.0,
+    11.999992483540002,
+    20.0,
+    3.0000000000003,
+    3.9999999999999996,
+    12.003591504293254,
+    1.9999999999999998,
+    1.9999999999999998,
+    20.0,
+    0.9999999999999999,
+    5.0,
+    17.999999999998558,
+    35.209959987709446,
+    3.999999976074656,
+    1.0,
+    4.552729174601,
+    12.000000000000483,
+    15.733665108047555,
+    9.00006176573672,
+    0.9999999999999999,
+    2.0,
+    8.0,
+    3.0000000000003,
+    3.0000000000002998,
+    4.0,
+    1.9999999999999998,
+    4.999999999999999,
+    12.00000000000048,
+    1.0,
+    16.000000000000004,
+    4.999999999999999,
+    4.0,
+    16.0,
+    10.0,
+    0.9999999999999999,
+    0.9999999999999999,
+    1.0,
+    18.99999999999943,
+    21.999999999997797,
+    4.000000000000001,
+    9.5,
+    1.0,
+    1.0,
+    12.999999999999481,
+    0.9999999999999999,
+    4.0,
+    2.0
+  ],
+  "t": 9.99999999995291e-07,
+  "deviations": [
+    0.0,
+    0.0,
+    6.26371706312515e-07,
+    0.0,
+    0.0,
+    0.0,
+    0.19976056638040987,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.6004527267142258,
+    5.981336079275076e-09,
+    0.0,
+    0.13818229365024975,
+    0.0,
+    0.9667081385059443,
+    0.4999965685701421,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.499999999999985,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "objective": 3.999999976074656,
+  "bounds_residual": 1.1368683772161603e-13,
+  "normalized_residual": 4.838796030526282e-12
+}

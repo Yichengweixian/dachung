@@ -1,0 +1,19 @@
+{
+  "unit": "U11R12-input-shortage-proxy",
+  "formal_run_manifest_sha256": "280deddf5e1a554e339491f3bf86564b92589923bab80ff08095ec40d464b22f",
+  "remote_master_before_publication": "524a0bafe8cc4b259f278dbb22523960c37b09c8",
+  "local_head_before_publication": "524a0bafe8cc4b259f278dbb22523960c37b09c8",
+  "scientific_audit": {"path": "results/annual/U11R12-v01-independent-audit.json", "passed": true, "checked_hashes": 6326},
+  "prepublication_recheck": {"path": "results/annual/U11R12-v01-publication-recheck.json", "passed": true, "checked_hashes": 6326, "new_solver_calls": 0},
+  "whitespace_checks": [
+    {"command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check", "exit_code": 1, "reason": "Native CBC logs have trailing spaces and EOF blank lines; evidence bytes preserved."},
+    {"command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check -- . ':(glob,exclude)results/annual/U11R12-v01/**/*_cbc.log' ':(glob,exclude)results/annual/U11R12-v01/**/stdout.txt'", "exit_code": 0, "note": "Only raw CBC log/stdout paths excluded; code, specs, CSV, LP, MPS and other records remain checked."}
+  ],
+  "index_audits": {
+    "initial_checkpoint": "results/annual/U11R12-v01-publication-audit.json",
+    "final_checkpoint": "results/annual/U11R12-v01-publication-audit-v02.json",
+    "note": "Initial checkpoint preceded the final publication wording and supplementary reports; final checkpoint supersedes it for staged-file hashes. The final report excludes itself from the byte proof."
+  },
+  "publication_plan": {"push_command": "git push origin master", "after_push_commands": ["git ls-remote origin refs/heads/master", "git rev-parse HEAD", "git status --short"]},
+  "note": "This is the precommit proof, not a claim of a completed push. Final transport results are verified from live Git refs after publication."
+}

@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "new_solver_calls": 0,
+  "checked_hashes": 6326,
+  "weight_lp_calls": 300,
+  "dispatch_calls": 147,
+  "baseline_days_reconstructed": 365,
+  "max_readback_difference": 1.1920928955078125e-07,
+  "max_physical_residual": 7.37365724035044e-12,
+  "max_mps_residual": 2.1538326677728037e-13,
+  "max_weight_bound_residual": 2.2737367544323206e-13,
+  "max_normalized_residual": 4.838796030526282e-12,
+  "max_same_source_cost_difference": 0.0,
+  "max_repeat_difference": 0.0,
+  "verdict": "refuted",
+  "passes_ED": [
+    true,
+    true,
+    true
+  ],
+  "groups": [
+    {
+      "seed": 42,
+      "worst_error_pp": 0.21761496135798097,
+      "max_input_relative_error": 1.0000000293623435e-06,
+      "cost_error_CNY": -40917756.07137191,
+      "unserved_error_MWh": -4204.174493582228,
+      "old_cost_error_CNY": -4235119.4672676325,
+      "old_unserved_error_MWh": -519.6416926227976,
+      "cost_absolute_improvement_CNY": -36682636.60410428,
+      "unserved_absolute_improvement_MWh": -3684.5328009594305,
+      "changed_days": 24
+    },
+    {
+      "seed": 7,
+      "worst_error_pp": 0.025075703797433846,
+      "max_input_relative_error": 1.000000037840722e-06,
+      "cost_error_CNY": 12829199.419458866,
+      "unserved_error_MWh": 1335.0270743412766,
+      "old_cost_error_CNY": 20878147.13732612,
+      "old_unserved_error_MWh": 2097.659777818073,
+      "cost_absolute_improvement_CNY": 8048947.717867255,
+      "unserved_absolute_improvement_MWh": 762.6327034767965,
+      "changed_days": 19
+    },
+    {
+      "seed": 2026,
+      "worst_error_pp": 0.16595315718569736,
+      "max_input_relative_error": 9.999999937504028e-07,
+      "cost_error_CNY": -8993392.76429391,
+      "unserved_error_MWh": -961.3804739180559,
+      "old_cost_error_CNY": -4696070.080264449,
+      "old_unserved_error_MWh": -626.6410034435467,
+      "cost_absolute_improvement_CNY": -4297322.68402946,
+      "unserved_absolute_improvement_MWh": -334.7394704745093,
+      "changed_days": 26
+    }
+  ],
+  "audit_source_sha256": "557a5e742a76c54419ba5f73996f5e561445862213315e3c8b2d9f42b09cf1c1",
+  "run_manifest_sha256": "280deddf5e1a554e339491f3bf86564b92589923bab80ff08095ec40d464b22f"
+}

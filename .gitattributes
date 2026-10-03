@@ -27,3 +27,12 @@ src/cost_unserved_attribution.py -text
 scripts/audit_cost_unserved_attribution.py -text
 scripts/freeze_cost_unserved_attribution.py -text
 tests/test_cost_unserved_attribution.py -text
+instructions/studies/U11R12-input-shortage-proxy/** -text
+results/annual/U11R12-* -text
+results/annual/U11R12-v01/** -text
+run_input_shortage_proxy.py -text
+src/input_shortage_proxy.py -text
+scripts/freeze_input_shortage_proxy.py -text
+scripts/audit_input_shortage_proxy.py -text
+tests/test_input_shortage_proxy.py -text
+scripts/audit_u11r12_publication.py -text
