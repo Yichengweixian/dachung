@@ -19,3 +19,11 @@ run_fixed_weights_capacity_transfer.py -text
 src/fixed_weights_capacity_transfer.py -text
 scripts/audit_fixed_weights_capacity_transfer.py -text
 tests/test_fixed_weights_capacity_transfer.py -text
+instructions/studies/U11R11-cost-unserved-attribution/** -text
+results/annual/U11R11-* -text
+results/annual/U11R11-v01/** -text
+run_cost_unserved_attribution.py -text
+src/cost_unserved_attribution.py -text
+scripts/audit_cost_unserved_attribution.py -text
+scripts/freeze_cost_unserved_attribution.py -text
+tests/test_cost_unserved_attribution.py -text

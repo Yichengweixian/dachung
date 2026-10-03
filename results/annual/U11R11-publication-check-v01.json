@@ -1,0 +1,32 @@
+{
+  "unit": "U11R11-cost-unserved-attribution",
+  "client_date": "2026-10-03",
+  "base_git_head": "445a6ea63bc1c7af8504fefc5d268f495694c07b",
+  "remote_master_before_publication": "445a6ea63bc1c7af8504fefc5d268f495694c07b",
+  "index_snapshot": {
+    "new_index_files": 35,
+    "pinned_files": 31,
+    "byte_mismatches": [],
+    "pinned_hash_mismatches": [],
+    "maximum_file_bytes": 812125,
+    "total_new_bytes": 2297281,
+    "credential_markers": [],
+    "passed": true,
+    "scope": "Snapshot before this report and final findings prose; it is not self-hashed. Frozen specifications, numerical artifacts and code remain unchanged."
+  },
+  "cached_diff_check": {
+    "command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check",
+    "exit_code": 0
+  },
+  "publication_audit": {
+    "command": ".\\.venv\\Scripts\\python.exe scripts/audit_cost_unserved_attribution.py U11R11-v01 --output results/annual/U11R11-v01-publication-audit.json",
+    "exit_code": 0,
+    "checked_hashes": 3216,
+    "new_solver_calls": 0
+  },
+  "limitations": [
+    "Supported concerns exploratory accounting hypothesis, not a new representation method or accepted cost accuracy.",
+    "Physical cause, independent years, real-grid loads/costs and cross-day storage remain unverified.",
+    "Old frozen files retain historical Windows checkout line-ending assumptions; only new U11R11 files receive byte-preserving Git attributes."
+  ]
+}

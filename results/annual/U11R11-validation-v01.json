@@ -1,0 +1,31 @@
+{
+  "unit": "U11R11-cost-unserved-attribution",
+  "client_date": "2026-10-03",
+  "tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -q",
+    "exit_code": 0,
+    "count": 124,
+    "elapsed_seconds": 4.246,
+    "new_tests": 7,
+    "scope": "Existing solver tests run separately; formal U11R11 analysis and independent audit make zero optimization calls."
+  },
+  "compile": {
+    "command": ".\\.venv\\Scripts\\python.exe -m compileall -q run_cost_unserved_attribution.py src/cost_unserved_attribution.py scripts/audit_cost_unserved_attribution.py scripts/freeze_cost_unserved_attribution.py tests/test_cost_unserved_attribution.py",
+    "exit_code": 0
+  },
+  "formal_analysis": {
+    "command": ".\\.venv\\Scripts\\python.exe run_cost_unserved_attribution.py --run-id U11R11-v01",
+    "exit_code": 0,
+    "new_solver_calls": 0,
+    "source_dispatches": 1527,
+    "elapsed_seconds": 22.10407260000011
+  },
+  "independent_audit": {
+    "command": ".\\.venv\\Scripts\\python.exe scripts/audit_cost_unserved_attribution.py U11R11-v01 --output results/annual/U11R11-v01-independent-audit.json",
+    "exit_code": 0,
+    "checked_hashes": 3216,
+    "new_solver_calls": 0
+  },
+  "freeze_sha256": "322c1f1f80daa20f7639bbf103a9fc3ddebd97100ab78ef824403dc6a584a0a2",
+  "run_manifest_sha256": "74b245e50e2d2a7152221f1041cf8d99c85a7c78149359adf5f8e1bef8b85d82"
+}

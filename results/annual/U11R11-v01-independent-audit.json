@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checked_hashes": 3216,
+  "new_solver_calls": 0,
+  "reconstructed_full_days": 1095,
+  "reconstructed_representative_days": 432,
+  "annual_rows": 126,
+  "cluster_rows": 6048,
+  "max_physical_residual": 7.382539024547441e-12,
+  "max_readback_difference": 2.384185791015625e-07,
+  "max_same_day_cost_difference": 0.0,
+  "verdict": "supported",
+  "hypothesis": [
+    {
+      "capacity_scenario": "E0_P0",
+      "seed": 7,
+      "shortage_abs_CNY": 20659500.548927546,
+      "next_abs_CNY": 286751.9543428179,
+      "margin_CNY": 20372748.594584726,
+      "state": "dominant"
+    },
+    {
+      "capacity_scenario": "E40_P20",
+      "seed": 7,
+      "shortage_abs_CNY": 20976597.77818066,
+      "next_abs_CNY": 326331.95647877455,
+      "margin_CNY": 20650265.821701884,
+      "state": "dominant"
+    },
+    {
+      "capacity_scenario": "E80_P20",
+      "seed": 7,
+      "shortage_abs_CNY": 22511148.62797159,
+      "next_abs_CNY": 676454.6928858757,
+      "margin_CNY": 21834693.935085714,
+      "state": "dominant"
+    }
+  ],
+  "audit_source_sha256": "1fac798d5969eaeaffe822a8407c3c84b810b705dbc3b40702a143b94e79d2ea",
+  "run_manifest_sha256": "74b245e50e2d2a7152221f1041cf8d99c85a7c78149359adf5f8e1bef8b85d82"
+}

@@ -1,0 +1,30 @@
+{
+  "hypothesis": "seed7_shortage_fee_dominates_three_capacities",
+  "verdict": "supported",
+  "groups": [
+    {
+      "capacity_scenario": "E0_P0",
+      "seed": 7,
+      "shortage_abs_CNY": 20659500.548927546,
+      "next_abs_CNY": 286751.9543428179,
+      "margin_CNY": 20372748.594584726,
+      "state": "dominant"
+    },
+    {
+      "capacity_scenario": "E40_P20",
+      "seed": 7,
+      "shortage_abs_CNY": 20976597.77818054,
+      "next_abs_CNY": 326331.95647877455,
+      "margin_CNY": 20650265.821701765,
+      "state": "dominant"
+    },
+    {
+      "capacity_scenario": "E80_P20",
+      "seed": 7,
+      "shortage_abs_CNY": 22511148.62797153,
+      "next_abs_CNY": 676454.6928859353,
+      "margin_CNY": 21834693.935085595,
+      "state": "dominant"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "phase": "freeze_preparation",
+  "passed": false,
+  "error": "Windows could not start Python with over 3000 --input arguments: filename or extension too long.",
+  "freeze_created": false,
+  "new_solver_calls": 0,
+  "resolution": "Use a short Python entrypoint to pass the same enumerated inputs directly to the existing freeze_study.main; no change to scientific criteria or input scope."
+}

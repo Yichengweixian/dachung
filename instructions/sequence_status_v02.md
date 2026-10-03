@@ -4,6 +4,7 @@
 
 | 单元 | 当前状态 | 证据 |
 |---|---|---|
+| U11R11 | complete / supported（仅成本/缺供会计归因，非精度改善） | results/annual/U11R11-v01/、U11R11-v01-independent-audit.json；九组1527日重建、零正式求解；权重改善未消除替代偏差 |
 | U11R10 | complete / supported（固定N48权重的两配置迁移双门槛） | results/annual/U11R10-v01/、U11R10-v01-independent-audit.json；1020次全Optimal，六组均通过，成本/缺供只诊断 |
 | U11R08B | complete / supported（仅当前年度固定日集合双门槛，BAND=1e-6） | results/annual/U11R08B-v01/、独立审计；540 LP+252 MILP全Optimal，共同通过N=48 |
 | U11R09 | complete / inconclusive（R08固定权重重新调度；无共同N通过双门槛） | results/annual/U11R09-v01/、U11R09-v01-independent-audit.json；252次主MILP+9次重复，零权重LP |

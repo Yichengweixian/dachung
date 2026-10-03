@@ -64,3 +64,5 @@ results/master_revalidation_v01/、results/optimization/U06-master-v01/、docs/m
 2026-10-02 | U11R08B执行 | 新单元冻结1e-6固定带，保留原双门槛与其余方法，执行完整矩阵 | complete/supported：540次权重LP+252次调度全Optimal，共同N=48，重复权重与旧控制差0；78项测试通过，独立审计5432项哈希、原生解/MPS及252个日解通过 | results/annual/U11R08B-v01/、U11R08B-v01-independent-audit.json。审计v01因Python/PuLP求和8.88e-16差造成固定带精确比较错误，原版本保留、v02核对实际目标带并独立重算后通过；没有求解重试、改判据或改旧失败。限当前年度双门槛，成本/缺供精度与跨年等未验证，无PPT；按持续授权提交推送。
 
 2026-10-02 | U11R10容量迁移 | 冻结原N48日/权重与现有E0_P0、E80_P20后独立求全年基准及代表日 | complete/supported：1020次全Optimal、六组双门槛通过、最大E0.950136672210018、重复差0；117项测试与2180项哈希及另进程小时物理/成本审计通过 | results/annual/U11R10-v01/、U11R10-v01-independent-audit.json、U11R10-validation-v01.json。没有重校准/重聚类，零权重LP；成本/缺供仍仅诊断，不保证成本精度/任意容量/跨年。旧判定与冻结findings保持，无PPT；按持续授权提交推送。
+
+2026-10-03 | U11R11误差归因 | 冻结3103项旧证据后只读分解三容量/三种子成本与缺供，0正式求解 | complete/supported仅指seed7缺供罚项主导的探索性假设：1527源日重建、124项测试、3216项哈希与独立会计审计通过；全部九组校准均减少成本/缺供误差，同源日指标差0，但替代偏差未消除 | results/annual/U11R11-v01/、U11R11-v01-independent-audit.json、U11R11-validation-v01.json。冻结前Windows参数过长失败记录保留，以短入口复用原freezer解决，未改范围/判据；旧研究保持，无PPT，按持续授权提交推送。
