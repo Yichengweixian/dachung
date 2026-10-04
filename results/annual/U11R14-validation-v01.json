@@ -1,0 +1,16 @@
+{
+  "unit": "U11R14-proxy-energy-feasibility",
+  "checks": [
+    {"command": ".venv\\Scripts\\python.exe -m unittest tests.test_proxy_energy_feasibility -v", "exit_code": 0, "tests": 8},
+    {"command": ".venv\\Scripts\\python.exe -m unittest tests.test_proxy_energy_feasibility -v", "exit_code": 1, "tests": 9, "errors": 1, "error": "Windows default GBK decoded UTF-8 freeze JSON in new native-audit test; no formal study optimization had run"},
+    {"command": ".venv\\Scripts\\python.exe -m unittest tests.test_proxy_energy_feasibility -v", "exit_code": 0, "tests": 9, "seconds": 0.280},
+    {"command": ".venv\\Scripts\\python.exe -m unittest discover -s tests -v", "exit_code": 0, "tests": 149, "seconds": 5.492},
+    {"command": ".venv\\Scripts\\python.exe -m unittest tests.test_proxy_energy_feasibility -q", "exit_code": 0, "tests": 9, "seconds": 0.204},
+    {"command": ".venv\\Scripts\\python.exe -m py_compile src/proxy_energy_feasibility.py run_proxy_energy_feasibility.py scripts/audit_proxy_energy_feasibility.py scripts/audit_u11r14_publication.py scripts/freeze_proxy_energy_feasibility.py tests/test_proxy_energy_feasibility.py", "exit_code": 0},
+    {"command": ".venv\\Scripts\\python.exe run_proxy_energy_feasibility.py --run-id U11R14-v01", "exit_code": 0, "lp_calls": 6, "dispatch_calls": 0, "verdict": "supported", "seconds": 9.83052840000164},
+    {"command": ".venv\\Scripts\\python.exe scripts/audit_proxy_energy_feasibility.py U11R14-v01 --output results/annual/U11R14-v01-independent-audit.json", "exit_code": 0, "passed": true, "checked_hashes": 6434, "source_dispatches": 509, "new_solver_calls": 0},
+    {"command": ".venv\\Scripts\\python.exe -m unittest discover -s tests -q", "exit_code": 0, "tests": 149, "seconds": 5.517}
+  ],
+  "formal_run_manifest_sha256": "a92a7955690f82699c8ce6b1a3ee39c884962a32fbdea7d8ea4582b23d956621",
+  "note": "Synthetic unit-test optimization and existing suite dispatch tests are validation, not formal R14 study calls. Exact proof repairs do not replace native exported weights. Supported means input-only feasibility; both optimal solver outputs and all failing E/D diagnostics are preserved. Default-encoding test error was fixed before formal execution without changing frozen criteria. Read-only inspection also encountered nonexistent guessed historical evidence/checker paths; actual paths were subsequently discovered using rg, with no data or scientific result changes."
+}

@@ -1,0 +1,192 @@
+{
+  "passed": true,
+  "new_solver_calls": 0,
+  "checked_hashes": 6358,
+  "source_dispatches": 653,
+  "max_physical_residual": 7.37365724035044e-12,
+  "max_readback_difference": 1.1920928955078125e-07,
+  "max_identity_difference": 1.1920928955078125e-07,
+  "max_same_source_cost_difference": 0.0,
+  "verdict": "supported",
+  "retrospective": true,
+  "hypothesis": [
+    {
+      "seed": 42,
+      "metric": "total_cost_CNY",
+      "count_error": -1194813.3962697983,
+      "calibrated_error": -40917756.07137191,
+      "absolute_error_increase": 39722942.675102115,
+      "state": "increased"
+    },
+    {
+      "seed": 42,
+      "metric": "unserved_MWh",
+      "count_error": -309.56102500022826,
+      "calibrated_error": -4204.174493582228,
+      "absolute_error_increase": 3894.6134685819998,
+      "state": "increased"
+    },
+    {
+      "seed": 7,
+      "metric": "total_cost_CNY",
+      "count_error": -2252035.4685457945,
+      "calibrated_error": 12829199.419458866,
+      "absolute_error_increase": 10577163.950913072,
+      "state": "increased"
+    },
+    {
+      "seed": 7,
+      "metric": "unserved_MWh",
+      "count_error": -130.00722500011761,
+      "calibrated_error": 1335.0270743412766,
+      "absolute_error_increase": 1205.019849341159,
+      "state": "increased"
+    },
+    {
+      "seed": 2026,
+      "metric": "total_cost_CNY",
+      "count_error": -2098968.714479208,
+      "calibrated_error": -8993392.76429391,
+      "absolute_error_increase": 6894424.049814701,
+      "state": "increased"
+    },
+    {
+      "seed": 2026,
+      "metric": "unserved_MWh",
+      "count_error": -262.15090000014607,
+      "calibrated_error": -961.3804739180559,
+      "absolute_error_increase": 699.2295739179099,
+      "state": "increased"
+    }
+  ],
+  "counterfactuals": [
+    {
+      "seed": 42,
+      "combination": "old_count",
+      "E": 0.013143231602825267,
+      "D": 0.07123599680386365,
+      "passes_ED": false
+    },
+    {
+      "seed": 42,
+      "combination": "new_count",
+      "E": 0.3629363085722268,
+      "D": 0.02506586393120113,
+      "passes_ED": false
+    },
+    {
+      "seed": 42,
+      "combination": "Y00",
+      "E": 0.4601423791635284,
+      "D": 1.0000000346677128e-06,
+      "passes_ED": true
+    },
+    {
+      "seed": 42,
+      "combination": "Y10",
+      "E": 0.39128470781615476,
+      "D": 0.04549703174201916,
+      "passes_ED": false
+    },
+    {
+      "seed": 42,
+      "combination": "Y01",
+      "E": 0.23354799573289142,
+      "D": 0.03422641571671661,
+      "passes_ED": false
+    },
+    {
+      "seed": 42,
+      "combination": "Y11",
+      "E": 0.21761496135798097,
+      "D": 1.0000000293623435e-06,
+      "passes_ED": true
+    },
+    {
+      "seed": 7,
+      "combination": "old_count",
+      "E": 0.07701857081158892,
+      "D": 0.10303089878237562,
+      "passes_ED": false
+    },
+    {
+      "seed": 7,
+      "combination": "new_count",
+      "E": 0.35063924676872205,
+      "D": 0.02738226383011086,
+      "passes_ED": false
+    },
+    {
+      "seed": 7,
+      "combination": "Y00",
+      "E": 0.3710386933537677,
+      "D": 9.999999746662141e-07,
+      "passes_ED": true
+    },
+    {
+      "seed": 7,
+      "combination": "Y10",
+      "E": 0.38587374660953344,
+      "D": 0.07083182514772447,
+      "passes_ED": false
+    },
+    {
+      "seed": 7,
+      "combination": "Y01",
+      "E": 0.040247789320979166,
+      "D": 0.09142057479605885,
+      "passes_ED": false
+    },
+    {
+      "seed": 7,
+      "combination": "Y11",
+      "E": 0.025075703797433846,
+      "D": 1.000000037840722e-06,
+      "passes_ED": true
+    },
+    {
+      "seed": 2026,
+      "combination": "old_count",
+      "E": 0.23467513966461695,
+      "D": 0.03225039489030798,
+      "passes_ED": false
+    },
+    {
+      "seed": 2026,
+      "combination": "new_count",
+      "E": 0.15857073941120348,
+      "D": 0.008854737569742782,
+      "passes_ED": true
+    },
+    {
+      "seed": 2026,
+      "combination": "Y00",
+      "E": 0.8022108356878164,
+      "D": 1.0000000252856601e-06,
+      "passes_ED": true
+    },
+    {
+      "seed": 2026,
+      "combination": "Y10",
+      "E": 1.0044744394682112,
+      "D": 0.03457844207327949,
+      "passes_ED": false
+    },
+    {
+      "seed": 2026,
+      "combination": "Y01",
+      "E": 0.2428147052312326,
+      "D": 0.03065685610932661,
+      "passes_ED": false
+    },
+    {
+      "seed": 2026,
+      "combination": "Y11",
+      "E": 0.16595315718569736,
+      "D": 9.999999937504028e-07,
+      "passes_ED": true
+    }
+  ],
+  "run_manifest_sha256": "adb6d7032513868d50469e2e2a629722d0e30feab72b841a7e03d4d61ffa3c01",
+  "audit_source_sha256": "ba210d289d1027aa4cecbca82e28425f0c3a7be647389c42d856ab62d71bf3c4"
+}

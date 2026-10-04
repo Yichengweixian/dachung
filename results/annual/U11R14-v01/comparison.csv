@@ -1,0 +1,4 @@
+N,seed,primary_t,cbc_t,exact_lower,exact_upper,classification
+48,42,0,0,0,7.9621023639541688e-16,reachable
+48,7,0,0,0,2.2815796798661977e-15,reachable
+48,2026,0,0,0,1.8185815156073943e-16,reachable

@@ -45,3 +45,12 @@ scripts/freeze_day_weight_accounting.py -text
 scripts/audit_day_weight_accounting.py -text
 scripts/audit_u11r13_publication.py -text
 tests/test_day_weight_accounting.py -text
+instructions/studies/U11R14-proxy-energy-feasibility/** -text
+results/annual/U11R14-* -text
+results/annual/U11R14-v01/** -text
+src/proxy_energy_feasibility.py -text
+run_proxy_energy_feasibility.py -text
+scripts/freeze_proxy_energy_feasibility.py -text
+scripts/audit_proxy_energy_feasibility.py -text
+scripts/audit_u11r14_publication.py -text
+tests/test_proxy_energy_feasibility.py -text

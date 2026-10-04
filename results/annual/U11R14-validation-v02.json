@@ -1,0 +1,13 @@
+{
+  "unit": "U11R14-proxy-energy-feasibility",
+  "supplements": "U11R14-validation-v01.json",
+  "checks": [
+    {"command": "git ls-remote origin refs/heads/master", "exit_code": 0, "remote_and_local_baseline": "bc61a1c6f278ac735a06326da7e95a73cf3ac08a"},
+    {"command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check", "exit_code": 1, "reason": "Only three original CBC native/stdout.txt files have native trailing spaces and terminal blank lines; raw evidence preserved byte-for-byte"},
+    {"command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check -- . ':(exclude)results/annual/U11R14-v01/**/stdout.txt'", "exit_code": 0},
+    {"command": ".venv\\Scripts\\python.exe scripts/audit_u11r14_publication.py --output results/annual/U11R14-publication-index-v01.json", "exit_code": 0, "passed": true, "new_files_checked": 72, "pinned_index_hashes": 69},
+    {"command": ".venv\\Scripts\\python.exe scripts/audit_proxy_energy_feasibility.py U11R14-v01 --output results/annual/U11R14-v01-independent-audit-v02.json", "exit_code": 0, "passed": true, "checked_hashes": 6434, "source_dispatches": 509, "new_solver_calls": 0}
+  ],
+  "formal_run_manifest_sha256": "a92a7955690f82699c8ce6b1a3ee39c884962a32fbdea7d8ea4582b23d956621",
+  "scope": "Existing-file diff is five mutable documents/attributes, 21 insertions and no removals. All old scientific sources, data, results and frozen decision rules remain unchanged. Final supplemental index checkpoint is U11R14-publication-index-v02.json."
+}

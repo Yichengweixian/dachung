@@ -4,6 +4,7 @@
 
 | 单元 | 当前状态 | 证据 |
 |---|---|---|
+| U11R14 | complete / supported（仅固定新日集合四通道输入可行性） | results/annual/U11R14-v01/、U11R14-v01-independent-audit.json；6 LP全Optimal、0新调度，6434项哈希/509源日审计；非唯一最优权重下seed7/2026的E仍超标，非方法成功 |
 | U11R13 | complete / supported（仅回顾性会计：新日校准增大六项误差） | results/annual/U11R13-v01/、U11R13-v01-independent-audit.json；653源日零求解、6358项哈希通过，两替换顺序存在交互；非新算法成功 |
 | U11R12 | complete / refuted（选日+原校准流程未共同改善成本/缺供） | results/annual/U11R12-v01/、U11R12-v01-independent-audit.json；300LP+147MILP全Optimal，E/D全部通过，但seed42/2026经济与缺供误差增大 |
 | U11R11 | complete / supported（仅成本/缺供会计归因，非精度改善） | results/annual/U11R11-v01/、U11R11-v01-independent-audit.json；九组1527日重建、零正式求解；权重改善未消除替代偏差 |

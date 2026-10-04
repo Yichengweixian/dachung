@@ -1,0 +1,13 @@
+{
+  "command": [
+    "E:\\dachuang\\.venv\\Scripts\\python.exe",
+    "E:\\dachuang\\run_proxy_energy_feasibility.py",
+    "--worker",
+    "E:\\dachuang\\results\\annual\\U11R14-v01\\N48_seed7\\model.json",
+    "--solution",
+    "E:\\dachuang\\results\\annual\\U11R14-v01\\N48_seed7\\highs\\solution.json"
+  ],
+  "timeout_seconds": 90,
+  "returncode": 0,
+  "seconds": 2.873030999999173
+}
