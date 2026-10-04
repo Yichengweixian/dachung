@@ -1,0 +1,55 @@
+{
+  "retrospective": true,
+  "hypothesis": "new_weights_increase_cost_and_unserved_absolute_errors",
+  "verdict": "supported",
+  "groups": [
+    {
+      "seed": 42,
+      "metric": "total_cost_CNY",
+      "count_error": -1194813.3962697983,
+      "calibrated_error": -40917756.07137191,
+      "absolute_error_increase": 39722942.675102115,
+      "state": "increased"
+    },
+    {
+      "seed": 42,
+      "metric": "unserved_MWh",
+      "count_error": -309.56102500023553,
+      "calibrated_error": -4204.174493582221,
+      "absolute_error_increase": 3894.613468581985,
+      "state": "increased"
+    },
+    {
+      "seed": 7,
+      "metric": "total_cost_CNY",
+      "count_error": -2252035.4685459137,
+      "calibrated_error": 12829199.419458866,
+      "absolute_error_increase": 10577163.950912952,
+      "state": "increased"
+    },
+    {
+      "seed": 7,
+      "metric": "unserved_MWh",
+      "count_error": -130.00722500011761,
+      "calibrated_error": 1335.0270743412693,
+      "absolute_error_increase": 1205.0198493411517,
+      "state": "increased"
+    },
+    {
+      "seed": 2026,
+      "metric": "total_cost_CNY",
+      "count_error": -2098968.714479327,
+      "calibrated_error": -8993392.764294028,
+      "absolute_error_increase": 6894424.049814701,
+      "state": "increased"
+    },
+    {
+      "seed": 2026,
+      "metric": "unserved_MWh",
+      "count_error": -262.15090000014607,
+      "calibrated_error": -961.3804739180487,
+      "absolute_error_increase": 699.2295739179026,
+      "state": "increased"
+    }
+  ]
+}

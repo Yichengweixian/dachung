@@ -1,0 +1,12 @@
+{
+  "unit": "U11R13-day-weight-accounting",
+  "checks": [
+    {"command": ".\\.venv\\Scripts\\python.exe -m unittest tests.test_day_weight_accounting -v", "exit_code": 0, "tests": 8, "seconds": 1.804},
+    {"command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -q", "exit_code": 0, "tests": 140, "seconds": 8.532},
+    {"command": ".\\.venv\\Scripts\\python.exe run_day_weight_accounting.py --run-id U11R13-v01", "exit_code": 0, "new_solver_calls": 0, "source_dispatches": 653, "verdict": "supported", "retrospective": true, "seconds": 18.294404300002498},
+    {"command": ".\\.venv\\Scripts\\python.exe scripts/audit_day_weight_accounting.py U11R13-v01 --output results/annual/U11R13-v01-independent-audit.json", "exit_code": 0, "passed": true, "checked_hashes": 6358, "new_solver_calls": 0},
+    {"command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -q", "exit_code": 0, "tests": 140, "seconds": 6.298}
+  ],
+  "formal_run_manifest_sha256": "adb6d7032513868d50469e2e2a629722d0e30feab72b841a7e03d4d61ffa3c01",
+  "note": "The first full-test process finished successfully during the zero-solve accounting process; a second full suite passed afterward. Existing test-suite optimizer calls are validation only, not new formal study calls. Supported refers to the retrospective accounting hypothesis, not an improved research algorithm; U11R12 remains refuted."
+}

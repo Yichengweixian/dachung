@@ -1,0 +1,15 @@
+{
+  "unit": "U11R13-day-weight-accounting",
+  "formal_run_manifest_sha256": "adb6d7032513868d50469e2e2a629722d0e30feab72b841a7e03d4d61ffa3c01",
+  "remote_master_before_publication": "03550e700678cad8c0d79263616046f1c1646e36",
+  "local_head_before_publication": "03550e700678cad8c0d79263616046f1c1646e36",
+  "scientific_audit": {"path": "results/annual/U11R13-v01-independent-audit.json", "passed": true, "checked_hashes": 6358, "new_solver_calls": 0},
+  "publication_recheck": {"path": "results/annual/U11R13-v01-publication-recheck.json", "passed": true, "checked_hashes": 6358, "new_solver_calls": 0},
+  "staged_whitespace_command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check",
+  "staged_whitespace_exit_code": 0,
+  "index_audits": ["results/annual/U11R13-v01-publication-audit.json", "results/annual/U11R13-v01-publication-audit-v02.json"],
+  "scope_note": "Final index checkpoint includes the initial checkpoint and supplemental reports, but excludes itself to avoid a self-reference.",
+  "scientific_note": "Supported is retrospective accounting only, not a successful improvement or causal proof. U11R12 remains refuted.",
+  "publication_plan": {"push_command": "git push origin master", "after_push_commands": ["git ls-remote origin refs/heads/master", "git rev-parse HEAD", "git status --short"]},
+  "note": "Precommit evidence, not a completed-push claim; live refs are checked after the push."
+}

@@ -36,3 +36,12 @@ scripts/freeze_input_shortage_proxy.py -text
 scripts/audit_input_shortage_proxy.py -text
 tests/test_input_shortage_proxy.py -text
 scripts/audit_u11r12_publication.py -text
+instructions/studies/U11R13-day-weight-accounting/** -text
+results/annual/U11R13-* -text
+results/annual/U11R13-v01/** -text
+src/day_weight_accounting.py -text
+run_day_weight_accounting.py -text
+scripts/freeze_day_weight_accounting.py -text
+scripts/audit_day_weight_accounting.py -text
+scripts/audit_u11r13_publication.py -text
+tests/test_day_weight_accounting.py -text
