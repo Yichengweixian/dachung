@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "error": "TypeError(\"unsupported operand type(s) for +: 'decimal.Decimal' and 'str'\")",
+  "new_solver_calls": 0,
+  "audit_source_sha256": "e70324578020e520873d972173a51766ac844b393d060d322e666bcd326c093f"
+}

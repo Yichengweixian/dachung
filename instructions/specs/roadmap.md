@@ -34,6 +34,7 @@
 | U11R12 | 原簇内纯输入缺供代理选日 | exploratory | complete / refuted（E/D通过但成本/缺供未共同改善） | U11R11、U11R08B、U11R02 | results/annual/U11R12-v01/、独立审计 |
 | U11R13 | 新旧代表日与权重的双路径会计分解 | exploratory | complete / supported（回顾性会计，非新方法验证） | U11R12、U11R11、U11R08B、U11R02 | results/annual/U11R13-v01/、独立审计 |
 | U11R14 | 固定新日集合的四通道代理电量可行性 | exploratory | complete / supported（仅输入门槛可达，非调度精度） | U11R13、U11R12、U11R08 | results/annual/U11R14-v01/、独立审计 |
+| U11R15 | 四通道minimax的确定性次级规则与调度复核 | exploratory | complete / refuted（L1未共同通过E；规则给出唯一可复现权重） | U11R14、U11R12、U11R08B | results/annual/U11R15-v03/、U11R15-v03-independent-audit-v02.json |
 | U12 | 遗传算法/粒子群增强 | exploratory | 由 U12R01 覆盖 | U09R01 | — |
 | U12R01 | 三种子 GA 与网格对照 | exploratory | complete / inconclusive | U09R01 | results/ga/U12R01-v01/ |
 | U12R02 | 固定89次预算GA及10种子验证 | exploratory | complete / supported | U09R01、U12R01 | results/ga/U12R02-v02/ |
@@ -50,6 +51,8 @@ U00 → U06 → U07 → U08。完成后即可支撑一次有"优化模型 + 渗�
 继续 U09 → U10 → U11 → U12 → U13 → U14。U09 是本项目核心创新点；U10/U11 把结论从构造数据搬到真实数据与全年尺度。
 
 ## Backlog（意外发现与暂缓项，进入前先在本表登记）
+
+- 2026-10-05 U11R15完成：四通道minimax的确定性层级（min t → min Σ|w−c|/c → 日期序打钉）在3 seed×2求解器下459次LP全Optimal、0新调度，两求解器最终权重差≤2.59e-9天、另进程重解差0，规则唯一可复现成立；但L1解稀疏并触界（移动11—15天，seed42有5天压到0.5c），seed42的E=1.0087256325909344个百分点超1.0门槛，H1=refuted；H2亦refuted。预声明对照L∞（全部48天移动、无触界）三seed E=0.557103/0.622921/0.356998全部通过，但**按冻结判据只作对照**。下一步候选（均须新单元先冻结）：(a) 预注册L∞为主规则并复核E/D、成本缺供，纳入E0_P0/E80_P20容量迁移（需新调度预算）；(b) 带逐日偏离上限的L1；(c) 纯输入代理仍缺日内形状与跨日耦合。旧判定与冻结文件不改，v01/v02失败与审计v01失败保留。
 
 - 2026-10-04 U11R14登记：固定R12三个N48日集合，加入已定义纯输入超120MW净负荷日累计代理，检验四通道共同2%保真。主HiGHS3+交叉CBC3共6LP、0新调度，精确有理数上下界和非唯一解全量留证；先冻结再实现。不将输入可行性或较好单解诊断当成本/缺供验证，旧判定不改。
 

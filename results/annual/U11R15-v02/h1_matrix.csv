@@ -1,0 +1,4 @@
+seed,classification,cross_solver_ok,E,max_input_relative_error
+42,reachable,True,1.0087256325909344,1.000000000139778e-06
+7,reachable,True,0.058474018837173958,1.000000000139778e-06
+2026,reachable,True,0.31109582527232504,1.000000000139778e-06

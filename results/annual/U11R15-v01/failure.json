@@ -1,0 +1,5 @@
+{
+  "error": "ValueError('Effective-day weights differ from integer cluster counts')",
+  "lp_calls": 0,
+  "dispatch_calls": 0
+}

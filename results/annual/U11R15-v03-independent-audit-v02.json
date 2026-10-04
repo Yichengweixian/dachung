@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "new_solver_calls": 0,
+  "formal_lp_calls": 459,
+  "dispatch_calls": 0,
+  "source_days": 509,
+  "checked_hashes": 6613,
+  "verdict": "refuted",
+  "h2": "refuted",
+  "classifications": [
+    "reachable",
+    "reachable",
+    "reachable"
+  ],
+  "max_stage_bound_residual": 0.0,
+  "max_four_channel_rebuild_difference": 0.0,
+  "max_physical_residual": 8.526512829121202e-14,
+  "diagnostics": [
+    {
+      "seed": 42,
+      "classification": "reachable",
+      "E": 1.008725632590938,
+      "D": 1.000000000139778e-06,
+      "cost_error": 1665074.686424613,
+      "unserved_error": -0.22740268570487387
+    },
+    {
+      "seed": 7,
+      "classification": "reachable",
+      "E": 0.05847401883717396,
+      "D": 1.000000000139778e-06,
+      "cost_error": -1409655.4525380135,
+      "unserved_error": -133.7968865622097
+    },
+    {
+      "seed": 2026,
+      "classification": "reachable",
+      "E": 0.31109582527232504,
+      "D": 1.000000000139778e-06,
+      "cost_error": -2171632.777700305,
+      "unserved_error": -279.0088535561081
+    }
+  ],
+  "h2_matrix": [
+    {
+      "seed": 42,
+      "cost_error": 1665074.686424613,
+      "unserved_error": -0.22740268570487387,
+      "base_cost": -1194813.3962697983,
+      "base_unserved": -309.56102500022826
+    },
+    {
+      "seed": 7,
+      "cost_error": -1409655.4525380135,
+      "unserved_error": -133.7968865622097,
+      "base_cost": -2252035.4685457945,
+      "base_unserved": -130.00722500011761
+    },
+    {
+      "seed": 2026,
+      "cost_error": -2171632.777700305,
+      "unserved_error": -279.0088535561081,
+      "base_cost": -2098968.714479208,
+      "base_unserved": -262.15090000014607
+    }
+  ],
+  "run_manifest_sha256": "f07fa10a4fa992e5490fe3558adcfae4c36a55aad00cc6bc0e4db917c798418b",
+  "audit_source_sha256": "e3d0b8e360101a26856f181e5646df9bd3f425c2d559e22fe5f90d24c9ba3423"
+}
